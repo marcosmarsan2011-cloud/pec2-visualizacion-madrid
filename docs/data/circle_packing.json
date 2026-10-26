@@ -1,0 +1,107 @@
+{
+ "name": "NFL",
+ "children": [
+  {
+   "name": "AFC",
+   "children": [
+    {
+     "name": "AFC East",
+     "children": [
+      {
+       "name": "New England Patriots",
+       "value": 6
+      }
+     ]
+    },
+    {
+     "name": "AFC North",
+     "children": [
+      {
+       "name": "Baltimore Ravens",
+       "value": 2
+      },
+      {
+       "name": "Pittsburgh Steelers",
+       "value": 2
+      }
+     ]
+    },
+    {
+     "name": "AFC South",
+     "children": [
+      {
+       "name": "Indianapolis Colts",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "AFC West",
+     "children": [
+      {
+       "name": "Kansas City Chiefs",
+       "value": 3
+      },
+      {
+       "name": "Denver Broncos",
+       "value": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "NFC",
+   "children": [
+    {
+     "name": "NFC East",
+     "children": [
+      {
+       "name": "New York Giants",
+       "value": 2
+      },
+      {
+       "name": "Philadelphia Eagles",
+       "value": 2
+      }
+     ]
+    },
+    {
+     "name": "NFC North",
+     "children": [
+      {
+       "name": "Green Bay Packers",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "NFC South",
+     "children": [
+      {
+       "name": "Tampa Bay Buccaneers",
+       "value": 2
+      },
+      {
+       "name": "New Orleans Saints",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "NFC West",
+     "children": [
+      {
+       "name": "Los Angeles Rams",
+       "value": 2
+      },
+      {
+       "name": "Seattle Seahawks",
+       "value": 2
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

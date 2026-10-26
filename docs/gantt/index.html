@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gantt · Quarterbacks de los Packers</title>
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+  <main>
+    <p class="volver"><a href="../">← Las tres técnicas</a></p>
+    <h1>Tres quarterbacks para 27 años</h1>
+    <p class="subtitulo">
+      Quarterback titular de los Green Bay Packers en cada partido desde 1999.
+      Cada barra es una etapa: una racha de partidos seguidos como titular.
+    </p>
+    <p><b>Favre, Rodgers y Love fueron titulares en 454 de los 477 partidos.</b>
+      Los demás solo aparecen cuando el titular se lesiona o descansa.</p>
+
+    <div class="leyenda" id="leyenda"></div>
+    <div id="grafico"></div>
+
+    <p class="fuente">
+      Fuente: resultados de partidos de <a href="https://github.com/nflverse/nflverse-data">nflverse</a>
+      (temporada regular y playoffs, de 1999 a octubre de 2026).
+    </p>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script>
+    // Colores: los tres titulares de largo plazo y el resto
+    const colores = { "Titular habitual": "#008300", "Suplente": "#898781" };
+    const grupo = d => d.total_qb >= 50 ? "Titular habitual" : "Suplente";
+
+    for (const g in colores) {
+      d3.select("#leyenda").append("span")
+        .html(`<i style="background:${colores[g]}"></i>`)
+        .append("span").text(g);
+    }
+
+    d3.csv("../data/gantt_qb.csv", d3.autoType).then(etapas => {
+      // 1. Tamaño del dibujo: una fila de 32 px por quarterback
+      const filas = [...new Set(etapas.map(d => d.qb))];   // en orden de aparición
+      const margen = { arriba: 10, derecha: 90, abajo: 30, izquierda: 120 };
+      const ancho = 800;
+      const alto = margen.arriba + filas.length * 32 + margen.abajo;
+
+      // 2. Escalas: el tiempo en horizontal y los quarterbacks en vertical
+      const x = d3.scaleTime()
+        .domain([new Date(1999, 6, 1), new Date(2026, 11, 31)])
+        .range([margen.izquierda, ancho - margen.derecha]);
+      const y = d3.scaleBand()
+        .domain(filas)
+        .range([margen.arriba, alto - margen.abajo])
+        .padding(0.3);
+
+      const svg = d3.select("#grafico").append("svg")
+        .attr("viewBox", [0, 0, ancho, alto]);
+
+      // 3. Eje de años abajo, con líneas verticales suaves cada 3 años
+      svg.append("g")
+        .attr("class", "eje")
+        .attr("transform", `translate(0, ${alto - margen.abajo})`)
+        .call(d3.axisBottom(x).ticks(d3.timeYear.every(3)).tickSize(-(alto - margen.arriba - margen.abajo)));
+
+      // 4. Nombre de cada quarterback a la izquierda
+      svg.selectAll("text.fila")
+        .data(filas)
+        .join("text")
+          .attr("class", "fila")
+          .attr("x", margen.izquierda - 8)
+          .attr("y", d => y(d) + y.bandwidth() / 2)
+          .text(d => d);
+
+      // 5. Una barra por etapa, desde su primer hasta su último partido
+      //    (como mínimo 4 px de ancho para que se vean las de un solo partido)
+      svg.selectAll("rect")
+        .data(etapas)
+        .join("rect")
+          .attr("x", d => x(d.inicio))
+          .attr("y", d => y(d.qb))
+          .attr("width", d => Math.max(4, x(d.fin) - x(d.inicio)))
+          .attr("height", y.bandwidth())
+          .attr("rx", 3)
+          .attr("fill", d => colores[grupo(d)]);
+
+      // 6. Total de partidos de cada quarterback a la derecha
+      svg.selectAll("text.total")
+        .data(filas)
+        .join("text")
+          .attr("class", "total")
+          .attr("x", ancho - margen.derecha + 8)
+          .attr("y", d => y(d) + y.bandwidth() / 2)
+          .text(d => {
+            const total = etapas.find(e => e.qb === d).total_qb;
+            return total === 1 ? "1 partido" : total + " partidos";
+          });
+    });
+  </script>
+</body>
+</html>

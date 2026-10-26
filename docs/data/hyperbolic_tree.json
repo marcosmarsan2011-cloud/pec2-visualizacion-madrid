@@ -1,0 +1,622 @@
+{
+ "id": "0",
+ "name": "Bill Belichick",
+ "data": {
+  "equipos": "Cleveland Browns (1991–1995), New England Patriots (2000–2023), North Carolina (2025-present)",
+  "partidos_nfl": 429
+ },
+ "children": [
+  {
+   "id": "1",
+   "name": "Nick Saban",
+   "data": {
+    "equipos": "Toledo (1990), Michigan State (1995–1999), LSU (2000–2004), Miami Dolphins (2005–2006), Alabama (2007–2023)",
+    "partidos_nfl": 32
+   },
+   "children": [
+    {
+     "id": "3",
+     "name": "Bobby Williams",
+     "data": {
+      "equipos": "Michigan State (2000–2002)",
+      "partidos_nfl": 0
+     },
+     "children": [
+      {
+       "id": "5",
+       "name": "Ben McAdoo",
+       "data": {
+        "equipos": "New York Giants (2016–2017)",
+        "partidos_nfl": 29
+       },
+       "children": []
+      },
+      {
+       "id": "6",
+       "name": "Robert Saleh",
+       "data": {
+        "equipos": "New York Jets (2021–2024), Tennessee Titans (2026-present)",
+        "partidos_nfl": 75
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "14",
+     "name": "Scott Linehan",
+     "data": {
+      "equipos": "St. Louis Rams (2006–2008)",
+      "partidos_nfl": 36
+     },
+     "children": []
+    },
+    {
+     "id": "15",
+     "name": "Derek Dooley",
+     "data": {
+      "equipos": "Louisiana Tech (2007–2009), Tennessee (2010–2012)",
+      "partidos_nfl": 0
+     },
+     "children": [
+      {
+       "id": "16",
+       "name": "Brandon Staley",
+       "data": {
+        "equipos": "San Diego Chargers, (2021–2023)",
+        "partidos_nfl": 49
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "23",
+     "name": "Josh McDaniels",
+     "data": {
+      "equipos": "Denver Broncos (2009–2010), Las Vegas Raiders (2022–2023) (first served under Saban)",
+      "partidos_nfl": 53
+     },
+     "children": []
+    },
+    {
+     "id": "25",
+     "name": "Jimbo Fisher",
+     "data": {
+      "equipos": "Florida State (2010–2017), Texas A&M (2018–2023)",
+      "partidos_nfl": 0
+     },
+     "children": [
+      {
+       "id": "26",
+       "name": "Bobby Petrino",
+       "data": {
+        "equipos": "Louisville (2003–2006; 2014–2018), Atlanta Falcons (2007), Arkansas (2008–2011), Western Kentucky (2013), Missouri State (2020–2022)",
+        "partidos_nfl": 12
+       },
+       "children": [
+        {
+         "id": "29",
+         "name": "Jonathan Gannon",
+         "data": {
+          "equipos": "Arizona Cardinals (2023–2025)",
+          "partidos_nfl": 58
+         },
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "34",
+     "name": "Jason Garrett",
+     "data": {
+      "equipos": "Dallas Cowboys (2010–2019)",
+      "partidos_nfl": 157
+     },
+     "children": []
+    },
+    {
+     "id": "36",
+     "name": "Pat Shurmur",
+     "data": {
+      "equipos": "Cleveland Browns (2011–2012), New York Giants (2018–2019)",
+      "partidos_nfl": 65
+     },
+     "children": []
+    },
+    {
+     "id": "43",
+     "name": "Mike Mularkey",
+     "data": {
+      "equipos": "Jacksonville Jaguars (2012), Tennessee Titans (2016–2017)",
+      "partidos_nfl": 82
+     },
+     "children": []
+    },
+    {
+     "id": "48",
+     "name": "Dan Quinn",
+     "data": {
+      "equipos": "Atlanta Falcons (2015–2020), Washington Commanders (2024-present)",
+      "partidos_nfl": 133
+     },
+     "children": [
+      {
+       "id": "49",
+       "name": "Kyle Shanahan",
+       "data": {
+        "equipos": "San Francisco 49ers (2017–present)",
+        "partidos_nfl": 170
+       },
+       "children": [
+        {
+         "id": "50",
+         "name": "Jeff Hafley",
+         "data": {
+          "equipos": "Boston College (2020–2023), Miami Dolphins (2026-present)",
+          "partidos_nfl": 6
+         },
+         "children": []
+        },
+        {
+         "id": "51",
+         "name": "Robert Saleh",
+         "data": {
+          "equipos": "New York Jets (2021–2024), Tennessee Titans (2026-present)",
+          "partidos_nfl": 75
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "53",
+       "name": "Matt LaFleur",
+       "data": {
+        "equipos": "Green Bay Packers (2019–present)",
+        "partidos_nfl": 133
+       },
+       "children": [
+        {
+         "id": "54",
+         "name": "Nathaniel Hackett",
+         "data": {
+          "equipos": "Denver Broncos (2022)",
+          "partidos_nfl": 15
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "55",
+       "name": "Mike McDaniel",
+       "data": {
+        "equipos": "Miami Dolphins (2022–2025)",
+        "partidos_nfl": 70
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "56",
+     "name": "Adam Gase",
+     "data": {
+      "equipos": "Miami Dolphins (2016–2018), New York Jets (2019–2020)",
+      "partidos_nfl": 81
+     },
+     "children": []
+    },
+    {
+     "id": "66",
+     "name": "Mel Tucker",
+     "data": {
+      "equipos": "Colorado (2019), Michigan State (2020–2023)",
+      "partidos_nfl": 5
+     },
+     "children": []
+    },
+    {
+     "id": "67",
+     "name": "Freddie Kitchens",
+     "data": {
+      "equipos": "Cleveland Browns (2019)",
+      "partidos_nfl": 16
+     },
+     "children": []
+    },
+    {
+     "id": "68",
+     "name": "Joe Judge",
+     "data": {
+      "equipos": "New York Giants (2020–2021) (first served under Saban)",
+      "partidos_nfl": 33
+     },
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "69",
+   "name": "Rod Dowhower",
+   "data": {
+    "equipos": "Vanderbilt (1995-1996)",
+    "partidos_nfl": 0
+   },
+   "children": [
+    {
+     "id": "70",
+     "name": "Ken Whisenhunt",
+     "data": {
+      "equipos": "Arizona Cardinals (2007–2012), Tennessee Titans (2014–2015)",
+      "partidos_nfl": 134
+     },
+     "children": [
+      {
+       "id": "71",
+       "name": "Frank Reich",
+       "data": {
+        "equipos": "Indianapolis Colts (2018–2022), Carolina Panthers (2023)",
+        "partidos_nfl": 88
+       },
+       "children": []
+      },
+      {
+       "id": "72",
+       "name": "Arthur Smith",
+       "data": {
+        "equipos": "Atlanta Falcons (2021-2023)",
+        "partidos_nfl": 51
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "73",
+   "name": "Pat Hill",
+   "data": {
+    "equipos": "Fresno State (1997–2011)",
+    "partidos_nfl": 0
+   },
+   "children": [
+    {
+     "id": "74",
+     "name": "Lane Kiffin",
+     "data": {
+      "equipos": "Oakland Raiders (2007-2008), Tennessee (2009), USC (2010-2013), Florida Atlantic (2017-2019), Ole Miss (2020-present)",
+      "partidos_nfl": 20
+     },
+     "children": [
+      {
+       "id": "75",
+       "name": "Tom Cable",
+       "data": {
+        "equipos": "Oakland Raiders (2008–2010)",
+        "partidos_nfl": 44
+       },
+       "children": [
+        {
+         "id": "76",
+         "name": "Hue Jackson",
+         "data": {
+          "equipos": "Oakland Raiders (2011), Cleveland Browns (2016–2018)",
+          "partidos_nfl": 56
+         },
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "84",
+   "name": "Kirk Ferentz",
+   "data": {
+    "equipos": "Iowa (1999–present)",
+    "partidos_nfl": 0
+   },
+   "children": [
+    {
+     "id": "96",
+     "name": "Joe Philbin",
+     "data": {
+      "equipos": "Miami Dolphins (2012–2015)",
+      "partidos_nfl": 68
+     },
+     "children": [
+      {
+       "id": "97",
+       "name": "Dan Campbell",
+       "data": {
+        "equipos": "Detroit Lions (2021–present)",
+        "partidos_nfl": 95
+       },
+       "children": []
+      },
+      {
+       "id": "98",
+       "name": "Zac Taylor",
+       "data": {
+        "equipos": "Cincinnati Bengals (2019–present)",
+        "partidos_nfl": 129
+       },
+       "children": [
+        {
+         "id": "99",
+         "name": "Brian Callahan",
+         "data": {
+          "equipos": "Tennessee Titans (2024-2025)",
+          "partidos_nfl": 34
+         },
+         "children": []
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "100",
+   "name": "Al Groh",
+   "data": {
+    "equipos": "New York Jets (2000), Virginia (2001–2009)",
+    "partidos_nfl": 16
+   },
+   "children": [
+    {
+     "id": "101",
+     "name": "Mike Nolan",
+     "data": {
+      "equipos": "San Francisco 49ers (2005–2008)",
+      "partidos_nfl": 55
+     },
+     "children": [
+      {
+       "id": "102",
+       "name": "Mike McCarthy",
+       "data": {
+        "equipos": "Green Bay Packers (2006–2018), Dallas Cowboys (2020–present)",
+        "partidos_nfl": 317
+       },
+       "children": []
+      },
+      {
+       "id": "103",
+       "name": "Mike Singletary",
+       "data": {
+        "equipos": "San Francisco 49ers (2009–2010)",
+        "partidos_nfl": 40
+       },
+       "children": []
+      },
+      {
+       "id": "104",
+       "name": "Vance Joseph",
+       "data": {
+        "equipos": "Denver Broncos (2017–2018)",
+        "partidos_nfl": 32
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "105",
+     "name": "Ron Prince",
+     "data": {
+      "equipos": "Kansas State (2006–2008), Howard (2019)",
+      "partidos_nfl": 0
+     },
+     "children": [
+      {
+       "id": "106",
+       "name": "Raheem Morris",
+       "data": {
+        "equipos": "Tampa Bay Buccaneers (2009–2011), Atlanta Falcons (2024-2025)",
+        "partidos_nfl": 100
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "113",
+     "name": "Al Golden",
+     "data": {
+      "equipos": "Temple (2006–2010), Miami (2011–2015)",
+      "partidos_nfl": 0
+     },
+     "children": [
+      {
+       "id": "114",
+       "name": "Matt Rhule",
+       "data": {
+        "equipos": "Temple (2013–2016), Baylor (2017–2020), Carolina Panthers (2020–2022), Nebraska (2023-present)",
+        "partidos_nfl": 38
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "125",
+     "name": "Todd Haley",
+     "data": {
+      "equipos": "Kansas City Chiefs (2009–2011)",
+      "partidos_nfl": 46
+     },
+     "children": [
+      {
+       "id": "126",
+       "name": "Nick Sirianni",
+       "data": {
+        "equipos": "Philadelphia Eagles (2021–present)",
+        "partidos_nfl": 101
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "129",
+     "name": "Todd Bowles",
+     "data": {
+      "equipos": "New York Jets (2015–2018), Tampa Bay Buccaneers (2022–present)",
+      "partidos_nfl": 146
+     },
+     "children": [
+      {
+       "id": "130",
+       "name": "Dave Canales",
+       "data": {
+        "equipos": "Carolina Panthers (2024–present)",
+        "partidos_nfl": 41
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "136",
+   "name": "Romeo Crennel",
+   "data": {
+    "equipos": "Cleveland Browns (2005–2008), Kansas City Chiefs (2011–2012)",
+    "partidos_nfl": 95
+   },
+   "children": [
+    {
+     "id": "137",
+     "name": "Anthony Lynn",
+     "data": {
+      "equipos": "Los Angeles Chargers (2017–2020)",
+      "partidos_nfl": 67
+     },
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "138",
+   "name": "Eric Mangini",
+   "data": {
+    "equipos": "New York Jets (2006–2008), Cleveland Browns (2009–2010)",
+    "partidos_nfl": 81
+   },
+   "children": [
+    {
+     "id": "140",
+     "name": "Matt Eberflus",
+     "data": {
+      "equipos": "Chicago Bears (2022–2024)",
+      "partidos_nfl": 51
+     },
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "141",
+   "name": "Jim Schwartz",
+   "data": {
+    "equipos": "Detroit Lions (2009–2013)",
+    "partidos_nfl": 81
+   },
+   "children": []
+  },
+  {
+   "id": "143",
+   "name": "Josh McDaniels",
+   "data": {
+    "equipos": "Denver Broncos (2009–2010), Las Vegas Raiders (2022–2023)",
+    "partidos_nfl": 53
+   },
+   "children": [
+    {
+     "id": "144",
+     "name": "Mike McCoy",
+     "data": {
+      "equipos": "San Diego Chargers (2013–2016)",
+      "partidos_nfl": 66
+     },
+     "children": [
+      {
+       "id": "145",
+       "name": "Shane Steichen",
+       "data": {
+        "equipos": "Indianapolis Colts (2023–present)",
+        "partidos_nfl": 58
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "151",
+   "name": "Bill O'Brien",
+   "data": {
+    "equipos": "Penn State (2012–2013), Houston Texans (2014–2020)",
+    "partidos_nfl": 106
+   },
+   "children": [
+    {
+     "id": "154",
+     "name": "Mike Vrabel",
+     "data": {
+      "equipos": "Tennessee Titans (2018–2023), New England Patriots (2025-present) (played under Belichick first)",
+      "partidos_nfl": 132
+     },
+     "children": []
+    }
+   ]
+  },
+  {
+   "id": "155",
+   "name": "Matt Patricia",
+   "data": {
+    "equipos": "Detroit Lions (2018–2020)",
+    "partidos_nfl": 43
+   },
+   "children": []
+  },
+  {
+   "id": "156",
+   "name": "Brian Flores",
+   "data": {
+    "equipos": "Miami Dolphins (2019–2021)",
+    "partidos_nfl": 49
+   },
+   "children": []
+  },
+  {
+   "id": "158",
+   "name": "Joe Judge",
+   "data": {
+    "equipos": "New York Giants (2020–2021)",
+    "partidos_nfl": 33
+   },
+   "children": []
+  },
+  {
+   "id": "161",
+   "name": "Brian Daboll",
+   "data": {
+    "equipos": "New York Giants (2022–2025)",
+    "partidos_nfl": 70
+   },
+   "children": []
+  }
+ ]
+}

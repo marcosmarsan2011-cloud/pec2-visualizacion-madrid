@@ -1,0 +1,47 @@
+/* Estilo común para las tres visualizaciones */
+body {
+  margin: 0;
+  background: #fcfcfb;
+  color: #0b0b0b;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+h1 { margin: 0 0 8px; font-size: 28px; }
+.subtitulo { color: #52514e; line-height: 1.5; }
+.volver a, .fuente a { color: #2a78d6; }
+.fuente { color: #898781; font-size: 13px; }
+
+/* Leyenda */
+.leyenda { display: flex; flex-wrap: wrap; gap: 16px; margin: 16px 0; font-size: 14px; color: #52514e; }
+.leyenda i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+
+/* Gráfico */
+svg { width: 100%; height: auto; display: block; }
+svg text { text-anchor: middle; }
+svg text.equipo { font-size: 12px; font-weight: 600; fill: #ffffff; }
+svg text.division {
+  font-size: 13px; fill: #52514e;
+  paint-order: stroke; stroke: #fcfcfb; stroke-width: 3px; /* borde claro para que se lea encima de los círculos */
+}
+svg text.conf { font-size: 18px; font-weight: 700; fill: #0b0b0b; }
+
+/* Gantt: nombres de fila a la izquierda, totales a la derecha, eje suave */
+svg text.fila { text-anchor: end; dominant-baseline: middle; font-size: 13px; fill: #0b0b0b; }
+svg text.total { text-anchor: start; dominant-baseline: middle; font-size: 12px; fill: #52514e; }
+.eje text { font-size: 12px; fill: #52514e; }
+.eje line { stroke: #e1e0d9; }
+.eje path { stroke: #c3c2b7; }
+
+/* Hyperbolic Tree */
+#grafico { position: relative; }   /* JIT coloca las etiquetas dentro de este div */
+.nodo { cursor: pointer; color: #0b0b0b; white-space: nowrap; padding: 2px 0; }
+.nodo:hover { color: #2a78d6; }
+#ficha {
+  border-left: 3px solid #2a78d6; padding: 6px 12px; margin: 8px 0 12px;
+  font-size: 14px; color: #52514e; line-height: 1.5;
+}
+#ficha b { color: #0b0b0b; font-size: 16px; }

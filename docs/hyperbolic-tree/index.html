@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hyperbolic Tree · Árbol de Belichick</title>
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+  <main>
+    <p class="volver"><a href="../">← Las tres técnicas</a></p>
+    <h1>El árbol de entrenadores de Bill Belichick</h1>
+    <p class="subtitulo">
+      Cada punto es un entrenador que antes fue ayudante de su "padre" en el árbol.
+      De Belichick salen 14 entrenadores, de ellos salen otros, y así hasta 5 generaciones y 66 entrenadores
+      que han dirigido en la NFL.
+      <b>Haz clic en un nombre para llevarlo al centro</b>: el árbol se recoloca y lo que está lejos se comprime hacia el borde.
+    </p>
+
+    <div class="leyenda" id="leyenda"></div>
+
+    <!-- Ficha del entrenador que está en el centro -->
+    <div id="ficha"></div>
+
+    <!-- Aquí JIT dibuja el árbol -->
+    <div id="grafico"></div>
+
+    <p class="fuente">
+      Fuente: estructura del árbol del artículo
+      <a href="https://en.wikipedia.org/wiki/Coaching_tree">Coaching tree</a> de Wikipedia (versión del 25/10/2026);
+      partidos dirigidos en la NFL desde 1999 de <a href="https://github.com/nflverse/nflverse-data">nflverse</a>.
+    </p>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jit/2.0.2/jit.min.js"></script>
+  <script>
+    // Color de cada punto: entrenadores con partidos en la NFL o "puentes" universitarios
+    const colores = { "Ha dirigido en la NFL": "#2a78d6", "Solo universidad (puente hacia sus discípulos)": "#898781" };
+
+    const leyenda = document.getElementById("leyenda");
+    for (const texto in colores) {
+      leyenda.insertAdjacentHTML("beforeend", `<span><i style="background:${colores[texto]}"></i>${texto}</span>`);
+    }
+
+    // Muestra en la ficha los datos del entrenador elegido
+    function mostrarFicha(nodo) {
+      const ficha = document.getElementById("ficha");
+      ficha.innerHTML = "<b></b><br><span class='equipos'></span><br><span class='partidos'></span>";
+      ficha.querySelector("b").textContent = nodo.name;
+      ficha.querySelector(".equipos").textContent = nodo.data.equipos;
+      ficha.querySelector(".partidos").textContent = nodo.data.partidos_nfl > 0
+        ? nodo.data.partidos_nfl + " partidos dirigidos en la NFL desde 1999"
+        : "Sin partidos en la NFL desde 1999";
+    }
+
+    // Pone el color a cada nodo del árbol (JIT lo lee de data.$color)
+    function colorear(nodo) {
+      const tipo = nodo.data.partidos_nfl > 0 ? "Ha dirigido en la NFL" : "Solo universidad (puente hacia sus discípulos)";
+      nodo.data.$color = colores[tipo];
+      nodo.children.forEach(colorear);
+    }
+
+    fetch("../data/hyperbolic_tree.json")
+      .then(respuesta => respuesta.json())
+      .then(arbol => {
+        colorear(arbol);
+        const lado = document.getElementById("grafico").offsetWidth;   // gráfico cuadrado
+
+        // 1. Crear el Hyperbolic Tree
+        const ht = new $jit.Hypertree({
+          injectInto: "grafico",
+          width: lado,
+          height: lado,
+          Node: { dim: 9, overridable: true },        // tamaño de los puntos; el color sale de data.$color
+          Edge: { lineWidth: 2, color: "#c3c2b7" },   // líneas entre mentor y ayudante
+          duration: 700,                              // duración de la animación al hacer clic
+
+          // 2. Crear la etiqueta (nombre) de cada nodo y hacerla clicable
+          onCreateLabel: (etiqueta, nodo) => {
+            etiqueta.textContent = nodo.name;
+            etiqueta.className = "nodo";
+            etiqueta.onclick = () => {
+              ht.onClick(nodo.id);    // lleva el nodo al centro con una animación
+              mostrarFicha(nodo);
+            };
+          },
+
+          // 3. Tamaño del nombre según la distancia al centro (_depth):
+          //    grande en el centro, mediano en sus vecinos, pequeño en el siguiente nivel, oculto después
+          onPlaceLabel: (etiqueta, nodo) => {
+            const tamanos = ["17px", "14px", "11px"];
+            if (nodo._depth <= 2) {
+              etiqueta.style.display = "";
+              etiqueta.style.fontSize = tamanos[nodo._depth];
+              etiqueta.style.fontWeight = nodo._depth === 0 ? "700" : "400";
+              etiqueta.style.color = nodo._depth === 2 ? "#52514e" : "#0b0b0b";
+            } else {
+              etiqueta.style.display = "none";
+            }
+            // centrar la etiqueta encima de su punto
+            etiqueta.style.left = (parseInt(etiqueta.style.left) - etiqueta.offsetWidth / 2) + "px";
+          }
+        });
+
+        // 4. Cargar los datos y dibujar
+        ht.loadJSON(arbol);
+        ht.refresh();
+        mostrarFicha(arbol);
+      });
+  </script>
+</body>
+</html>

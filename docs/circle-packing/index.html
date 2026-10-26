@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circle Packing · Super Bowls</title>
+  <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+  <main>
+    <p class="volver"><a href="../">← Las tres técnicas</a></p>
+    <h1>¿Quién gana la Super Bowl?</h1>
+    <p class="subtitulo">
+      Las 27 Super Bowls de las temporadas 1999 a 2025. Cada círculo es un equipo y su tamaño
+      es el número de títulos que ganó. Los equipos se agrupan por división y las divisiones
+      por conferencia.
+    </p>
+    <p><b>Los Patriots ganaron 6 de las 27 (más de una de cada cinco).</b>
+      Solo 13 de los 32 equipos han ganado alguna; los otros 19 no aparecen.</p>
+
+    <!-- Leyenda: un color por conferencia -->
+    <div class="leyenda" id="leyenda"></div>
+
+    <!-- Aquí D3 dibuja el gráfico -->
+    <div id="grafico"></div>
+
+    <p class="fuente">
+      Fuente: resultados de partidos de <a href="https://github.com/nflverse/nflverse-data">nflverse</a>
+      (desde la temporada 1999). Los Rams de St. Louis y de Los Ángeles se cuentan como un mismo equipo.
+    </p>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script>
+    // Color de cada conferencia
+    const colores = { "AFC": "#e34948", "NFC": "#2a78d6" };
+
+    // Leyenda
+    for (const conf in colores) {
+      d3.select("#leyenda").append("span")
+        .html(`<i style="background:${colores[conf]}"></i>`)
+        .append("span").text(conf);
+    }
+
+    const ancho = 800;
+
+    // Nombre corto: "New England Patriots" -> "Patriots"
+    const ultimaPalabra = texto => texto.split(" ").pop();
+
+    d3.json("../data/circle_packing.json").then(datos => {
+      // 1. Convertir el JSON en una jerarquía y sumar los títulos hacia arriba
+      const raiz = d3.hierarchy(datos)
+        .sum(d => d.value)
+        .sort((a, b) => b.value - a.value);
+
+      // 2. Calcular la posición y el radio de cada círculo
+      d3.pack().size([ancho, ancho]).padding(18)(raiz);
+
+      // Conferencia de un nodo (su antepasado de profundidad 1)
+      const conferencia = d => d.ancestors().find(a => a.depth === 1).data.name;
+
+      // Recortar el dibujo a lo que ocupan las conferencias
+      // (dejando 30 px arriba para el nombre de la conferencia)
+      const arriba = d3.min(raiz.children, d => d.y - d.r) - 30;
+      const abajo = d3.max(raiz.children, d => d.y + d.r) + 2;
+      const svg = d3.select("#grafico").append("svg")
+        .attr("viewBox", [0, arriba, ancho, abajo - arriba]);
+
+      // 3. Un círculo por nodo (menos la raíz):
+      //    conferencias y divisiones transparentes, equipos rellenos
+      svg.selectAll("circle")
+        .data(raiz.descendants().slice(1))
+        .join("circle")
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y)
+          .attr("r", d => d.r)
+          .attr("fill", d => colores[conferencia(d)])
+          .attr("fill-opacity", d => d.children ? 0.08 : 0.9)
+          .attr("stroke", d => colores[conferencia(d)])
+          .attr("stroke-opacity", d => d.children ? 0.4 : 0);
+
+      // 4. Nombre y títulos de cada equipo, dentro de su círculo
+      svg.selectAll("text.equipo")
+        .data(raiz.leaves())
+        .join("text")
+          .attr("class", "equipo")
+          .attr("x", d => d.x)
+          .attr("y", d => d.y)
+          .text(d => ultimaPalabra(d.data.name))
+        .append("tspan")
+          .attr("x", d => d.x)
+          .attr("dy", "1.2em")
+          .text(d => d.value);
+
+      // 5. Nombre de cada conferencia, encima de su círculo
+      svg.selectAll("text.conf")
+        .data(raiz.children)
+        .join("text")
+          .attr("class", "conf")
+          .attr("x", d => d.x)
+          .attr("y", d => d.y - d.r - 8)
+          .text(d => d.data.name);
+
+      // 6. Nombre de cada división, en la parte de arriba de su círculo
+      svg.selectAll("text.division")
+        .data(raiz.descendants().filter(d => d.depth === 2))
+        .join("text")
+          .attr("class", "division")
+          .attr("x", d => d.x)
+          .attr("y", d => d.y - d.r + 14)
+          .text(d => d.data.name);
+    });
+  </script>
+</body>
+</html>
