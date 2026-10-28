@@ -3,152 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gantt · Protones frente a fotones</title>
+  <title>Gantt · Obras de Madrid</title>
   <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
   <main>
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
-    <h1>¿Son mejores los protones? Habrá que esperar</h1>
+    <h1>El calendario de las grandes obras de Madrid</h1>
     <p class="subtitulo">
-      Los 27 ensayos clínicos aleatorizados que comparan la protonterapia con la radioterapia de
-      fotones. Cada fila es un ensayo: la barra oscura va desde que empieza hasta que mide su
-      resultado principal, y la clara es el seguimiento hasta que se cierra. El rombo marca los que
-      ya han terminado.
+      Las 13 obras públicas en ejecución del Área de Obras y Equipamientos del Ayuntamiento de Madrid
+      que tienen fechas. Cada barra va del inicio al fin previsto de la obra; a la derecha, su presupuesto.
+      La línea discontinua marca la fecha de los datos (22 de julio de 2026).
     </p>
-    <p><b>Solo 4 de los 27 han terminado.</b> Duran una mediana de casi 11 años y la mitad terminará
-      después de 2030; el de Oslo, con 25 años de seguimiento, no se cerrará hasta 2055. La prueba
-      definitiva de que los protones dañan menos que los fotones todavía está en marcha.</p>
+    <p><b>Cinco obras ya deberían haber terminado y siguen «en ejecución».</b>
+      Entre ellas, el soterramiento de la Castellana (112 M€), que junto a la cubrición de la M-30 en Ventas
+      (79 M€) suma tres de cada cuatro euros de estas obras.</p>
 
     <div class="leyenda" id="leyenda"></div>
     <div id="grafico"></div>
 
     <p class="fuente">
-      Selección: ensayos de protonterapia aleatorizados cuyo título compara protones con fotones
-      (o IMRT, o rayos X), sin los retirados antes de empezar. Las fechas futuras son las previstas por
-      cada ensayo; cuando solo dan año y mes, se toma el día 1. Las barras que pasan de 2040 se cortan.<br>
-      Fuente: <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> (U.S. National Library of Medicine),
-      consultado el 28 de octubre de 2026.
+      No se incluyen tres obras del conjunto de datos que aún no tienen fechas. «Retraso»: la fecha de fin
+      prevista ya había pasado cuando se publicaron los datos y la obra seguía en ejecución.<br>
+      Fuente: <a href="https://datos.madrid.es/dataset/300538-0-obras-planificadas-ejecucion">Obras públicas
+      planificadas y en ejecución</a>, Portal de Datos Abiertos del Ayuntamiento de Madrid (CC BY 4.0).
     </p>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script>
-    // Dos fases por ensayo: hasta el resultado principal y seguimiento hasta el cierre
-    const colores = { "Hasta el resultado principal": "#2a78d6", "Seguimiento hasta el cierre": "#a9c8ee" };
+    const azul = "#2a78d6";
+    const rojo = "#e34948";
+    const fechaDatos = new Date(2026, 6, 22);   // 22 de julio de 2026
+    const formato = d3.timeFormat("%d/%m/%Y");
+    const millones = n => (n / 1e6).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " M€";
 
-    for (const fase in colores) {
-      d3.select("#leyenda").append("span")
-        .html(`<i style="background:${colores[fase]}"></i>`).append("span").text(fase);
-    }
+    // Leyenda
     d3.select("#leyenda").append("span")
-      .html(`<i style="background:#0b0b0b; transform:rotate(45deg); width:10px; height:10px"></i>`)
-      .append("span").text("Terminado");
+      .html(`<i style="background:${azul}"></i>`).append("span").text("Plazo previsto de la obra");
+    d3.select("#leyenda").append("span")
+      .html(`<i style="background:${rojo}"></i>`).append("span").text("Retraso: sigue en ejecución pasado el plazo");
 
-    const hoy = new Date(2026, 9, 28);      // 28 de octubre de 2026
-    const limite = new Date(2040, 0, 1);    // las barras se cortan aquí
-    const formato = d3.timeFormat("%m/%Y");
-    const recorta = fecha => fecha > limite ? limite : fecha;
-    const miles = n => n.toLocaleString("es-ES");
+    // Meses en español para el eje
+    const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 
-    d3.csv("../data/gantt.csv", d3.autoType).then(ensayos => {
-      // 1. Tamaño del dibujo: una fila de 24 px por ensayo
-      const margen = { arriba: 24, derecha: 150, abajo: 30, izquierda: 210 };
+    d3.csv("../data/gantt.csv", d3.autoType).then(obras => {
+      // 1. Tamaño del dibujo: una fila de 32 px por obra
+      const margen = { arriba: 26, derecha: 80, abajo: 30, izquierda: 250 };
       const ancho = 800;
-      const alto = margen.arriba + ensayos.length * 24 + margen.abajo;
+      const alto = margen.arriba + obras.length * 32 + margen.abajo;
 
-      // 2. Escalas: el tiempo en horizontal y los ensayos en vertical
+      // 2. Escalas: el tiempo en horizontal y las obras en vertical
       const x = d3.scaleTime()
-        .domain([new Date(2009, 0, 1), limite])
+        .domain([new Date(2024, 11, 1), new Date(2027, 10, 1)])
         .range([margen.izquierda, ancho - margen.derecha]);
       const y = d3.scaleBand()
-        .domain(ensayos.map(d => d.ensayo))
+        .domain(obras.map(d => d.obra))
         .range([margen.arriba, alto - margen.abajo])
-        .padding(0.25);
+        .padding(0.3);
 
       const svg = d3.select("#grafico").append("svg")
         .attr("viewBox", [0, 0, ancho, alto]);
 
-      // 3. Eje de años abajo, con líneas verticales suaves cada 5 años
+      // 3. Eje de meses abajo, con líneas verticales suaves cada 6 meses
       svg.append("g")
         .attr("class", "eje")
         .attr("transform", `translate(0, ${alto - margen.abajo})`)
-        .call(d3.axisBottom(x).ticks(d3.timeYear.every(5)).tickFormat(d3.timeFormat("%Y"))
+        .call(d3.axisBottom(x).ticks(d3.timeMonth.every(6))
+          .tickFormat(d => `${meses[d.getMonth()]} ${d.getFullYear()}`)
           .tickSize(-(alto - margen.arriba - margen.abajo)));
 
-      // 4. Nombre de cada ensayo a la izquierda (tumor · grupo o acrónimo)
+      // 4. Nombre de cada obra a la izquierda
       svg.selectAll("text.fila")
-        .data(ensayos)
+        .data(obras)
         .join("text")
           .attr("class", "fila")
           .attr("x", margen.izquierda - 8)
-          .attr("y", d => y(d.ensayo) + y.bandwidth() / 2)
-          .text(d => d.ensayo);
+          .attr("y", d => y(d.obra) + y.bandwidth() / 2)
+          .text(d => d.obra);
 
-      // 5. Fase 1: desde el inicio hasta el resultado principal
-      svg.selectAll("rect.principal")
-        .data(ensayos)
+      // 5. Plazo previsto: una barra del inicio al fin
+      svg.selectAll("rect.plazo")
+        .data(obras)
         .join("rect")
           .attr("x", d => x(d.inicio))
-          .attr("y", d => y(d.ensayo))
-          .attr("width", d => x(recorta(d.fin_principal)) - x(d.inicio))
+          .attr("y", d => y(d.obra))
+          .attr("width", d => x(d.fin) - x(d.inicio))
           .attr("height", y.bandwidth())
-          .attr("fill", colores["Hasta el resultado principal"])
+          .attr("rx", 3)
+          .attr("fill", azul)
         .append("title")   // al pasar el ratón
-          .text(d => `${d.ensayo} (${d.nct}): inicio ${formato(d.inicio)}, resultado principal ${formato(d.fin_principal)}`);
+          .text(d => `${d.obra} (${d.distrito}): ${formato(d.inicio)} – ${formato(d.fin)}, ${d.meses} meses, ${millones(d.presupuesto)}`);
 
-      // 6. Fase 2: seguimiento desde el resultado principal hasta el cierre
-      svg.selectAll("rect.seguimiento")
-        .data(ensayos.filter(d => d.fin > d.fin_principal))
+      // 6. Retraso: del fin previsto a la fecha de los datos, si la obra seguía en ejecución
+      svg.selectAll("rect.retraso")
+        .data(obras.filter(d => d.fin < fechaDatos && d.estado === "En ejecución"))
         .join("rect")
-          .attr("x", d => x(recorta(d.fin_principal)))
-          .attr("y", d => y(d.ensayo))
-          .attr("width", d => x(recorta(d.fin)) - x(recorta(d.fin_principal)))
+          .attr("x", d => x(d.fin))
+          .attr("y", d => y(d.obra))
+          .attr("width", d => x(fechaDatos) - x(d.fin))
           .attr("height", y.bandwidth())
-          .attr("fill", colores["Seguimiento hasta el cierre"])
+          .attr("fill", rojo)
         .append("title")
-          .text(d => `${d.ensayo} (${d.nct}): cierre ${formato(d.fin)}`);
+          .text(d => `${d.obra}: debía terminar el ${formato(d.fin)} y seguía en ejecución el ${formato(fechaDatos)}`);
 
-      // Las barras cortadas llevan su año de cierre dentro, al final
-      svg.selectAll("text.cortada")
-        .data(ensayos.filter(d => d.fin > limite))
-        .join("text")
-          .attr("class", "total")
-          .attr("x", x(limite) - 4)
-          .attr("y", d => y(d.ensayo) + y.bandwidth() / 2)
-          .style("text-anchor", "end")
-          .text(d => `→ ${d.fin.getFullYear()}`);
-
-      // 7. Hito: rombo al final de los ensayos terminados
-      const lado = 9;
-      svg.selectAll("rect.hito")
-        .data(ensayos.filter(d => d.estado === "terminado"))
-        .join("rect")
-          .attr("width", lado)
-          .attr("height", lado)
-          .attr("transform", d => `translate(${x(d.fin)}, ${y(d.ensayo) + y.bandwidth() / 2}) rotate(45) translate(${-lado / 2}, ${-lado / 2})`)
-          .attr("fill", "#0b0b0b");
-
-      // 8. Pacientes y estado a la derecha
-      svg.selectAll("text.derecha")
-        .data(ensayos)
+      // 7. Presupuesto a la derecha
+      svg.selectAll("text.total")
+        .data(obras)
         .join("text")
           .attr("class", "total")
           .attr("x", ancho - margen.derecha + 8)
-          .attr("y", d => y(d.ensayo) + y.bandwidth() / 2)
-          .text(d => `${miles(d.pacientes)} pac. · ${d.estado}`);
+          .attr("y", d => y(d.obra) + y.bandwidth() / 2)
+          .text(d => millones(d.presupuesto));
 
-      // 9. Línea del día de hoy
+      // 8. Línea de la fecha de los datos
       svg.append("line")
-        .attr("x1", x(hoy)).attr("x2", x(hoy))
+        .attr("x1", x(fechaDatos)).attr("x2", x(fechaDatos))
         .attr("y1", margen.arriba - 6).attr("y2", alto - margen.abajo)
         .attr("stroke", "#0b0b0b")
         .attr("stroke-dasharray", "4 3");
       svg.append("text")
         .attr("class", "total")
-        .attr("x", x(hoy) + 4)
+        .attr("x", x(fechaDatos) + 4)
         .attr("y", margen.arriba - 10)
-        .text("hoy");
+        .text("datos del 22/07/2026");
     });
   </script>
 </body>

@@ -3,69 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hyperbolic Tree · Tumores tratados con protones</title>
+  <title>Hyperbolic Tree · Inversiones de Madrid</title>
   <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
   <main>
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
-    <h1>El mapa de la protonterapia</h1>
+    <h1>El árbol de las inversiones de Madrid</h1>
     <p class="subtitulo">
-      Todos los tumores que estudian los ensayos clínicos de protonterapia, colocados en la rama del cáncer
-      del tesauro médico MeSH: 280 categorías en hasta 9 niveles, de «Cáncer» a tumores concretos como el
-      melanoma uveal o el cordoma. Cada punto muestra cuántos ensayos caen en esa categoría o por debajo.
+      Las 204 inversiones principales del Ayuntamiento de Madrid, organizadas como un árbol: Madrid → línea
+      de inversión → distrito → proyecto (328 puntos en 4 niveles). La ficha muestra el presupuesto de cada rama.
       <b>Haz clic en un nombre para llevarlo al centro</b>: el árbol se recoloca y lo que está lejos se comprime hacia el borde.
     </p>
-    <p><b>El MeSH clasifica los tumores de dos formas: por dónde están y por el tejido del que nacen.</b>
-      Por eso el meningioma aparece tres veces: en «Sistema nervioso», en «Tejido nervioso» y en «Tejido vascular». De los 260 ensayos
-      con un tumor clasificado, 202 caen en la rama por localización y 121 en la de tipo de tejido.</p>
+    <p><b>Vicálvaro y Villa de Vallecas tienen 25 proyectos cada uno; Chamberí y Chamartín, uno.</b>
+      Al recorrer el árbol se ve cómo cada línea de inversión se reparte por los distritos.</p>
 
     <div class="leyenda" id="leyenda"></div>
 
-    <!-- Ficha de la categoría que está en el centro -->
+    <!-- Ficha del punto que está en el centro -->
     <div id="ficha"></div>
 
     <!-- Aquí JIT dibuja el árbol -->
     <div id="grafico"></div>
 
     <p class="fuente">
-      Los nombres de los grupos y de los tumores más frecuentes están traducidos; el resto conserva su nombre oficial MeSH en inglés.
-      Una enfermedad puede aparecer en varias ramas (el MeSH permite varios padres), por eso hay nombres repetidos.<br>
-      Fuente: ensayos de <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> con una intervención
-      de protones (consultado el 28 de octubre de 2026) y árbol MeSH 2025 de la
-      <a href="https://www.nlm.nih.gov/mesh/">U.S. National Library of Medicine</a>.
+      Fuente: <a href="https://datos.madrid.es/dataset/300533-0-inversiones-principales">Inversiones principales:
+      equipamientos, obras e infraestructuras</a> (datos a 31/12/2025), Portal de Datos Abiertos del Ayuntamiento de Madrid (CC BY 4.0).
     </p>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jit/2.0.2/jit.min.js"></script>
   <script>
-    // Color de cada punto según la rama de la que cuelga
-    const colores = { "Por localización": "#2a78d6", "Por tipo de tejido": "#eb6834", "Otras": "#898781", "Raíz": "#0b0b0b" };
+    // Un color por nivel del árbol
+    const colores = {
+      "Ayuntamiento": "#0b0b0b",
+      "Línea de inversión": "#2a78d6",
+      "Distrito": "#eb6834",
+      "Proyecto": "#898781"
+    };
+    const millones = n => (n / 1e6).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " M€";
 
     const leyenda = document.getElementById("leyenda");
-    for (const texto of ["Por localización", "Por tipo de tejido", "Otras"]) {
+    for (const texto of ["Línea de inversión", "Distrito", "Proyecto"]) {
       leyenda.insertAdjacentHTML("beforeend", `<span><i style="background:${colores[texto]}"></i>${texto}</span>`);
     }
 
-    // Muestra en la ficha los datos de la categoría elegida
+    // Muestra en la ficha los datos del punto elegido
     function mostrarFicha(nodo) {
       const ficha = document.getElementById("ficha");
-      ficha.innerHTML = "<b></b><br><span class='codigo'></span><br><span class='ensayos'></span>";
+      ficha.innerHTML = "<b></b><br><span class='tipo'></span><br><span class='importe'></span>";
       ficha.querySelector("b").textContent = nodo.name;
-      ficha.querySelector(".codigo").textContent = "Código MeSH: " + nodo.data.codigo;
-      ficha.querySelector(".ensayos").textContent = nodo.data.ensayos === 1
-        ? "1 ensayo de protonterapia"
-        : nodo.data.ensayos + " ensayos de protonterapia";
+      ficha.querySelector(".tipo").textContent = nodo.data.tipo === "Proyecto"
+        ? `Proyecto · ${nodo.data.años} · ${nodo.data.estado}`
+        : `${nodo.data.tipo} · ${nodo.data.proyectos} proyectos`;
+      ficha.querySelector(".importe").textContent = "Presupuesto: " + millones(nodo.data.presupuesto);
     }
 
     // Pone el color a cada nodo del árbol (JIT lo lee de data.$color)
     function colorear(nodo) {
-      const codigo = nodo.data.codigo;
-      const tipo = codigo === "C04" ? "Raíz"
-        : codigo.startsWith("C04.588") ? "Por localización"
-        : codigo.startsWith("C04.557") ? "Por tipo de tejido"
-        : "Otras";
-      nodo.data.$color = colores[tipo];
+      nodo.data.$color = colores[nodo.data.tipo];
       nodo.children.forEach(colorear);
     }
 
@@ -81,7 +77,7 @@
           width: lado,
           height: lado,
           Node: { dim: 7, overridable: true },        // tamaño de los puntos; el color sale de data.$color
-          Edge: { lineWidth: 1.5, color: "#c3c2b7" }, // líneas entre categoría y subcategoría
+          Edge: { lineWidth: 1.5, color: "#c3c2b7" }, // líneas entre cada nivel
           duration: 700,                              // duración de la animación al hacer clic
 
           // 2. Crear la etiqueta (nombre) de cada nodo y hacerla clicable

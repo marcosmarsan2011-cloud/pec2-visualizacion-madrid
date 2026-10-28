@@ -1,613 +1,1489 @@
 {
- "name": "Ensayos de protonterapia",
+ "name": "Inversiones de Madrid",
  "children": [
   {
-   "name": "Por localización",
+   "name": "Carácter general",
    "children": [
     {
-     "name": "Hueso",
-     "children": [
-      {
-       "name": "General",
-       "mesh": "Bone Neoplasms",
-       "value": 2
-      }
-     ]
+     "name": "Palacio cibeles",
+     "value": 2827016.0,
+     "distrito": "Retiro",
+     "años": "2023-2026",
+     "estado": "En proceso"
     },
     {
-     "name": "Mama",
-     "children": [
-      {
-       "name": "General",
-       "mesh": "Breast Neoplasms",
-       "value": 27
-      },
-      {
-       "name": "Mama triple negativo",
-       "mesh": "Triple Negative Breast Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Carcinoma in situ de mama",
-       "mesh": "Breast Carcinoma In Situ",
-       "value": 2
-      },
-      {
-       "name": "Carcinoma lobulillar",
-       "mesh": "Carcinoma, Lobular",
-       "value": 1
-      },
-      {
-       "name": "Carcinoma ductal",
-       "mesh": "Carcinoma, Ductal, Breast",
-       "value": 1
-      }
-     ]
+     "name": "Taller de cantería de la casa de campo, nave 4",
+     "value": 3490684.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2023-2026",
+     "estado": "En proceso"
     },
     {
-     "name": "Aparato digestivo",
-     "children": [
-      {
-       "name": "Carcinoma hepatocelular",
-       "mesh": "Carcinoma, Hepatocellular",
-       "value": 13
-      },
-      {
-       "name": "Esófago",
-       "mesh": "Esophageal Neoplasms",
-       "value": 6
-      },
-      {
-       "name": "Colorrectal",
-       "mesh": "Colorectal Neoplasms",
-       "value": 2
-      },
-      {
-       "name": "Gastrointestinal",
-       "mesh": "Gastrointestinal Neoplasms",
-       "value": 2
-      },
-      {
-       "name": "Ano",
-       "mesh": "Anus Neoplasms",
-       "value": 4
-      },
-      {
-       "name": "Recto",
-       "mesh": "Rectal Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Hígado",
-       "mesh": "Liver Neoplasms",
-       "value": 8
-      },
-      {
-       "name": "Páncreas",
-       "mesh": "Pancreatic Neoplasms",
-       "value": 13
-      },
-      {
-       "name": "Colon",
-       "mesh": "Colonic Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Esófago escamoso",
-       "mesh": "Esophageal Squamous Cell Carcinoma",
-       "value": 1
-      }
-     ]
+     "name": "Antiguo mercado de legazpi",
+     "value": 82271846.0,
+     "distrito": "Arganzuela",
+     "años": "2024-2027",
+     "estado": "En proceso"
     },
     {
-     "name": "Glándulas endocrinas",
-     "children": [
-      {
-       "name": "Hipófisis",
-       "mesh": "Pituitary Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Tiroides",
-       "mesh": "Thyroid Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Ovario",
-       "mesh": "Ovarian Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Adenoma hipofisario",
-       "mesh": "Growth Hormone-Secreting Pituitary Adenoma",
-       "value": 1
-      }
-     ]
+     "name": "Local calle povedilla, 4",
+     "value": 1142950.0,
+     "distrito": "Salamanca",
+     "años": "2024-2025",
+     "estado": "Finalizado"
     },
     {
-     "name": "Ojo",
-     "children": [
-      {
-       "name": "Retinoblastoma",
-       "mesh": "Retinoblastoma",
-       "value": 2
-      },
-      {
-       "name": "Melanoma uveal",
-       "mesh": "Uveal Melanoma",
-       "value": 1
-      },
-      {
-       "name": "General",
-       "mesh": "Eye Neoplasms",
-       "value": 1
-      }
-     ]
+     "name": "Edificio c/ alcalá, 45",
+     "value": 6242664.0,
+     "distrito": "Centro",
+     "años": "2024-2025",
+     "estado": "Finalizado"
     },
     {
-     "name": "Cabeza y cuello",
-     "children": [
-      {
-       "name": "General",
-       "mesh": "Head and Neck Neoplasms",
-       "value": 12
-      },
-      {
-       "name": "Parótida",
-       "mesh": "Parotid Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Nasofaringe",
-       "mesh": "Nasopharyngeal Carcinoma",
-       "value": 7
-      },
-      {
-       "name": "Orofaringe",
-       "mesh": "Oropharyngeal Neoplasms",
-       "value": 7
-      },
-      {
-       "name": "Carcinoma escamoso",
-       "mesh": "Squamous Cell Carcinoma of Head and Neck",
-       "value": 10
-      },
-      {
-       "name": "Hipofaringe",
-       "mesh": "Hypopharyngeal Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Laringe",
-       "mesh": "Laryngeal Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Boca",
-       "mesh": "Mouth Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Senos paranasales",
-       "mesh": "Paranasal Sinus Neoplasms",
-       "value": 2
-      },
-      {
-       "name": "Glándulas salivales",
-       "mesh": "Salivary Gland Neoplasms",
-       "value": 1
-      }
-     ]
+     "name": "Complejo edificios navas de tolosa",
+     "value": 5400000.0,
+     "distrito": "Villaverde",
+     "años": "2025-2027",
+     "estado": "En proceso"
     },
     {
-     "name": "Sistema nervioso",
-     "children": [
-      {
-       "name": "Cerebro",
-       "mesh": "Brain Neoplasms",
-       "value": 18
-      },
-      {
-       "name": "Meningioma",
-       "mesh": "Meningioma",
-       "value": 7
-      },
-      {
-       "name": "Carcinomatosis meníngea",
-       "mesh": "Meningeal Carcinomatosis",
-       "value": 5
-      },
-      {
-       "name": "Pinealoma",
-       "mesh": "Pinealoma",
-       "value": 2
-      },
-      {
-       "name": "Sistema nervioso central",
-       "mesh": "Central Nervous System Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Médula espinal",
-       "mesh": "Spinal Cord Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Neurinoma del acústico",
-       "mesh": "Neuroma, Acoustic",
-       "value": 1
-      },
-      {
-       "name": "Glioma pontino",
-       "mesh": "Diffuse Intrinsic Pontine Glioma",
-       "value": 1
-      },
-      {
-       "name": "Meninges",
-       "mesh": "Meningeal Neoplasms",
-       "value": 1
-      }
-     ]
+     "name": "Rehabilitaciones rrff",
+     "value": 1458300.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2025-2026",
+     "estado": "En proceso"
     },
     {
-     "name": "Piel",
-     "children": [
-      {
-       "name": "Melanoma",
-       "mesh": "Melanoma",
-       "value": 2
-      }
-     ]
-    },
-    {
-     "name": "Tórax",
-     "children": [
-      {
-       "name": "Pulmón",
-       "mesh": "Lung Neoplasms",
-       "value": 13
-      },
-      {
-       "name": "Timo",
-       "mesh": "Thymus Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Pulmón microcítico",
-       "mesh": "Small Cell Lung Carcinoma",
-       "value": 2
-      },
-      {
-       "name": "No microcítico",
-       "mesh": "Carcinoma, Non-Small-Cell Lung",
-       "value": 25
-      },
-      {
-       "name": "Timoma",
-       "mesh": "Thymoma",
-       "value": 2
-      },
-      {
-       "name": "Mesotelioma",
-       "mesh": "Mesothelioma, Malignant",
-       "value": 2
-      },
-      {
-       "name": "General",
-       "mesh": "Thoracic Neoplasms",
-       "value": 1
-      }
-     ]
-    },
-    {
-     "name": "Aparato urogenital",
-     "children": [
-      {
-       "name": "Próstata",
-       "mesh": "Prostatic Neoplasms",
-       "value": 28
-      },
-      {
-       "name": "Cuello uterino",
-       "mesh": "Uterine Cervical Neoplasms",
-       "value": 9
-      },
-      {
-       "name": "Endometrio",
-       "mesh": "Endometrial Neoplasms",
-       "value": 3
-      },
-      {
-       "name": "Útero",
-       "mesh": "Uterine Neoplasms",
-       "value": 2
-      },
-      {
-       "name": "Riñón",
-       "mesh": "Kidney Neoplasms",
-       "value": 1
-      },
-      {
-       "name": "Tumor de Wilms",
-       "mesh": "Wilms Tumor",
-       "value": 2
-      },
-      {
-       "name": "Carcinoma renal",
-       "mesh": "Carcinoma, Renal Cell",
-       "value": 2
-      }
-     ]
+     "name": "Adecuación centros",
+     "value": 3641939.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2025-2026",
+     "estado": "En proceso"
     }
    ]
   },
   {
-   "name": "Por tipo de tejido",
+   "name": "Cultura",
    "children": [
     {
-     "name": "Leucemias",
-     "children": [
-      {
-       "name": "Leucemia mieloide aguda",
-       "mesh": "Leukemia, Myeloid, Acute",
-       "value": 1
-      }
-     ]
+     "name": "Palacio \"el capricho\"",
+     "value": 8884452.0,
+     "distrito": "Barajas",
+     "años": "2018-2025",
+     "estado": "En proceso"
     },
     {
-     "name": "Linfomas",
-     "children": [
-      {
-       "name": "General",
-       "mesh": "Lymphoma",
-       "value": 2
-      },
-      {
-       "name": "Linfoma no Hodgkin",
-       "mesh": "Lymphoma, Non-Hodgkin",
-       "value": 1
-      },
-      {
-       "name": "Linfoma de Hodgkin",
-       "mesh": "Hodgkin Disease",
-       "value": 4
-      },
-      {
-       "name": "Linfoma B difuso",
-       "mesh": "Lymphoma, Large B-Cell, Diffuse",
-       "value": 1
-      },
-      {
-       "name": "Linfoma folicular",
-       "mesh": "Lymphoma, Follicular",
-       "value": 1
-      }
-     ]
+     "name": "Casa de vargas",
+     "value": 10671589.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2020-2025",
+     "estado": "En proceso"
     },
     {
-     "name": "Tumores mixtos",
-     "children": [
-      {
-       "name": "Tumor rabdoide",
-       "mesh": "Rhabdoid Tumor",
-       "value": 1
-      },
-      {
-       "name": "Mioepitelioma",
-       "mesh": "Myoepithelioma",
-       "value": 1
-      }
-     ]
+     "name": "Pabellón de hexágonos casa de campo",
+     "value": 3099444.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2024-2027",
+     "estado": "En proceso"
     },
     {
-     "name": "Sarcomas",
-     "children": [
-      {
-       "name": "Condrosarcoma",
-       "mesh": "Chondrosarcoma",
-       "value": 4
-      },
-      {
-       "name": "Sarcoma",
-       "mesh": "Sarcoma",
-       "value": 9
-      },
-      {
-       "name": "Rabdomiosarcoma",
-       "mesh": "Rhabdomyosarcoma",
-       "value": 2
-      },
-      {
-       "name": "Neurofibrosarcoma",
-       "mesh": "Neurofibrosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Tumor de células granulares",
-       "mesh": "Granular Cell Tumor",
-       "value": 1
-      },
-      {
-       "name": "Sarcoma de células claras",
-       "mesh": "Sarcoma, Clear Cell",
-       "value": 1
-      },
-      {
-       "name": "Fibrosarcoma",
-       "mesh": "Fibrosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Osteosarcoma",
-       "mesh": "Osteosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Liposarcoma",
-       "mesh": "Liposarcoma",
-       "value": 1
-      },
-      {
-       "name": "Angiosarcoma",
-       "mesh": "Hemangiosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Tejido adiposo",
-       "mesh": "Neoplasms, Adipose Tissue",
-       "value": 1
-      },
-      {
-       "name": "Leiomiosarcoma",
-       "mesh": "Leiomyosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Liposarcoma mixoide",
-       "mesh": "Liposarcoma, Myxoid",
-       "value": 1
-      },
-      {
-       "name": "Dermatofibrosarcoma",
-       "mesh": "Dermatofibrosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Sarcoma sinovial",
-       "mesh": "Sarcoma, Synovial",
-       "value": 1
-      }
-     ]
+     "name": "Nave 15 matadero",
+     "value": 1938478.0,
+     "distrito": "Arganzuela",
+     "años": "2021-2026",
+     "estado": "En proceso"
     },
     {
-     "name": "Gliomas y otros",
-     "children": [
-      {
-       "name": "Astrocitoma",
-       "mesh": "Astrocytoma",
-       "value": 3
-      },
-      {
-       "name": "Glioma",
-       "mesh": "Glioma",
-       "value": 6
-      },
-      {
-       "name": "Ganglioglioma",
-       "mesh": "Ganglioglioma",
-       "value": 1
-      },
-      {
-       "name": "General",
-       "mesh": "Neoplasms, Germ Cell and Embryonal",
-       "value": 1
-      },
-      {
-       "name": "Ependimoma",
-       "mesh": "Ependymoma",
-       "value": 3
-      },
-      {
-       "name": "Glioblastoma",
-       "mesh": "Glioblastoma",
-       "value": 6
-      },
-      {
-       "name": "Meduloblastoma",
-       "mesh": "Medulloblastoma",
-       "value": 1
-      },
-      {
-       "name": "Germinoma",
-       "mesh": "Germinoma",
-       "value": 2
-      },
-      {
-       "name": "Neuroblastoma",
-       "mesh": "Neuroblastoma",
-       "value": 2
-      },
-      {
-       "name": "Oligodendroglioma",
-       "mesh": "Oligodendroglioma",
-       "value": 1
-      },
-      {
-       "name": "Gliosarcoma",
-       "mesh": "Gliosarcoma",
-       "value": 1
-      },
-      {
-       "name": "Cordoma",
-       "mesh": "Chordoma",
-       "value": 5
-      },
-      {
-       "name": "Neuroendocrino",
-       "mesh": "Neuroendocrine Tumors",
-       "value": 1
-      },
-      {
-       "name": "Craneofaringioma",
-       "mesh": "Craniopharyngioma",
-       "value": 2
-      },
-      {
-       "name": "Ganglioneuroblastoma",
-       "mesh": "Ganglioneuroblastoma",
-       "value": 1
-      },
-      {
-       "name": "Seminoma",
-       "mesh": "Seminoma",
-       "value": 1
-      }
-     ]
+     "name": "Arco de la victoria",
+     "value": 1218017.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2023-2026",
+     "estado": "En proceso"
     },
     {
-     "name": "Carcinomas",
-     "children": [
-      {
-       "name": "Carcinoma adenoide quístico",
-       "mesh": "Carcinoma, Adenoid Cystic",
-       "value": 1
-      },
-      {
-       "name": "Colangiocarcinoma",
-       "mesh": "Cholangiocarcinoma",
-       "value": 1
-      },
-      {
-       "name": "Carcinoma",
-       "mesh": "Carcinoma",
-       "value": 1
-      }
-     ]
+     "name": "Museografia para el museo el capricho",
+     "value": 1600000.0,
+     "distrito": "Barajas",
+     "años": "2025-2026",
+     "estado": "En proceso"
     },
     {
-     "name": "Tejido nervioso",
-     "children": [
-      {
-       "name": "Vaina nerviosa",
-       "mesh": "Nerve Sheath Neoplasms",
-       "value": 1
-      }
-     ]
+     "name": "Museo de arte contemporaneo",
+     "value": 5080717.0,
+     "distrito": "Centro",
+     "años": "2025-2027",
+     "estado": "En proceso"
     },
     {
-     "name": "Tejido vascular",
-     "children": [
-      {
-       "name": "Hemangioendotelioma epitelioide",
-       "mesh": "Hemangioendothelioma, Epithelioid",
-       "value": 1
-      },
-      {
-       "name": "Tumor glómico",
-       "mesh": "Glomus Tumor",
-       "value": 1
-      }
-     ]
+     "name": "Biblioteca-centro cultural villa de vallecas",
+     "value": 8557768.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2021-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro cultural y biblioteca en montecarmelo",
+     "value": 5727814.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2020-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro cultural y biblioteca en las tablas",
+     "value": 13421803.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2020-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Biblioteca en el distrito de carabanchel",
+     "value": 8458155.0,
+     "distrito": "Carabanchel",
+     "años": "2020-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro cultural valdebebas",
+     "value": 10804220.0,
+     "distrito": "Hortaleza",
+     "años": "2021-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Edificio municipal c/ montamarta, 7",
+     "value": 3253735.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2021-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro multifuncional c/ francisco remiro, 21",
+     "value": 8884228.0,
+     "distrito": "Salamanca",
+     "años": "2022-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro cultural en c/ tomelloso, distrito usera",
+     "value": 8246261.0,
+     "distrito": "Usera",
+     "años": "2023-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Edificio paseo del prado, 30",
+     "value": 3942148.0,
+     "distrito": "Centro",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Biblioteca pública c/silvano,101-103 (entorno glorieta mar de cristal)",
+     "value": 8755733.0,
+     "distrito": "Hortaleza",
+     "años": "2023-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro cultural, biblioteca, auditorio y ludoteca en el cañaveral",
+     "value": 13528467.0,
+     "distrito": "Vicálvaro",
+     "años": "2023-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro cultural los rosales",
+     "value": 1934689.0,
+     "distrito": "Villaverde",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parcela c/encomienda palacios,231",
+     "value": 2914350.0,
+     "distrito": "Moratalaz",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Instalaciones centros",
+     "value": 1235255.0,
+     "distrito": "Arganzuela",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Obras nave 16 de matadero para la instalación de s",
+     "value": 1568810.0,
+     "distrito": "Arganzuela",
+     "años": "2025-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Obras de adecuación de almacenes generales (madrid",
+     "value": 1880000.0,
+     "distrito": "Arganzuela",
+     "años": "2027-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Obras de rehabilitación del pabellón xii fase i",
+     "value": 11836912.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2026-2027",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Deportes y juventud",
+   "children": [
+    {
+     "name": "Deportivo básico piqueñas",
+     "value": 1849918.0,
+     "distrito": "Carabanchel",
+     "años": "2022-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Deportivo básico parque lineal del manzanares",
+     "value": 1100000.0,
+     "distrito": "Usera",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Campo de fútbol en aravaca, c/escultor peresejo, bosque metropolitano",
+     "value": 1500000.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Campos de fútbol en valdebebas (instalaciones sotenibles)",
+     "value": 2168377.0,
+     "distrito": "Hortaleza",
+     "años": "2024-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo c/costanilla desamparados, 15 c/v a c/fúcar, 6",
+     "value": 35594952.0,
+     "distrito": "Centro",
+     "años": "2016-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Vestuarios campos de rugby y fútbol en entrevías",
+     "value": 1857319.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2021-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Pabellón deportivo en calle mónaco, 10, distrito san blas-canillejas",
+     "value": 12066355.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro cultural-juvenil distrito de ciudad lineal,c/ canal de panamá, 20",
+     "value": 6606187.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2023-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vestuarios campos de rugby y fútbol en entrevías",
+     "value": 1527909.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2024-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo municipal vicente del bosque",
+     "value": 16078967.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2024-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo peñuelas",
+     "value": 5970849.0,
+     "distrito": "Arganzuela",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro deportivo luis aragonés",
+     "value": 5324210.0,
+     "distrito": "Hortaleza",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro deportivo san juan bautista",
+     "value": 3526345.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo moscardó",
+     "value": 2967078.0,
+     "distrito": "Usera",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro deportivo orcasur",
+     "value": 3549396.0,
+     "distrito": "Usera",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo el espinillo",
+     "value": 1710246.0,
+     "distrito": "Villaverde",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro deportivo angel nieto",
+     "value": 3714645.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro deportivo raúl gonzález",
+     "value": 3500000.0,
+     "distrito": "Villaverde",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo orcasitas",
+     "value": 3715316.0,
+     "distrito": "Usera",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro deportivo san blas",
+     "value": 2508950.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2024-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro deportivo municipal marqués de samaranch",
+     "value": 1350000.0,
+     "distrito": "Arganzuela",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Campo de rugby en c/fuente carrantona s/n, distrito de moratalaz",
+     "value": 2692831.0,
+     "distrito": "Moratalaz",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque deportivo tres luces,c/francisco largo caballero y av.arcentales.construcción (id 21: 18880)",
+     "value": 1393397.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Campo de fútbol en el cañaveral",
+     "value": 1374989.0,
+     "distrito": "Vicálvaro",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Deportivo básico el cañaveral ii",
+     "value": 1047904.0,
+     "distrito": "Vicálvaro",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Obras caja mágica",
+     "value": 30956585.0,
+     "distrito": "Usera",
+     "años": "2022-2028",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Educación",
+   "children": [
+    {
+     "name": "Escuela de música en el distrito de puente de vallecas",
+     "value": 5343043.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2022-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Escuela infantil los pajaritos, distrito de retiro",
+     "value": 2967040.0,
+     "distrito": "Retiro",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Escuela infantil en calle de la silvina, 8, barrio de san fermín",
+     "value": 6514017.0,
+     "distrito": "Usera",
+     "años": "2022-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Escuela de música en c/ hurtumpascual, distrito latina",
+     "value": 5909975.0,
+     "distrito": "Latina",
+     "años": "2020-2025",
+     "estado": "Finalizado"
+    }
+   ]
+  },
+  {
+   "name": "Infraestructuras",
+   "children": [
+    {
+     "name": "Soterramiento autopista A5 y paseo verde del suroeste",
+     "value": 314645784.0,
+     "distrito": "Latina",
+     "años": "2019-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Madrid nuevo norte, nudo de fuencarral",
+     "value": 193705135.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2022-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Campus sur universidad politécnica de madrid y entornos escolares vallecas",
+     "value": 14129926.0,
+     "distrito": "Puente de Vallecas - Villa de Vallecas",
+     "años": "2023-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Avenida de las trece rosas",
+     "value": 1654075.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Carretera de valdecarros",
+     "value": 6520037.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Cubrición del viario M-30 en el puente de ventas",
+     "value": 87836964.0,
+     "distrito": "Salamanca - Ciudad Lineal",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Soterramiento paseo de la castellana, tramo complejo hospitalario la paz - calle de sinesio delgado",
+     "value": 128925871.0,
+     "distrito": "Chamartín - Fuencarral-El Pardo",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Pasarela peatonal y ciclista conexión arganzuela-carabanchel sobre el río manzanares",
+     "value": 1920000.0,
+     "distrito": "Arganzuela - Carabanchel",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Conexión peatonal calles sepúlveda y monsalupe",
+     "value": 1686106.0,
+     "distrito": "Latina",
+     "años": "2023-2025",
+     "estado": "Finalizado"
+    }
+   ]
+  },
+  {
+   "name": "Mantenimiento urbano",
+   "children": [
+    {
+     "name": "Casco histórico de barajas",
+     "value": 3200000.0,
+     "distrito": "Barajas",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Complejo manzana de azca",
+     "value": 60505000.0,
+     "distrito": "Tetuán",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza de matute en el distrito centro",
+     "value": 1565000.0,
+     "distrito": "Centro",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Casco antiguo carabanchel bajo",
+     "value": 1627834.0,
+     "distrito": "Carabanchel",
+     "años": "2024-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza en la calle san pol de mar",
+     "value": 961517.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    }
+   ]
+  },
+  {
+   "name": "Medio ambiente",
+   "children": [
+    {
+     "name": "Aumento de la capacidad del desagüe del tramo inferior arroyo de los migueles",
+     "value": 5098199.0,
+     "distrito": "Vicálvaro",
+     "años": "2015-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque de la casa de campo",
+     "value": 5810613.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2017-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque del retiro",
+     "value": 1978045.0,
+     "distrito": "Retiro",
+     "años": "2017-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Estación regeneradora de aguas residuales de rejas",
+     "value": 67529782.0,
+     "distrito": "Barajas",
+     "años": "2020-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Estación regeneradora de aguas residuales de valdebebas",
+     "value": 65932838.0,
+     "distrito": "Barajas",
+     "años": "2020-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Cañada del santísimo rehabilitación zonas verdes",
+     "value": 989385.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2019-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Depuradora de butarque consolidación de los terrenos",
+     "value": 3425456.0,
+     "distrito": "Villaverde",
+     "años": "2019-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Centro de tratamiento las dehesas",
+     "value": 12186510.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque pinar del rey",
+     "value": 1376316.0,
+     "distrito": "Hortaleza",
+     "años": "2022-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Parque la viña",
+     "value": 1287345.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2022-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Parque pinar de la elipa",
+     "value": 1613556.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2022-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Colectores de vicálvaro b y la dehesa",
+     "value": 1265489.0,
+     "distrito": "Vicálvaro",
+     "años": "2023-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Zonas verdes ensanche de vallecas",
+     "value": 1524958.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Zona forestal montecarmelo: M-607 km.13-gta.ventisquero de la condesa.rehabilitación (id 21: 17548)",
+     "value": 1851981.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Zona verde en el barrio de rejas",
+     "value": 592268.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Parque de canillejas",
+     "value": 1029990.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Aliviaderos de los estanques de tormentas de abroñigales y la gavia",
+     "value": 2872840.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Margen izquierda del río manzanares a la altura de la c/adelina patti",
+     "value": 1640000.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque cerro almodóvar",
+     "value": 1349985.0,
+     "distrito": "Latina",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque de las cruces, distrito de latina",
+     "value": 2594991.0,
+     "distrito": "Latina",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro de tratamiento la paloma",
+     "value": 9891029.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Zona verde en c/ primitiva gañán, distrito usera",
+     "value": 1000000.0,
+     "distrito": "Usera",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Salud pública",
+   "children": [
+    {
+     "name": "Renovacion tanatorios-tº M30",
+     "value": 1079540.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Rehabilitación cementerios cº la almudena",
+     "value": 10230023.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Acond",
+     "value": 2371766.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2023-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Unidades de enterramiento (almudena)",
+     "value": 1000000.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2023-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Unidades de enterramiento (carabanchel sur)",
+     "value": 3136814.0,
+     "distrito": "Carabanchel",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Sectores productivos",
+   "children": [
+    {
+     "name": "Factoría industrial villa de vallecas",
+     "value": 10105312.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2022-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Varios movilidad y servicios comunes",
+     "value": 2522500.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Asfaltado",
+     "value": 3822577.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2025-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Varios mercados centrales y edificaciones",
+     "value": 5194405.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Urbanización plaza zona comercial",
+     "value": 2716761.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Varios ampliación mercamadrid y nuevos proyectos",
+     "value": 17825398.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro de conocimiento e innovación",
+     "value": 7554741.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2023-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Aparcamientos",
+     "value": 1100000.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Nave multiservicio 1",
+     "value": 7800000.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Nave multiservicio 2",
+     "value": 1000000.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2026-2029",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Seguridad",
+   "children": [
+    {
+     "name": "Parque de bomberos nº 9",
+     "value": 3705421.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2023-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parque de bomberos número 9, edificio oeste",
+     "value": 1689172.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2024-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Edificio avenida orcasur, 51",
+     "value": 8162209.0,
+     "distrito": "Usera",
+     "años": "2024-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Base 0 samur-protección civil",
+     "value": 1241653.0,
+     "distrito": "Moncloa-Aravaca",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Base samur-proteccion civil y centro de salud del distrito de moratalaz",
+     "value": 5761179.0,
+     "distrito": "Moratalaz",
+     "años": "2022-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Nuevo aulario del centro de formacion de seguridad y emergencias (cifse)",
+     "value": 17359325.0,
+     "distrito": "Latina",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Unidad integral de policía municipal de vicálvaro",
+     "value": 7591925.0,
+     "distrito": "Vicálvaro",
+     "años": "2022-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Unidad integral policía municipal del distrito de villaverde, avda",
+     "value": 8015375.0,
+     "distrito": "Villaverde",
+     "años": "2023-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Complejo logístico y parque de bomberos en la calle el real de san vicente, 61",
+     "value": 13635756.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2024-2027",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Servicios sociales",
+   "children": [
+    {
+     "name": "Casa de familia villa de vallecas",
+     "value": 8549650.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro de mayores c/ tellez",
+     "value": 9187445.0,
+     "distrito": "Retiro",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro de mayores parque europa",
+     "value": 6951492.0,
+     "distrito": "Latina",
+     "años": "2022-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro de bienestar social en el palacio de la duquesa de sueca",
+     "value": 10188340.0,
+     "distrito": "Centro",
+     "años": "2022-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Apartamentos para mayores san francisco, calle jerte, 3",
+     "value": 3364294.0,
+     "distrito": "Centro",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro municipal de urgencias sociales (cemus)",
+     "value": 5150000.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Centro de mayores y día las rosas",
+     "value": 10150000.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2025-2028",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Urbanismo",
+   "children": [
+    {
+     "name": "Sistemas de compensación",
+     "value": 28702505.0,
+     "distrito": "Vicálvaro",
+     "años": "2008-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Uzp 2.03 desarrollo del este los ahijones",
+     "value": 17496018.0,
+     "distrito": "Vicálvaro",
+     "años": "2010-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Suelo urbanizable programado 3.01 desarrollo del este valdecarros",
+     "value": 25349324.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2010-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Anillo verde de villaverde",
+     "value": 9307688.0,
+     "distrito": "Villaverde",
+     "años": "2021-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Ámbito cerro almodóvar ii",
+     "value": 1623124.0,
+     "distrito": "Villa de Vallecas - Vicálvaro",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Borde forestal de orcasitas",
+     "value": 4318586.0,
+     "distrito": "Usera",
+     "años": "2021-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Cuña norte de o´donnell",
+     "value": 11059438.0,
+     "distrito": "Ciudad Lineal",
+     "años": "2021-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Ámbito corredor natural y parque fluvial del arroyo de butarque",
+     "value": 4770377.0,
+     "distrito": "Villaverde",
+     "años": "2021-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Parcelas ámbito valdegrulla y paraje valdesenderín",
+     "value": 5254724.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2021-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Ámbito castillo de la alameda",
+     "value": 2085925.0,
+     "distrito": "Barajas",
+     "años": "2022-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Ámbito de la cuña verde de o´donnell sur",
+     "value": 1500000.0,
+     "distrito": "Moratalaz",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Junta de compensación us 4.10 solana de valdebebas",
+     "value": 1381691.0,
+     "distrito": "Hortaleza",
+     "años": "2023-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Barrio de orcasur",
+     "value": 1468128.0,
+     "distrito": "Usera",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Ámbito de la avenida de niza y zonas adyacentes",
+     "value": 1500000.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Calle de la hulla e inmediaciones, ámbito arroyo de butarque sur",
+     "value": 1500000.0,
+     "distrito": "Villaverde",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Obras de urbanización espacios interbloque plan especial colonia urpisa",
+     "value": 2570211.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Calle de bujalance, colonia del cerro bermejo",
+     "value": 1647811.0,
+     "distrito": "Latina",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Calle de la hacienda de pavones, barrio pavones-las latas",
+     "value": 1643147.0,
+     "distrito": "Moratalaz",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Calle de san pedro de cardeña, manoteras sur",
+     "value": 1647811.0,
+     "distrito": "Hortaleza",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza de jacinto benavente",
+     "value": 2500000.0,
+     "distrito": "Centro",
+     "años": "2025-2025",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza de salvador dalí",
+     "value": 1459197.0,
+     "distrito": "Salamanca",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Zonas adyacentes jardines de sabatini con la plaza de españa.reurbanización y acondicionamiento",
+     "value": 7522466.0,
+     "distrito": "Centro",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Parque de manolito gafotas",
+     "value": 4007456.0,
+     "distrito": "Carabanchel",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Espacios libres en el entorno de la ciudad deportiva de san blas",
+     "value": 7077849.0,
+     "distrito": "San Blas-Canillejas",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Paseo de la dirección, distrito de tetuan",
+     "value": 5767925.0,
+     "distrito": "Tetuán",
+     "años": "2024-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza tirso de molina y calles aledañas",
+     "value": 2864117.0,
+     "distrito": "Centro",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Entorno del mercado nueva numancia",
+     "value": 1868108.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2024-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Calle de goya",
+     "value": 14940000.0,
+     "distrito": "Salamanca",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza de chamberí",
+     "value": 1350000.0,
+     "distrito": "Chamberí",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Plaza del dos de mayo",
+     "value": 2330000.0,
+     "distrito": "Centro",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Paisaje de la luz",
+     "value": 3120000.0,
+     "distrito": "Retiro",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Carretera del barrio de la fortuna",
+     "value": 2320000.0,
+     "distrito": "Latina",
+     "años": "2025-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Paisaje de la luz",
+     "value": 4525000.0,
+     "distrito": "Retiro",
+     "años": "2025-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Construcciones plan de negocio madrid nuevo norte",
+     "value": 187924173.0,
+     "distrito": "Chamartín",
+     "años": "2021-2030",
+     "estado": "En proceso"
+    }
+   ]
+  },
+  {
+   "name": "Vivienda",
+   "children": [
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 17768862.0,
+     "distrito": "Vicálvaro",
+     "años": "2019-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 16250831.0,
+     "distrito": "Vicálvaro",
+     "años": "2020-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 13908715.0,
+     "distrito": "Vicálvaro",
+     "años": "2020-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 14724291.0,
+     "distrito": "Vicálvaro",
+     "años": "2020-2026",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 9442992.0,
+     "distrito": "Vicálvaro",
+     "años": "2020-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 10621953.0,
+     "distrito": "Vicálvaro",
+     "años": "2020-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 13559000.0,
+     "distrito": "Vicálvaro",
+     "años": "2019-2025",
+     "estado": "Finalizado"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 15233549.0,
+     "distrito": "Vicálvaro",
+     "años": "2019-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 13202408.0,
+     "distrito": "Puente de Vallecas",
+     "años": "2017-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 14854029.0,
+     "distrito": "Villaverde",
+     "años": "2026-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 4069200.0,
+     "distrito": "Latina",
+     "años": "2021-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 8764137.0,
+     "distrito": "Latina",
+     "años": "2021-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 11788696.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2021-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 8264658.0,
+     "distrito": "Carabanchel",
+     "años": "2021-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 24655367.0,
+     "distrito": "Tetuán",
+     "años": "2021-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 29995507.0,
+     "distrito": "Vicálvaro",
+     "años": "2021-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 17634172.0,
+     "distrito": "Villaverde",
+     "años": "2021-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 11991494.0,
+     "distrito": "Barajas",
+     "años": "2022-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 13087649.0,
+     "distrito": "Barajas",
+     "años": "2022-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 16434564.0,
+     "distrito": "Tetuán",
+     "años": "2021-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 17805937.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2021-2027",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 15819200.0,
+     "distrito": "Vicálvaro",
+     "años": "2021-2028",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler 4.8.2 d de la ue1 del uzi 0.10 “ensanche de carabanchel 35",
+     "value": 11095677.0,
+     "distrito": "Carabanchel",
+     "años": "2023-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler.paseo dirección 05 C1",
+     "value": 44525714.0,
+     "distrito": "Tetuán",
+     "años": "2025-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 41012329.0,
+     "distrito": "Arganzuela",
+     "años": "2025-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 6086377.0,
+     "distrito": "Barajas",
+     "años": "2025-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler.ofelia nieto",
+     "value": 7561132.0,
+     "distrito": "Tetuán",
+     "años": "2025-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 16659585.0,
+     "distrito": "Vicálvaro",
+     "años": "2025-2031",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 39304888.0,
+     "distrito": "Vicálvaro",
+     "años": "2025-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 39304888.0,
+     "distrito": "Vicálvaro",
+     "años": "2025-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 39304888.0,
+     "distrito": "Vicálvaro",
+     "años": "2025-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 39304888.0,
+     "distrito": "Vicálvaro",
+     "años": "2025-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 40551346.0,
+     "distrito": "Fuencarral-El Pardo",
+     "años": "2026-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 72397306.0,
+     "distrito": "Hortaleza",
+     "años": "2026-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 24111291.0,
+     "distrito": "Carabanchel",
+     "años": "2026-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 61363270.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2026-2030",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 25999034.0,
+     "distrito": "Vicálvaro",
+     "años": "2027-2032",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 25999034.0,
+     "distrito": "Vicálvaro",
+     "años": "2027-2032",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 9000000.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2025-2029",
+     "estado": "En proceso"
+    },
+    {
+     "name": "Vivienda de protección pública básica alquiler",
+     "value": 8599021.0,
+     "distrito": "Villa de Vallecas",
+     "años": "2025-2029",
+     "estado": "En proceso"
     }
    ]
   }

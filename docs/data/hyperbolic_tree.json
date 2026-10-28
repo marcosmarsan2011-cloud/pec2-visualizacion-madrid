@@ -1,2622 +1,178 @@
 {
- "id": "C04",
- "name": "Cáncer (neoplasias)",
+ "id": "327",
+ "name": "Madrid",
  "data": {
-  "codigo": "C04",
-  "ensayos": 260
+  "tipo": "Ayuntamiento",
+  "presupuesto": 2890735629.0,
+  "proyectos": 204
  },
  "children": [
   {
-   "id": "C04.557",
-   "name": "Por tipo de tejido",
+   "id": "14",
+   "name": "Carácter general",
    "data": {
-    "codigo": "C04.557",
-    "ensayos": 121
+    "tipo": "Línea de inversión",
+    "presupuesto": 106475399.0,
+    "proyectos": 8
    },
    "children": [
     {
-     "id": "C04.557.337",
-     "name": "Leucemias",
+     "id": "1",
+     "name": "Arganzuela",
      "data": {
-      "codigo": "C04.557.337",
-      "ensayos": 1
+      "tipo": "Distrito",
+      "presupuesto": 82271846.0,
+      "proyectos": 1
      },
      "children": [
       {
-       "id": "C04.557.337.539",
-       "name": "Leukemia, Myeloid",
+       "id": "0",
+       "name": "Antiguo mercado de legazpi",
        "data": {
-        "codigo": "C04.557.337.539",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.557.337.539.275",
-         "name": "Leucemia mieloide aguda",
-         "data": {
-          "codigo": "C04.557.337.539.275",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.557.386",
-     "name": "Linfomas",
-     "data": {
-      "codigo": "C04.557.386",
-      "ensayos": 8
-     },
-     "children": [
-      {
-       "id": "C04.557.386.355",
-       "name": "Linfoma de Hodgkin",
-       "data": {
-        "codigo": "C04.557.386.355",
-        "ensayos": 6
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.386.480",
-       "name": "Linfoma no Hodgkin",
-       "data": {
-        "codigo": "C04.557.386.480",
-        "ensayos": 4
-       },
-       "children": [
-        {
-         "id": "C04.557.386.480.150",
-         "name": "Lymphoma, B-Cell",
-         "data": {
-          "codigo": "C04.557.386.480.150",
-          "ensayos": 1
-         },
-         "children": [
-          {
-           "id": "C04.557.386.480.150.585",
-           "name": "Linfoma B difuso",
-           "data": {
-            "codigo": "C04.557.386.480.150.585",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.386.480.350",
-         "name": "Linfoma folicular",
-         "data": {
-          "codigo": "C04.557.386.480.350",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.557.435",
-     "name": "Tumores mixtos",
-     "data": {
-      "codigo": "C04.557.435",
-      "ensayos": 6
-     },
-     "children": [
-      {
-       "id": "C04.557.435.585",
-       "name": "Mioepitelioma",
-       "data": {
-        "codigo": "C04.557.435.585",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.435.595",
-       "name": "Tumor de Wilms",
-       "data": {
-        "codigo": "C04.557.435.595",
-        "ensayos": 2
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.435.710",
-       "name": "Tumor rabdoide",
-       "data": {
-        "codigo": "C04.557.435.710",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.435.850",
-       "name": "Timoma",
-       "data": {
-        "codigo": "C04.557.435.850",
-        "ensayos": 2
+        "tipo": "Proyecto",
+        "presupuesto": 82271846.0,
+        "proyectos": 1,
+        "años": "2024-2027",
+        "estado": "En proceso"
        },
        "children": []
       }
      ]
     },
     {
-     "id": "C04.557.450",
-     "name": "Sarcomas",
+     "id": "3",
+     "name": "Centro",
      "data": {
-      "codigo": "C04.557.450",
-      "ensayos": 19
+      "tipo": "Distrito",
+      "presupuesto": 6242664.0,
+      "proyectos": 1
      },
      "children": [
       {
-       "id": "C04.557.450.550",
-       "name": "Tejido adiposo",
+       "id": "2",
+       "name": "Edificio c/ alcalá, 45",
        "data": {
-        "codigo": "C04.557.450.550",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.557.450.550.420",
-         "name": "Liposarcoma",
-         "data": {
-          "codigo": "C04.557.450.550.420",
-          "ensayos": 1
-         },
-         "children": [
-          {
-           "id": "C04.557.450.550.420.425",
-           "name": "Liposarcoma mixoide",
-           "data": {
-            "codigo": "C04.557.450.550.420.425",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.557.450.565",
-       "name": "Neoplasms, Connective Tissue",
-       "data": {
-        "codigo": "C04.557.450.565",
-        "ensayos": 7
-       },
-       "children": [
-        {
-         "id": "C04.557.450.565.280",
-         "name": "Condrosarcoma",
-         "data": {
-          "codigo": "C04.557.450.565.280",
-          "ensayos": 4
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.565.575",
-         "name": "Neoplasms, Bone Tissue",
-         "data": {
-          "codigo": "C04.557.450.565.575",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.450.565.575.650",
-           "name": "Osteosarcoma",
-           "data": {
-            "codigo": "C04.557.450.565.575.650",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.450.565.575.650.800",
-             "name": "Sarcoma, Ewing",
-             "data": {
-              "codigo": "C04.557.450.565.575.650.800",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "C04.557.450.565.590",
-         "name": "Neoplasms, Fibrous Tissue",
-         "data": {
-          "codigo": "C04.557.450.565.590",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.450.565.590.350",
-           "name": "Fibrosarcoma",
-           "data": {
-            "codigo": "C04.557.450.565.590.350",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.450.565.590.350.320",
-             "name": "Dermatofibrosarcoma",
-             "data": {
-              "codigo": "C04.557.450.565.590.350.320",
-              "ensayos": 1
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.450.565.590.350.590",
-             "name": "Neurofibrosarcoma",
-             "data": {
-              "codigo": "C04.557.450.565.590.350.590",
-              "ensayos": 2
-             },
-             "children": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "C04.557.450.565.800",
-         "name": "Sarcoma de células claras",
-         "data": {
-          "codigo": "C04.557.450.565.800",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.565.835",
-         "name": "Sarcoma sinovial",
-         "data": {
-          "codigo": "C04.557.450.565.835",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.557.450.590",
-       "name": "Neoplasms, Muscle Tissue",
-       "data": {
-        "codigo": "C04.557.450.590",
-        "ensayos": 4
-       },
-       "children": [
-        {
-         "id": "C04.557.450.590.350",
-         "name": "Tumor de células granulares",
-         "data": {
-          "codigo": "C04.557.450.590.350",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.590.455",
-         "name": "Leiomiosarcoma",
-         "data": {
-          "codigo": "C04.557.450.590.455",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.590.550",
-         "name": "Myosarcoma",
-         "data": {
-          "codigo": "C04.557.450.590.550",
-          "ensayos": 3
-         },
-         "children": [
-          {
-           "id": "C04.557.450.590.550.660",
-           "name": "Rabdomiosarcoma",
-           "data": {
-            "codigo": "C04.557.450.590.550.660",
-            "ensayos": 3
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.557.450.795",
-       "name": "Sarcoma",
-       "data": {
-        "codigo": "C04.557.450.795",
-        "ensayos": 19
-       },
-       "children": [
-        {
-         "id": "C04.557.450.795.300",
-         "name": "Condrosarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.300",
-          "ensayos": 4
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.795.350",
-         "name": "Fibrosarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.350",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.450.795.350.320",
-           "name": "Dermatofibrosarcoma",
-           "data": {
-            "codigo": "C04.557.450.795.350.320",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.450.795.350.590",
-           "name": "Neurofibrosarcoma",
-           "data": {
-            "codigo": "C04.557.450.795.350.590",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.450.795.390",
-         "name": "Angiosarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.390",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.795.455",
-         "name": "Leiomiosarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.455",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.795.465",
-         "name": "Liposarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.465",
-          "ensayos": 1
-         },
-         "children": [
-          {
-           "id": "C04.557.450.795.465.425",
-           "name": "Liposarcoma mixoide",
-           "data": {
-            "codigo": "C04.557.450.795.465.425",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.450.795.550",
-         "name": "Myosarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.550",
-          "ensayos": 3
-         },
-         "children": [
-          {
-           "id": "C04.557.450.795.550.660",
-           "name": "Rabdomiosarcoma",
-           "data": {
-            "codigo": "C04.557.450.795.550.660",
-            "ensayos": 3
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.450.795.620",
-         "name": "Osteosarcoma",
-         "data": {
-          "codigo": "C04.557.450.795.620",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.450.795.620.800",
-           "name": "Sarcoma, Ewing",
-           "data": {
-            "codigo": "C04.557.450.795.620.800",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.450.795.800",
-         "name": "Sarcoma de células claras",
-         "data": {
-          "codigo": "C04.557.450.795.800",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.795.850",
-         "name": "Sarcoma, Kaposi",
-         "data": {
-          "codigo": "C04.557.450.795.850",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.450.795.875",
-         "name": "Sarcoma sinovial",
-         "data": {
-          "codigo": "C04.557.450.795.875",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.557.465",
-     "name": "Gliomas y otros",
-     "data": {
-      "codigo": "C04.557.465",
-      "ensayos": 46
-     },
-     "children": [
-      {
-       "id": "C04.557.465.220",
-       "name": "Cordoma",
-       "data": {
-        "codigo": "C04.557.465.220",
-        "ensayos": 5
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.465.330",
-       "name": "Germinoma",
-       "data": {
-        "codigo": "C04.557.465.330",
-        "ensayos": 3
-       },
-       "children": [
-        {
-         "id": "C04.557.465.330.800",
-         "name": "Seminoma",
-         "data": {
-          "codigo": "C04.557.465.330.800",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.557.465.625",
-       "name": "Neuroectodermal Tumors",
-       "data": {
-        "codigo": "C04.557.465.625",
-        "ensayos": 38
-       },
-       "children": [
-        {
-         "id": "C04.557.465.625.200",
-         "name": "Craneofaringioma",
-         "data": {
-          "codigo": "C04.557.465.625.200",
-          "ensayos": 3
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.465.625.600",
-         "name": "Neoplasms, Neuroepithelial",
-         "data": {
-          "codigo": "C04.557.465.625.600",
-          "ensayos": 30
-         },
-         "children": [
-          {
-           "id": "C04.557.465.625.600.380",
-           "name": "Glioma",
-           "data": {
-            "codigo": "C04.557.465.625.600.380",
-            "ensayos": 24
-           },
-           "children": [
-            {
-             "id": "C04.557.465.625.600.380.080",
-             "name": "Astrocitoma",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.080",
-              "ensayos": 14
-             },
-             "children": [
-              {
-               "id": "C04.557.465.625.600.380.080.335",
-               "name": "Glioblastoma",
-               "data": {
-                "codigo": "C04.557.465.625.600.380.080.335",
-                "ensayos": 9
-               },
-               "children": []
-              }
-             ]
-            },
-            {
-             "id": "C04.557.465.625.600.380.185",
-             "name": "Glioma pontino",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.185",
-              "ensayos": 1
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.465.625.600.380.290",
-             "name": "Ependimoma",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.290",
-              "ensayos": 5
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.465.625.600.380.350",
-             "name": "Ganglioglioma",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.350",
-              "ensayos": 2
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.465.625.600.380.400",
-             "name": "Gliosarcoma",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.400",
-              "ensayos": 1
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.465.625.600.380.515",
-             "name": "Meduloblastoma",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.515",
-              "ensayos": 2
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.465.625.600.380.590",
-             "name": "Oligodendroglioma",
-             "data": {
-              "codigo": "C04.557.465.625.600.380.590",
-              "ensayos": 2
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.557.465.625.600.590",
-           "name": "Neuroectodermal Tumors, Primitive",
-           "data": {
-            "codigo": "C04.557.465.625.600.590",
-            "ensayos": 6
-           },
-           "children": [
-            {
-             "id": "C04.557.465.625.600.590.500",
-             "name": "Meduloblastoma",
-             "data": {
-              "codigo": "C04.557.465.625.600.590.500",
-              "ensayos": 2
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.465.625.600.590.650",
-             "name": "Neuroectodermal Tumors, Primitive, Peripheral",
-             "data": {
-              "codigo": "C04.557.465.625.600.590.650",
-              "ensayos": 4
-             },
-             "children": [
-              {
-               "id": "C04.557.465.625.600.590.650.550",
-               "name": "Neuroblastoma",
-               "data": {
-                "codigo": "C04.557.465.625.600.590.650.550",
-                "ensayos": 4
-               },
-               "children": [
-                {
-                 "id": "C04.557.465.625.600.590.650.550.150",
-                 "name": "Esthesioneuroblastoma, Olfactory",
-                 "data": {
-                  "codigo": "C04.557.465.625.600.590.650.550.150",
-                  "ensayos": 2
-                 },
-                 "children": []
-                },
-                {
-                 "id": "C04.557.465.625.600.590.650.550.300",
-                 "name": "Ganglioneuroblastoma",
-                 "data": {
-                  "codigo": "C04.557.465.625.600.590.650.550.300",
-                  "ensayos": 1
-                 },
-                 "children": []
-                }
-               ]
-              }
-             ]
-            }
-           ]
-          },
-          {
-           "id": "C04.557.465.625.600.657",
-           "name": "Pinealoma",
-           "data": {
-            "codigo": "C04.557.465.625.600.657",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.465.625.600.725",
-           "name": "Retinoblastoma",
-           "data": {
-            "codigo": "C04.557.465.625.600.725",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.465.625.650",
-         "name": "Neuroendocrino",
-         "data": {
-          "codigo": "C04.557.465.625.650",
-          "ensayos": 6
-         },
-         "children": [
-          {
-           "id": "C04.557.465.625.650.200",
-           "name": "Carcinoid Tumor",
-           "data": {
-            "codigo": "C04.557.465.625.650.200",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.465.625.650.510",
-           "name": "Melanoma",
-           "data": {
-            "codigo": "C04.557.465.625.650.510",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.465.625.650.510.762",
-             "name": "Melanoma uveal",
-             "data": {
-              "codigo": "C04.557.465.625.650.510.762",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.557.465.625.650.595",
-           "name": "Neurilemmoma",
-           "data": {
-            "codigo": "C04.557.465.625.650.595",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.465.625.650.595.610",
-             "name": "Neurinoma del acústico",
-             "data": {
-              "codigo": "C04.557.465.625.650.595.610",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          }
-         ]
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.557.470",
-     "name": "Carcinomas",
-     "data": {
-      "codigo": "C04.557.470",
-      "ensayos": 77
-     },
-     "children": [
-      {
-       "id": "C04.557.470.035",
-       "name": "Adenoma",
-       "data": {
-        "codigo": "C04.557.470.035",
-        "ensayos": 3
-       },
-       "children": [
-        {
-         "id": "C04.557.470.035.415",
-         "name": "Adenoma hipofisario",
-         "data": {
-          "codigo": "C04.557.470.035.415",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.470.035.510",
-         "name": "Mesothelioma",
-         "data": {
-          "codigo": "C04.557.470.035.510",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.470.035.510.757",
-           "name": "Mesotelioma",
-           "data": {
-            "codigo": "C04.557.470.035.510.757",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.557.470.200",
-       "name": "Carcinoma",
-       "data": {
-        "codigo": "C04.557.470.200",
-        "ensayos": 47
-       },
-       "children": [
-        {
-         "id": "C04.557.470.200.025",
-         "name": "Adenocarcinoma",
-         "data": {
-          "codigo": "C04.557.470.200.025",
-          "ensayos": 25
-         },
-         "children": [
-          {
-           "id": "C04.557.470.200.025.200",
-           "name": "Carcinoid Tumor",
-           "data": {
-            "codigo": "C04.557.470.200.025.200",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.220",
-           "name": "Carcinoma adenoide quístico",
-           "data": {
-            "codigo": "C04.557.470.200.025.220",
-            "ensayos": 3
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.232",
-           "name": "Carcinoma, Ductal",
-           "data": {
-            "codigo": "C04.557.470.200.025.232",
-            "ensayos": 1
-           },
-           "children": [
-            {
-             "id": "C04.557.470.200.025.232.500",
-             "name": "Carcinoma ductal",
-             "data": {
-              "codigo": "C04.557.470.200.025.232.500",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.557.470.200.025.255",
-           "name": "Carcinoma hepatocelular",
-           "data": {
-            "codigo": "C04.557.470.200.025.255",
-            "ensayos": 13
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.275",
-           "name": "Carcinoma, Intraductal, Noninfiltrating",
-           "data": {
-            "codigo": "C04.557.470.200.025.275",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.305",
-           "name": "Carcinoma lobulillar",
-           "data": {
-            "codigo": "C04.557.470.200.025.305",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.340",
-           "name": "Carcinoma, Mucoepidermoid",
-           "data": {
-            "codigo": "C04.557.470.200.025.340",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.390",
-           "name": "Carcinoma renal",
-           "data": {
-            "codigo": "C04.557.470.200.025.390",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.025.450",
-           "name": "Colangiocarcinoma",
-           "data": {
-            "codigo": "C04.557.470.200.025.450",
-            "ensayos": 3
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.470.200.240",
-         "name": "Carcinoma in Situ",
-         "data": {
-          "codigo": "C04.557.470.200.240",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.470.200.240.187",
-           "name": "Carcinoma in situ de mama",
-           "data": {
-            "codigo": "C04.557.470.200.240.187",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.470.200.240.187.250",
-             "name": "Carcinoma, Intraductal, Noninfiltrating",
-             "data": {
-              "codigo": "C04.557.470.200.240.187.250",
-              "ensayos": 2
-             },
-             "children": []
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "C04.557.470.200.260",
-         "name": "Carcinoma, Large Cell",
-         "data": {
-          "codigo": "C04.557.470.200.260",
-          "ensayos": 1
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.470.200.400",
-         "name": "Carcinoma, Squamous Cell",
-         "data": {
-          "codigo": "C04.557.470.200.400",
-          "ensayos": 17
-         },
-         "children": [
-          {
-           "id": "C04.557.470.200.400.330",
-           "name": "Esófago escamoso",
-           "data": {
-            "codigo": "C04.557.470.200.400.330",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.200.400.565",
-           "name": "Carcinoma escamoso",
-           "data": {
-            "codigo": "C04.557.470.200.400.565",
-            "ensayos": 10
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.470.200.623",
-         "name": "Nasofaringe",
-         "data": {
-          "codigo": "C04.557.470.200.623",
-          "ensayos": 7
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.557.470.590",
-       "name": "Neoplasms, Cystic, Mucinous, and Serous",
-       "data": {
-        "codigo": "C04.557.470.590",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.557.470.590.340",
-         "name": "Carcinoma, Mucoepidermoid",
-         "data": {
-          "codigo": "C04.557.470.590.340",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.557.470.615",
-       "name": "Neoplasms, Ductal, Lobular, and Medullary",
-       "data": {
-        "codigo": "C04.557.470.615",
-        "ensayos": 2
-       },
-       "children": [
-        {
-         "id": "C04.557.470.615.132",
-         "name": "Carcinoma, Ductal",
-         "data": {
-          "codigo": "C04.557.470.615.132",
-          "ensayos": 1
-         },
-         "children": [
-          {
-           "id": "C04.557.470.615.132.500",
-           "name": "Carcinoma ductal",
-           "data": {
-            "codigo": "C04.557.470.615.132.500",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.470.615.275",
-         "name": "Carcinoma, Intraductal, Noninfiltrating",
-         "data": {
-          "codigo": "C04.557.470.615.275",
-          "ensayos": 2
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.470.615.305",
-         "name": "Carcinoma lobulillar",
-         "data": {
-          "codigo": "C04.557.470.615.305",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.557.470.660",
-       "name": "Neoplasms, Mesothelial",
-       "data": {
-        "codigo": "C04.557.470.660",
-        "ensayos": 2
-       },
-       "children": [
-        {
-         "id": "C04.557.470.660.510",
-         "name": "Mesothelioma",
-         "data": {
-          "codigo": "C04.557.470.660.510",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.470.660.510.757",
-           "name": "Mesotelioma",
-           "data": {
-            "codigo": "C04.557.470.660.510.757",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.557.470.670",
-       "name": "Neoplasms, Neuroepithelial",
-       "data": {
-        "codigo": "C04.557.470.670",
-        "ensayos": 30
-       },
-       "children": [
-        {
-         "id": "C04.557.470.670.380",
-         "name": "Glioma",
-         "data": {
-          "codigo": "C04.557.470.670.380",
-          "ensayos": 24
-         },
-         "children": [
-          {
-           "id": "C04.557.470.670.380.080",
-           "name": "Astrocitoma",
-           "data": {
-            "codigo": "C04.557.470.670.380.080",
-            "ensayos": 14
-           },
-           "children": [
-            {
-             "id": "C04.557.470.670.380.080.335",
-             "name": "Glioblastoma",
-             "data": {
-              "codigo": "C04.557.470.670.380.080.335",
-              "ensayos": 9
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.557.470.670.380.185",
-           "name": "Glioma pontino",
-           "data": {
-            "codigo": "C04.557.470.670.380.185",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.670.380.290",
-           "name": "Ependimoma",
-           "data": {
-            "codigo": "C04.557.470.670.380.290",
-            "ensayos": 5
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.670.380.350",
-           "name": "Ganglioglioma",
-           "data": {
-            "codigo": "C04.557.470.670.380.350",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.670.380.400",
-           "name": "Gliosarcoma",
-           "data": {
-            "codigo": "C04.557.470.670.380.400",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.670.380.515",
-           "name": "Meduloblastoma",
-           "data": {
-            "codigo": "C04.557.470.670.380.515",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.670.380.590",
-           "name": "Oligodendroglioma",
-           "data": {
-            "codigo": "C04.557.470.670.380.590",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.470.670.590",
-         "name": "Neuroectodermal Tumors, Primitive",
-         "data": {
-          "codigo": "C04.557.470.670.590",
-          "ensayos": 6
-         },
-         "children": [
-          {
-           "id": "C04.557.470.670.590.500",
-           "name": "Meduloblastoma",
-           "data": {
-            "codigo": "C04.557.470.670.590.500",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.470.670.590.650",
-           "name": "Neuroectodermal Tumors, Primitive, Peripheral",
-           "data": {
-            "codigo": "C04.557.470.670.590.650",
-            "ensayos": 4
-           },
-           "children": [
-            {
-             "id": "C04.557.470.670.590.650.550",
-             "name": "Neuroblastoma",
-             "data": {
-              "codigo": "C04.557.470.670.590.650.550",
-              "ensayos": 4
-             },
-             "children": [
-              {
-               "id": "C04.557.470.670.590.650.550.150",
-               "name": "Esthesioneuroblastoma, Olfactory",
-               "data": {
-                "codigo": "C04.557.470.670.590.650.550.150",
-                "ensayos": 2
-               },
-               "children": []
-              },
-              {
-               "id": "C04.557.470.670.590.650.550.300",
-               "name": "Ganglioneuroblastoma",
-               "data": {
-                "codigo": "C04.557.470.670.590.650.550.300",
-                "ensayos": 1
-               },
-               "children": []
-              }
-             ]
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "C04.557.470.670.657",
-         "name": "Pinealoma",
-         "data": {
-          "codigo": "C04.557.470.670.657",
-          "ensayos": 2
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.470.670.725",
-         "name": "Retinoblastoma",
-         "data": {
-          "codigo": "C04.557.470.670.725",
-          "ensayos": 2
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.557.470.700",
-       "name": "Neoplasms, Squamous Cell",
-       "data": {
-        "codigo": "C04.557.470.700",
-        "ensayos": 7
-       },
-       "children": [
-        {
-         "id": "C04.557.470.700.400",
-         "name": "Carcinoma, Squamous Cell",
-         "data": {
-          "codigo": "C04.557.470.700.400",
-          "ensayos": 7
-         },
-         "children": [
-          {
-           "id": "C04.557.470.700.400.565",
-           "name": "Esófago escamoso",
-           "data": {
-            "codigo": "C04.557.470.700.400.565",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.557.580",
-     "name": "Tejido nervioso",
-     "data": {
-      "codigo": "C04.557.580",
-      "ensayos": 46
-     },
-     "children": [
-      {
-       "id": "C04.557.580.520",
-       "name": "Meningioma",
-       "data": {
-        "codigo": "C04.557.580.520",
-        "ensayos": 7
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.580.600",
-       "name": "Vaina nerviosa",
-       "data": {
-        "codigo": "C04.557.580.600",
-        "ensayos": 4
-       },
-       "children": [
-        {
-         "id": "C04.557.580.600.580",
-         "name": "Neurofibroma",
-         "data": {
-          "codigo": "C04.557.580.600.580",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.580.600.580.795",
-           "name": "Neurofibrosarcoma",
-           "data": {
-            "codigo": "C04.557.580.600.580.795",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.580.600.610",
-         "name": "Neuroma",
-         "data": {
-          "codigo": "C04.557.580.600.610",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.557.580.600.610.595",
-           "name": "Neurilemmoma",
-           "data": {
-            "codigo": "C04.557.580.600.610.595",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.580.600.610.595.610",
-             "name": "Neurinoma del acústico",
-             "data": {
-              "codigo": "C04.557.580.600.610.595.610",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.557.580.625",
-       "name": "Neuroectodermal Tumors",
-       "data": {
-        "codigo": "C04.557.580.625",
-        "ensayos": 38
-       },
-       "children": [
-        {
-         "id": "C04.557.580.625.200",
-         "name": "Craneofaringioma",
-         "data": {
-          "codigo": "C04.557.580.625.200",
-          "ensayos": 3
-         },
-         "children": []
-        },
-        {
-         "id": "C04.557.580.625.600",
-         "name": "Neoplasms, Neuroepithelial",
-         "data": {
-          "codigo": "C04.557.580.625.600",
-          "ensayos": 30
-         },
-         "children": [
-          {
-           "id": "C04.557.580.625.600.380",
-           "name": "Glioma",
-           "data": {
-            "codigo": "C04.557.580.625.600.380",
-            "ensayos": 24
-           },
-           "children": [
-            {
-             "id": "C04.557.580.625.600.380.080",
-             "name": "Astrocitoma",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.080",
-              "ensayos": 14
-             },
-             "children": [
-              {
-               "id": "C04.557.580.625.600.380.080.335",
-               "name": "Glioblastoma",
-               "data": {
-                "codigo": "C04.557.580.625.600.380.080.335",
-                "ensayos": 9
-               },
-               "children": []
-              }
-             ]
-            },
-            {
-             "id": "C04.557.580.625.600.380.185",
-             "name": "Glioma pontino",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.185",
-              "ensayos": 1
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.580.625.600.380.290",
-             "name": "Ependimoma",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.290",
-              "ensayos": 5
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.580.625.600.380.350",
-             "name": "Ganglioglioma",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.350",
-              "ensayos": 2
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.580.625.600.380.400",
-             "name": "Gliosarcoma",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.400",
-              "ensayos": 1
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.580.625.600.380.515",
-             "name": "Meduloblastoma",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.515",
-              "ensayos": 2
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.580.625.600.380.590",
-             "name": "Oligodendroglioma",
-             "data": {
-              "codigo": "C04.557.580.625.600.380.590",
-              "ensayos": 2
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.557.580.625.600.590",
-           "name": "Neuroectodermal Tumors, Primitive",
-           "data": {
-            "codigo": "C04.557.580.625.600.590",
-            "ensayos": 6
-           },
-           "children": [
-            {
-             "id": "C04.557.580.625.600.590.500",
-             "name": "Meduloblastoma",
-             "data": {
-              "codigo": "C04.557.580.625.600.590.500",
-              "ensayos": 2
-             },
-             "children": []
-            },
-            {
-             "id": "C04.557.580.625.600.590.650",
-             "name": "Neuroectodermal Tumors, Primitive, Peripheral",
-             "data": {
-              "codigo": "C04.557.580.625.600.590.650",
-              "ensayos": 4
-             },
-             "children": [
-              {
-               "id": "C04.557.580.625.600.590.650.550",
-               "name": "Neuroblastoma",
-               "data": {
-                "codigo": "C04.557.580.625.600.590.650.550",
-                "ensayos": 4
-               },
-               "children": [
-                {
-                 "id": "C04.557.580.625.600.590.650.550.150",
-                 "name": "Esthesioneuroblastoma, Olfactory",
-                 "data": {
-                  "codigo": "C04.557.580.625.600.590.650.550.150",
-                  "ensayos": 2
-                 },
-                 "children": []
-                },
-                {
-                 "id": "C04.557.580.625.600.590.650.550.300",
-                 "name": "Ganglioneuroblastoma",
-                 "data": {
-                  "codigo": "C04.557.580.625.600.590.650.550.300",
-                  "ensayos": 1
-                 },
-                 "children": []
-                }
-               ]
-              }
-             ]
-            }
-           ]
-          },
-          {
-           "id": "C04.557.580.625.600.657",
-           "name": "Pinealoma",
-           "data": {
-            "codigo": "C04.557.580.625.600.657",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.580.625.600.725",
-           "name": "Retinoblastoma",
-           "data": {
-            "codigo": "C04.557.580.625.600.725",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.557.580.625.650",
-         "name": "Neuroendocrino",
-         "data": {
-          "codigo": "C04.557.580.625.650",
-          "ensayos": 6
-         },
-         "children": [
-          {
-           "id": "C04.557.580.625.650.200",
-           "name": "Carcinoid Tumor",
-           "data": {
-            "codigo": "C04.557.580.625.650.200",
-            "ensayos": 1
-           },
-           "children": []
-          },
-          {
-           "id": "C04.557.580.625.650.510",
-           "name": "Melanoma",
-           "data": {
-            "codigo": "C04.557.580.625.650.510",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.580.625.650.510.762",
-             "name": "Melanoma uveal",
-             "data": {
-              "codigo": "C04.557.580.625.650.510.762",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.557.580.625.650.595",
-           "name": "Neurilemmoma",
-           "data": {
-            "codigo": "C04.557.580.625.650.595",
-            "ensayos": 2
-           },
-           "children": [
-            {
-             "id": "C04.557.580.625.650.595.610",
-             "name": "Neurinoma del acústico",
-             "data": {
-              "codigo": "C04.557.580.625.650.595.610",
-              "ensayos": 1
-             },
-             "children": []
-            }
-           ]
-          }
-         ]
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.557.645",
-     "name": "Tejido vascular",
-     "data": {
-      "codigo": "C04.557.645",
-      "ensayos": 9
-     },
-     "children": [
-      {
-       "id": "C04.557.645.350",
-       "name": "Tumor glómico",
-       "data": {
-        "codigo": "C04.557.645.350",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.645.375",
-       "name": "Hemangioma",
-       "data": {
-        "codigo": "C04.557.645.375",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.557.645.375.370",
-         "name": "Hemangioendothelioma",
-         "data": {
-          "codigo": "C04.557.645.375.370",
-          "ensayos": 1
-         },
-         "children": [
-          {
-           "id": "C04.557.645.375.370.380",
-           "name": "Hemangioendotelioma epitelioide",
-           "data": {
-            "codigo": "C04.557.645.375.370.380",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.557.645.380",
-       "name": "Hemangiopericytoma",
-       "data": {
-        "codigo": "C04.557.645.380",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.645.390",
-       "name": "Angiosarcoma",
-       "data": {
-        "codigo": "C04.557.645.390",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.645.520",
-       "name": "Meningioma",
-       "data": {
-        "codigo": "C04.557.645.520",
-        "ensayos": 7
-       },
-       "children": []
-      },
-      {
-       "id": "C04.557.645.750",
-       "name": "Sarcoma, Kaposi",
-       "data": {
-        "codigo": "C04.557.645.750",
-        "ensayos": 1
+        "tipo": "Proyecto",
+        "presupuesto": 6242664.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
        },
        "children": []
       }
      ]
     },
     {
-     "id": "C04.557.665",
-     "name": "Nevi and Melanomas",
+     "id": "7",
+     "name": "Moncloa-Aravaca",
      "data": {
-      "codigo": "C04.557.665",
-      "ensayos": 2
+      "tipo": "Distrito",
+      "presupuesto": 8590923.0,
+      "proyectos": 3
      },
      "children": [
       {
-       "id": "C04.557.665.510",
-       "name": "Melanoma",
+       "id": "4",
+       "name": "Taller de cantería de la casa de campo, nave 4",
        "data": {
-        "codigo": "C04.557.665.510",
-        "ensayos": 2
-       },
-       "children": [
-        {
-         "id": "C04.557.665.510.762",
-         "name": "Melanoma uveal",
-         "data": {
-          "codigo": "C04.557.665.510.762",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "C04.588",
-   "name": "Por localización",
-   "data": {
-    "codigo": "C04.588",
-    "ensayos": 202
-   },
-   "children": [
-    {
-     "id": "C04.588.149",
-     "name": "Hueso",
-     "data": {
-      "codigo": "C04.588.149",
-      "ensayos": 2
-     },
-     "children": []
-    },
-    {
-     "id": "C04.588.180",
-     "name": "Mama",
-     "data": {
-      "codigo": "C04.588.180",
-      "ensayos": 27
-     },
-     "children": [
-      {
-       "id": "C04.588.180.130",
-       "name": "Carcinoma in situ de mama",
-       "data": {
-        "codigo": "C04.588.180.130",
-        "ensayos": 2
+        "tipo": "Proyecto",
+        "presupuesto": 3490684.0,
+        "proyectos": 1,
+        "años": "2023-2026",
+        "estado": "En proceso"
        },
        "children": []
       },
       {
-       "id": "C04.588.180.390",
-       "name": "Carcinoma ductal",
+       "id": "5",
+       "name": "Rehabilitaciones rrff",
        "data": {
-        "codigo": "C04.588.180.390",
-        "ensayos": 1
+        "tipo": "Proyecto",
+        "presupuesto": 1458300.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
        },
        "children": []
       },
       {
-       "id": "C04.588.180.437",
-       "name": "Carcinoma lobulillar",
+       "id": "6",
+       "name": "Adecuación centros",
        "data": {
-        "codigo": "C04.588.180.437",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.588.180.788",
-       "name": "Mama triple negativo",
-       "data": {
-        "codigo": "C04.588.180.788",
-        "ensayos": 1
+        "tipo": "Proyecto",
+        "presupuesto": 3641939.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
        },
        "children": []
       }
      ]
     },
     {
-     "id": "C04.588.274",
-     "name": "Aparato digestivo",
+     "id": "9",
+     "name": "Retiro",
      "data": {
-      "codigo": "C04.588.274",
-      "ensayos": 48
+      "tipo": "Distrito",
+      "presupuesto": 2827016.0,
+      "proyectos": 1
      },
      "children": [
       {
-       "id": "C04.588.274.476",
-       "name": "Gastrointestinal",
+       "id": "8",
+       "name": "Palacio cibeles",
        "data": {
-        "codigo": "C04.588.274.476",
-        "ensayos": 18
-       },
-       "children": [
-        {
-         "id": "C04.588.274.476.205",
-         "name": "Esófago",
-         "data": {
-          "codigo": "C04.588.274.476.205",
-          "ensayos": 7
-         },
-         "children": [
-          {
-           "id": "C04.588.274.476.205.500",
-           "name": "Esófago escamoso",
-           "data": {
-            "codigo": "C04.588.274.476.205.500",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.588.274.476.411",
-         "name": "Intestinal Neoplasms",
-         "data": {
-          "codigo": "C04.588.274.476.411",
-          "ensayos": 9
-         },
-         "children": [
-          {
-           "id": "C04.588.274.476.411.307",
-           "name": "Colorrectal",
-           "data": {
-            "codigo": "C04.588.274.476.411.307",
-            "ensayos": 9
-           },
-           "children": [
-            {
-             "id": "C04.588.274.476.411.307.180",
-             "name": "Colon",
-             "data": {
-              "codigo": "C04.588.274.476.411.307.180",
-              "ensayos": 1
-             },
-             "children": []
-            },
-            {
-             "id": "C04.588.274.476.411.307.790",
-             "name": "Recto",
-             "data": {
-              "codigo": "C04.588.274.476.411.307.790",
-              "ensayos": 7
-             },
-             "children": [
-              {
-               "id": "C04.588.274.476.411.307.790.040",
-               "name": "Ano",
-               "data": {
-                "codigo": "C04.588.274.476.411.307.790.040",
-                "ensayos": 4
-               },
-               "children": []
-              }
-             ]
-            }
-           ]
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.588.274.623",
-       "name": "Hígado",
-       "data": {
-        "codigo": "C04.588.274.623",
-        "ensayos": 19
-       },
-       "children": [
-        {
-         "id": "C04.588.274.623.160",
-         "name": "Carcinoma hepatocelular",
-         "data": {
-          "codigo": "C04.588.274.623.160",
-          "ensayos": 13
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.274.761",
-       "name": "Páncreas",
-       "data": {
-        "codigo": "C04.588.274.761",
-        "ensayos": 13
+        "tipo": "Proyecto",
+        "presupuesto": 2827016.0,
+        "proyectos": 1,
+        "años": "2023-2026",
+        "estado": "En proceso"
        },
        "children": []
       }
      ]
     },
     {
-     "id": "C04.588.322",
-     "name": "Glándulas endocrinas",
+     "id": "11",
+     "name": "Salamanca",
      "data": {
-      "codigo": "C04.588.322",
-      "ensayos": 16
+      "tipo": "Distrito",
+      "presupuesto": 1142950.0,
+      "proyectos": 1
      },
      "children": [
       {
-       "id": "C04.588.322.455",
-       "name": "Ovario",
+       "id": "10",
+       "name": "Local calle povedilla, 4",
        "data": {
-        "codigo": "C04.588.322.455",
-        "ensayos": 1
-       },
-       "children": []
-      },
-      {
-       "id": "C04.588.322.475",
-       "name": "Páncreas",
-       "data": {
-        "codigo": "C04.588.322.475",
-        "ensayos": 13
-       },
-       "children": []
-      },
-      {
-       "id": "C04.588.322.609",
-       "name": "Hipófisis",
-       "data": {
-        "codigo": "C04.588.322.609",
-        "ensayos": 3
-       },
-       "children": [
-        {
-         "id": "C04.588.322.609.292",
-         "name": "Adenoma hipofisario",
-         "data": {
-          "codigo": "C04.588.322.609.292",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.322.894",
-       "name": "Tiroides",
-       "data": {
-        "codigo": "C04.588.322.894",
-        "ensayos": 1
+        "tipo": "Proyecto",
+        "presupuesto": 1142950.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
        },
        "children": []
       }
      ]
     },
     {
-     "id": "C04.588.364",
-     "name": "Ojo",
+     "id": "13",
+     "name": "Villaverde",
      "data": {
-      "codigo": "C04.588.364",
-      "ensayos": 3
+      "tipo": "Distrito",
+      "presupuesto": 5400000.0,
+      "proyectos": 1
      },
      "children": [
       {
-       "id": "C04.588.364.818",
-       "name": "Retinal Neoplasms",
+       "id": "12",
+       "name": "Complejo edificios navas de tolosa",
        "data": {
-        "codigo": "C04.588.364.818",
-        "ensayos": 2
-       },
-       "children": [
-        {
-         "id": "C04.588.364.818.760",
-         "name": "Retinoblastoma",
-         "data": {
-          "codigo": "C04.588.364.818.760",
-          "ensayos": 2
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.364.978",
-       "name": "Uveal Neoplasms",
-       "data": {
-        "codigo": "C04.588.364.978",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.588.364.978.312",
-         "name": "Melanoma uveal",
-         "data": {
-          "codigo": "C04.588.364.978.312",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.588.443",
-     "name": "Cabeza y cuello",
-     "data": {
-      "codigo": "C04.588.443",
-      "ensayos": 38
-     },
-     "children": [
-      {
-       "id": "C04.588.443.177",
-       "name": "Carcinoma escamoso",
-       "data": {
-        "codigo": "C04.588.443.177",
-        "ensayos": 10
-       },
-       "children": []
-      },
-      {
-       "id": "C04.588.443.353",
-       "name": "Esófago",
-       "data": {
-        "codigo": "C04.588.443.353",
-        "ensayos": 7
-       },
-       "children": [
-        {
-         "id": "C04.588.443.353.500",
-         "name": "Esófago escamoso",
-         "data": {
-          "codigo": "C04.588.443.353.500",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.443.591",
-       "name": "Boca",
-       "data": {
-        "codigo": "C04.588.443.591",
-        "ensayos": 2
-       },
-       "children": [
-        {
-         "id": "C04.588.443.591.824",
-         "name": "Glándulas salivales",
-         "data": {
-          "codigo": "C04.588.443.591.824",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.588.443.591.824.695",
-           "name": "Parótida",
-           "data": {
-            "codigo": "C04.588.443.591.824.695",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.588.443.665",
-       "name": "Otorhinolaryngologic Neoplasms",
-       "data": {
-        "codigo": "C04.588.443.665",
-        "ensayos": 15
-       },
-       "children": [
-        {
-         "id": "C04.588.443.665.481",
-         "name": "Laringe",
-         "data": {
-          "codigo": "C04.588.443.665.481",
-          "ensayos": 3
-         },
-         "children": []
-        },
-        {
-         "id": "C04.588.443.665.650",
-         "name": "Nose Neoplasms",
-         "data": {
-          "codigo": "C04.588.443.665.650",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.588.443.665.650.693",
-           "name": "Senos paranasales",
-           "data": {
-            "codigo": "C04.588.443.665.650.693",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.588.443.665.710",
-         "name": "Pharyngeal Neoplasms",
-         "data": {
-          "codigo": "C04.588.443.665.710",
-          "ensayos": 14
-         },
-         "children": [
-          {
-           "id": "C04.588.443.665.710.485",
-           "name": "Hipofaringe",
-           "data": {
-            "codigo": "C04.588.443.665.710.485",
-            "ensayos": 3
-           },
-           "children": []
-          },
-          {
-           "id": "C04.588.443.665.710.650",
-           "name": "Nasopharyngeal Neoplasms",
-           "data": {
-            "codigo": "C04.588.443.665.710.650",
-            "ensayos": 7
-           },
-           "children": [
-            {
-             "id": "C04.588.443.665.710.650.500",
-             "name": "Nasofaringe",
-             "data": {
-              "codigo": "C04.588.443.665.710.650.500",
-              "ensayos": 7
-             },
-             "children": []
-            }
-           ]
-          },
-          {
-           "id": "C04.588.443.665.710.684",
-           "name": "Orofaringe",
-           "data": {
-            "codigo": "C04.588.443.665.710.684",
-            "ensayos": 7
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.588.443.915",
-       "name": "Tiroides",
-       "data": {
-        "codigo": "C04.588.443.915",
-        "ensayos": 1
-       },
-       "children": []
-      }
-     ]
-    },
-    {
-     "id": "C04.588.614",
-     "name": "Sistema nervioso",
-     "data": {
-      "codigo": "C04.588.614",
-      "ensayos": 34
-     },
-     "children": [
-      {
-       "id": "C04.588.614.250",
-       "name": "Sistema nervioso central",
-       "data": {
-        "codigo": "C04.588.614.250",
-        "ensayos": 33
-       },
-       "children": [
-        {
-         "id": "C04.588.614.250.195",
-         "name": "Cerebro",
-         "data": {
-          "codigo": "C04.588.614.250.195",
-          "ensayos": 20
-         },
-         "children": [
-          {
-           "id": "C04.588.614.250.195.411",
-           "name": "Infratentorial Neoplasms",
-           "data": {
-            "codigo": "C04.588.614.250.195.411",
-            "ensayos": 1
-           },
-           "children": [
-            {
-             "id": "C04.588.614.250.195.411.100",
-             "name": "Brain Stem Neoplasms",
-             "data": {
-              "codigo": "C04.588.614.250.195.411.100",
-              "ensayos": 1
-             },
-             "children": [
-              {
-               "id": "C04.588.614.250.195.411.100.500",
-               "name": "Glioma pontino",
-               "data": {
-                "codigo": "C04.588.614.250.195.411.100.500",
-                "ensayos": 1
-               },
-               "children": []
-              }
-             ]
-            }
-           ]
-          },
-          {
-           "id": "C04.588.614.250.195.766",
-           "name": "Pinealoma",
-           "data": {
-            "codigo": "C04.588.614.250.195.766",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.588.614.250.195.885",
-           "name": "Supratentorial Neoplasms",
-           "data": {
-            "codigo": "C04.588.614.250.195.885",
-            "ensayos": 3
-           },
-           "children": [
-            {
-             "id": "C04.588.614.250.195.885.500",
-             "name": "Hypothalamic Neoplasms",
-             "data": {
-              "codigo": "C04.588.614.250.195.885.500",
-              "ensayos": 3
-             },
-             "children": [
-              {
-               "id": "C04.588.614.250.195.885.500.600",
-               "name": "Hipófisis",
-               "data": {
-                "codigo": "C04.588.614.250.195.885.500.600",
-                "ensayos": 3
-               },
-               "children": []
-              }
-             ]
-            }
-           ]
-          }
-         ]
-        },
-        {
-         "id": "C04.588.614.250.580",
-         "name": "Meninges",
-         "data": {
-          "codigo": "C04.588.614.250.580",
-          "ensayos": 13
-         },
-         "children": [
-          {
-           "id": "C04.588.614.250.580.150",
-           "name": "Carcinomatosis meníngea",
-           "data": {
-            "codigo": "C04.588.614.250.580.150",
-            "ensayos": 5
-           },
-           "children": []
-          },
-          {
-           "id": "C04.588.614.250.580.500",
-           "name": "Meningioma",
-           "data": {
-            "codigo": "C04.588.614.250.580.500",
-            "ensayos": 7
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.588.614.250.803",
-         "name": "Médula espinal",
-         "data": {
-          "codigo": "C04.588.614.250.803",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.614.300",
-       "name": "Cranial Nerve Neoplasms",
-       "data": {
-        "codigo": "C04.588.614.300",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.588.614.300.015",
-         "name": "Neurinoma del acústico",
-         "data": {
-          "codigo": "C04.588.614.300.015",
-          "ensayos": 1
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.614.596",
-       "name": "Peripheral Nervous System Neoplasms",
-       "data": {
-        "codigo": "C04.588.614.596",
-        "ensayos": 1
-       },
-       "children": [
-        {
-         "id": "C04.588.614.596.240",
-         "name": "Cranial Nerve Neoplasms",
-         "data": {
-          "codigo": "C04.588.614.596.240",
-          "ensayos": 1
-         },
-         "children": [
-          {
-           "id": "C04.588.614.596.240.015",
-           "name": "Neurinoma del acústico",
-           "data": {
-            "codigo": "C04.588.614.596.240.015",
-            "ensayos": 1
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.588.805",
-     "name": "Piel",
-     "data": {
-      "codigo": "C04.588.805",
-      "ensayos": 2
-     },
-     "children": [
-      {
-       "id": "C04.588.805.377",
-       "name": "Melanoma",
-       "data": {
-        "codigo": "C04.588.805.377",
-        "ensayos": 2
-       },
-       "children": []
-      }
-     ]
-    },
-    {
-     "id": "C04.588.894",
-     "name": "Tórax",
-     "data": {
-      "codigo": "C04.588.894",
-      "ensayos": 33
-     },
-     "children": [
-      {
-       "id": "C04.588.894.797",
-       "name": "Respiratory Tract Neoplasms",
-       "data": {
-        "codigo": "C04.588.894.797",
-        "ensayos": 30
-       },
-       "children": [
-        {
-         "id": "C04.588.894.797.520",
-         "name": "Pulmón",
-         "data": {
-          "codigo": "C04.588.894.797.520",
-          "ensayos": 30
-         },
-         "children": [
-          {
-           "id": "C04.588.894.797.520.109",
-           "name": "Bronchial Neoplasms",
-           "data": {
-            "codigo": "C04.588.894.797.520.109",
-            "ensayos": 26
-           },
-           "children": [
-            {
-             "id": "C04.588.894.797.520.109.220",
-             "name": "Carcinoma, Bronchogenic",
-             "data": {
-              "codigo": "C04.588.894.797.520.109.220",
-              "ensayos": 26
-             },
-             "children": [
-              {
-               "id": "C04.588.894.797.520.109.220.249",
-               "name": "No microcítico",
-               "data": {
-                "codigo": "C04.588.894.797.520.109.220.249",
-                "ensayos": 25
-               },
-               "children": []
-              },
-              {
-               "id": "C04.588.894.797.520.109.220.624",
-               "name": "Pulmón microcítico",
-               "data": {
-                "codigo": "C04.588.894.797.520.109.220.624",
-                "ensayos": 2
-               },
-               "children": []
-              }
-             ]
-            }
-           ]
-          },
-          {
-           "id": "C04.588.894.797.520.173",
-           "name": "Mesotelioma",
-           "data": {
-            "codigo": "C04.588.894.797.520.173",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        },
-        {
-         "id": "C04.588.894.797.640",
-         "name": "Pleural Neoplasms",
-         "data": {
-          "codigo": "C04.588.894.797.640",
-          "ensayos": 2
-         },
-         "children": [
-          {
-           "id": "C04.588.894.797.640.350",
-           "name": "Mesotelioma",
-           "data": {
-            "codigo": "C04.588.894.797.640.350",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.588.894.949",
-       "name": "Timo",
-       "data": {
-        "codigo": "C04.588.894.949",
-        "ensayos": 3
-       },
-       "children": [
-        {
-         "id": "C04.588.894.949.500",
-         "name": "Timoma",
-         "data": {
-          "codigo": "C04.588.894.949.500",
-          "ensayos": 2
-         },
-         "children": []
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "id": "C04.588.945",
-     "name": "Aparato urogenital",
-     "data": {
-      "codigo": "C04.588.945",
-      "ensayos": 41
-     },
-     "children": [
-      {
-       "id": "C04.588.945.418",
-       "name": "Genital Neoplasms, Female",
-       "data": {
-        "codigo": "C04.588.945.418",
-        "ensayos": 10
-       },
-       "children": [
-        {
-         "id": "C04.588.945.418.948",
-         "name": "Útero",
-         "data": {
-          "codigo": "C04.588.945.418.948",
-          "ensayos": 10
-         },
-         "children": [
-          {
-           "id": "C04.588.945.418.948.585",
-           "name": "Endometrio",
-           "data": {
-            "codigo": "C04.588.945.418.948.585",
-            "ensayos": 3
-           },
-           "children": []
-          },
-          {
-           "id": "C04.588.945.418.948.850",
-           "name": "Cuello uterino",
-           "data": {
-            "codigo": "C04.588.945.418.948.850",
-            "ensayos": 9
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      },
-      {
-       "id": "C04.588.945.440",
-       "name": "Genital Neoplasms, Male",
-       "data": {
-        "codigo": "C04.588.945.440",
-        "ensayos": 28
-       },
-       "children": [
-        {
-         "id": "C04.588.945.440.770",
-         "name": "Próstata",
-         "data": {
-          "codigo": "C04.588.945.440.770",
-          "ensayos": 28
-         },
-         "children": []
-        }
-       ]
-      },
-      {
-       "id": "C04.588.945.947",
-       "name": "Urologic Neoplasms",
-       "data": {
-        "codigo": "C04.588.945.947",
-        "ensayos": 4
-       },
-       "children": [
-        {
-         "id": "C04.588.945.947.535",
-         "name": "Riñón",
-         "data": {
-          "codigo": "C04.588.945.947.535",
-          "ensayos": 4
-         },
-         "children": [
-          {
-           "id": "C04.588.945.947.535.160",
-           "name": "Carcinoma renal",
-           "data": {
-            "codigo": "C04.588.945.947.535.160",
-            "ensayos": 2
-           },
-           "children": []
-          },
-          {
-           "id": "C04.588.945.947.535.585",
-           "name": "Tumor de Wilms",
-           "data": {
-            "codigo": "C04.588.945.947.535.585",
-            "ensayos": 2
-           },
-           "children": []
-          }
-         ]
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "C04.697",
-   "name": "Procesos neoplásicos",
-   "data": {
-    "codigo": "C04.697",
-    "ensayos": 5
-   },
-   "children": [
-    {
-     "id": "C04.697.650",
-     "name": "Neoplasm Metastasis",
-     "data": {
-      "codigo": "C04.697.650",
-      "ensayos": 5
-     },
-     "children": [
-      {
-       "id": "C04.697.650.560",
-       "name": "Lymphatic Metastasis",
-       "data": {
-        "codigo": "C04.697.650.560",
-        "ensayos": 1
+        "tipo": "Proyecto",
+        "presupuesto": 5400000.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
        },
        "children": []
       }
@@ -2625,21 +181,3629 @@
    ]
   },
   {
-   "id": "C04.700",
-   "name": "Síndromes hereditarios",
+   "id": "53",
+   "name": "Cultura",
    "data": {
-    "codigo": "C04.700",
-    "ensayos": 2
+    "tipo": "Línea de inversión",
+    "presupuesto": 147443045.0,
+    "proyectos": 24
    },
    "children": [
     {
-     "id": "C04.700.900",
-     "name": "Tumor de Wilms",
+     "id": "19",
+     "name": "Arganzuela",
      "data": {
-      "codigo": "C04.700.900",
-      "ensayos": 2
+      "tipo": "Distrito",
+      "presupuesto": 6622543.0,
+      "proyectos": 4
      },
-     "children": []
+     "children": [
+      {
+       "id": "15",
+       "name": "Nave 15 matadero",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1938478.0,
+        "proyectos": 1,
+        "años": "2021-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "16",
+       "name": "Instalaciones centros",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1235255.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "17",
+       "name": "Obras nave 16 de matadero para la instalación de s",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1568810.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "18",
+       "name": "Obras de adecuación de almacenes generales (madrid",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1880000.0,
+        "proyectos": 1,
+        "años": "2027-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "22",
+     "name": "Barajas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 10484452.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "20",
+       "name": "Palacio \"el capricho\"",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8884452.0,
+        "proyectos": 1,
+        "años": "2018-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "21",
+       "name": "Museografia para el museo el capricho",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1600000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "24",
+     "name": "Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8458155.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "23",
+       "name": "Biblioteca en el distrito de carabanchel",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8458155.0,
+        "proyectos": 1,
+        "años": "2020-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "27",
+     "name": "Centro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 9022865.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "25",
+       "name": "Museo de arte contemporaneo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5080717.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "26",
+       "name": "Edificio paseo del prado, 30",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3942148.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "30",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 19149617.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "28",
+       "name": "Centro cultural y biblioteca en montecarmelo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5727814.0,
+        "proyectos": 1,
+        "años": "2020-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "29",
+       "name": "Centro cultural y biblioteca en las tablas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13421803.0,
+        "proyectos": 1,
+        "años": "2020-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "33",
+     "name": "Hortaleza",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 19559953.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "31",
+       "name": "Centro cultural valdebebas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10804220.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "32",
+       "name": "Biblioteca pública c/silvano,101-103 (entorno glorieta mar de cristal)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8755733.0,
+        "proyectos": 1,
+        "años": "2023-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "38",
+     "name": "Moncloa-Aravaca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 26825962.0,
+      "proyectos": 4
+     },
+     "children": [
+      {
+       "id": "34",
+       "name": "Casa de vargas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10671589.0,
+        "proyectos": 1,
+        "años": "2020-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "35",
+       "name": "Pabellón de hexágonos casa de campo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3099444.0,
+        "proyectos": 1,
+        "años": "2024-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "36",
+       "name": "Arco de la victoria",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1218017.0,
+        "proyectos": 1,
+        "años": "2023-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "37",
+       "name": "Obras de rehabilitación del pabellón xii fase i",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 11836912.0,
+        "proyectos": 1,
+        "años": "2026-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "40",
+     "name": "Moratalaz",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 2914350.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "39",
+       "name": "Parcela c/encomienda palacios,231",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2914350.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "42",
+     "name": "Salamanca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8884228.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "41",
+       "name": "Centro multifuncional c/ francisco remiro, 21",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8884228.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "44",
+     "name": "San Blas-Canillejas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3253735.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "43",
+       "name": "Edificio municipal c/ montamarta, 7",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3253735.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "46",
+     "name": "Usera",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8246261.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "45",
+       "name": "Centro cultural en c/ tomelloso, distrito usera",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8246261.0,
+        "proyectos": 1,
+        "años": "2023-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "48",
+     "name": "Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 13528467.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "47",
+       "name": "Centro cultural, biblioteca, auditorio y ludoteca en el cañaveral",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13528467.0,
+        "proyectos": 1,
+        "años": "2023-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "50",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8557768.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "49",
+       "name": "Biblioteca-centro cultural villa de vallecas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8557768.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "52",
+     "name": "Villaverde",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1934689.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "51",
+       "name": "Centro cultural los rosales",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1934689.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "93",
+   "name": "Deportes y juventud",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 155652725.0,
+    "proyectos": 26
+   },
+   "children": [
+    {
+     "id": "56",
+     "name": "Arganzuela",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 7320849.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "54",
+       "name": "Centro deportivo peñuelas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5970849.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "55",
+       "name": "Centro deportivo municipal marqués de samaranch",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1350000.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "58",
+     "name": "Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1849918.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "57",
+       "name": "Deportivo básico piqueñas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1849918.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "60",
+     "name": "Centro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 35594952.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "59",
+       "name": "Centro deportivo c/costanilla desamparados, 15 c/v a c/fúcar, 6",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 35594952.0,
+        "proyectos": 1,
+        "años": "2016-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "64",
+     "name": "Ciudad Lineal",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 11525929.0,
+      "proyectos": 3
+     },
+     "children": [
+      {
+       "id": "61",
+       "name": "Centro cultural-juvenil distrito de ciudad lineal,c/ canal de panamá, 20",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 6606187.0,
+        "proyectos": 1,
+        "años": "2023-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "62",
+       "name": "Centro deportivo san juan bautista",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3526345.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "63",
+       "name": "Parque deportivo tres luces,c/francisco largo caballero y av.arcentales.construcción (id 21: 18880)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1393397.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "66",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 16078967.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "65",
+       "name": "Centro deportivo municipal vicente del bosque",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 16078967.0,
+        "proyectos": 1,
+        "años": "2024-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "69",
+     "name": "Hortaleza",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 7492587.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "67",
+       "name": "Campos de fútbol en valdebebas (instalaciones sotenibles)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2168377.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "68",
+       "name": "Centro deportivo luis aragonés",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5324210.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "71",
+     "name": "Moncloa-Aravaca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1500000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "70",
+       "name": "Campo de fútbol en aravaca, c/escultor peresejo, bosque metropolitano",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1500000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "73",
+     "name": "Moratalaz",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 2692831.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "72",
+       "name": "Campo de rugby en c/fuente carrantona s/n, distrito de moratalaz",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2692831.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "77",
+     "name": "Puente de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 7099873.0,
+      "proyectos": 3
+     },
+     "children": [
+      {
+       "id": "74",
+       "name": "Vestuarios campos de rugby y fútbol en entrevías",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1857319.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "75",
+       "name": "Vestuarios campos de rugby y fútbol en entrevías",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1527909.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "76",
+       "name": "Centro deportivo angel nieto",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3714645.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "80",
+     "name": "San Blas-Canillejas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 14575305.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "78",
+       "name": "Pabellón deportivo en calle mónaco, 10, distrito san blas-canillejas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 12066355.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "79",
+       "name": "Centro deportivo san blas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2508950.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "86",
+     "name": "Usera",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 42288375.0,
+      "proyectos": 5
+     },
+     "children": [
+      {
+       "id": "81",
+       "name": "Deportivo básico parque lineal del manzanares",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1100000.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "82",
+       "name": "Centro deportivo moscardó",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2967078.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "83",
+       "name": "Centro deportivo orcasur",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3549396.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "84",
+       "name": "Centro deportivo orcasitas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3715316.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "85",
+       "name": "Obras caja mágica",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 30956585.0,
+        "proyectos": 1,
+        "años": "2022-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "89",
+     "name": "Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 2422893.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "87",
+       "name": "Campo de fútbol en el cañaveral",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1374989.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "88",
+       "name": "Deportivo básico el cañaveral ii",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1047904.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "92",
+     "name": "Villaverde",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5210246.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "90",
+       "name": "Centro deportivo el espinillo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1710246.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "91",
+       "name": "Centro deportivo raúl gonzález",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3500000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "102",
+   "name": "Educación",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 20734075.0,
+    "proyectos": 4
+   },
+   "children": [
+    {
+     "id": "95",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5909975.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "94",
+       "name": "Escuela de música en c/ hurtumpascual, distrito latina",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5909975.0,
+        "proyectos": 1,
+        "años": "2020-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "97",
+     "name": "Puente de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5343043.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "96",
+       "name": "Escuela de música en el distrito de puente de vallecas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5343043.0,
+        "proyectos": 1,
+        "años": "2022-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "99",
+     "name": "Retiro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 2967040.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "98",
+       "name": "Escuela infantil los pajaritos, distrito de retiro",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2967040.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "101",
+     "name": "Usera",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 6514017.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "100",
+       "name": "Escuela infantil en calle de la silvina, 8, barrio de san fermín",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 6514017.0,
+        "proyectos": 1,
+        "años": "2022-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "120",
+   "name": "Infraestructuras",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 751023898.0,
+    "proyectos": 9
+   },
+   "children": [
+    {
+     "id": "104",
+     "name": "Arganzuela - Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1920000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "103",
+       "name": "Pasarela peatonal y ciclista conexión arganzuela-carabanchel sobre el río manzanares",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1920000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "106",
+     "name": "Chamartín - Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 128925871.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "105",
+       "name": "Soterramiento paseo de la castellana, tramo complejo hospitalario la paz - calle de sinesio delgado",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 128925871.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "108",
+     "name": "Ciudad Lineal",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1654075.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "107",
+       "name": "Avenida de las trece rosas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1654075.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "110",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 193705135.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "109",
+       "name": "Madrid nuevo norte, nudo de fuencarral",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 193705135.0,
+        "proyectos": 1,
+        "años": "2022-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "113",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 316331890.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "111",
+       "name": "Soterramiento autopista A5 y paseo verde del suroeste",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 314645784.0,
+        "proyectos": 1,
+        "años": "2019-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "112",
+       "name": "Conexión peatonal calles sepúlveda y monsalupe",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1686106.0,
+        "proyectos": 1,
+        "años": "2023-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "115",
+     "name": "Puente de Vallecas - Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 14129926.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "114",
+       "name": "Campus sur universidad politécnica de madrid y entornos escolares vallecas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 14129926.0,
+        "proyectos": 1,
+        "años": "2023-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "117",
+     "name": "Salamanca - Ciudad Lineal",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 87836964.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "116",
+       "name": "Cubrición del viario M-30 en el puente de ventas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 87836964.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "119",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 6520037.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "118",
+       "name": "Carretera de valdecarros",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 6520037.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "131",
+   "name": "Mantenimiento urbano",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 67859351.0,
+    "proyectos": 5
+   },
+   "children": [
+    {
+     "id": "122",
+     "name": "Barajas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3200000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "121",
+       "name": "Casco histórico de barajas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3200000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "124",
+     "name": "Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1627834.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "123",
+       "name": "Casco antiguo carabanchel bajo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1627834.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "126",
+     "name": "Centro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1565000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "125",
+       "name": "Plaza de matute en el distrito centro",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1565000.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "128",
+     "name": "Moncloa-Aravaca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 961517.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "127",
+       "name": "Plaza en la calle san pol de mar",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 961517.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "130",
+     "name": "Tetuán",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 60505000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "129",
+       "name": "Complejo manzana de azca",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 60505000.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "167",
+   "name": "Medio ambiente",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 192841576.0,
+    "proyectos": 22
+   },
+   "children": [
+    {
+     "id": "134",
+     "name": "Barajas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 133462620.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "132",
+       "name": "Estación regeneradora de aguas residuales de rejas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 67529782.0,
+        "proyectos": 1,
+        "años": "2020-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "133",
+       "name": "Estación regeneradora de aguas residuales de valdebebas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 65932838.0,
+        "proyectos": 1,
+        "años": "2020-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "136",
+     "name": "Ciudad Lineal",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1613556.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "135",
+       "name": "Parque pinar de la elipa",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1613556.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "139",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3491981.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "137",
+       "name": "Zona forestal montecarmelo: M-607 km.13-gta.ventisquero de la condesa.rehabilitación (id 21: 17548)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1851981.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "138",
+       "name": "Margen izquierda del río manzanares a la altura de la c/adelina patti",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1640000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "141",
+     "name": "Hortaleza",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1376316.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "140",
+       "name": "Parque pinar del rey",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1376316.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "144",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3944976.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "142",
+       "name": "Parque cerro almodóvar",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1349985.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "143",
+       "name": "Parque de las cruces, distrito de latina",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2594991.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "146",
+     "name": "Moncloa-Aravaca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5810613.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "145",
+       "name": "Parque de la casa de campo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5810613.0,
+        "proyectos": 1,
+        "años": "2017-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "148",
+     "name": "Puente de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1287345.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "147",
+       "name": "Parque la viña",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1287345.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "150",
+     "name": "Retiro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1978045.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "149",
+       "name": "Parque del retiro",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1978045.0,
+        "proyectos": 1,
+        "años": "2017-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "153",
+     "name": "San Blas-Canillejas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1622258.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "151",
+       "name": "Zona verde en el barrio de rejas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 592268.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "152",
+       "name": "Parque de canillejas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1029990.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "155",
+     "name": "Usera",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1000000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "154",
+       "name": "Zona verde en c/ primitiva gañán, distrito usera",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1000000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "158",
+     "name": "Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 6363688.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "156",
+       "name": "Aumento de la capacidad del desagüe del tramo inferior arroyo de los migueles",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5098199.0,
+        "proyectos": 1,
+        "años": "2015-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "157",
+       "name": "Colectores de vicálvaro b y la dehesa",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1265489.0,
+        "proyectos": 1,
+        "años": "2023-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "164",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 27464722.0,
+      "proyectos": 5
+     },
+     "children": [
+      {
+       "id": "159",
+       "name": "Cañada del santísimo rehabilitación zonas verdes",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 989385.0,
+        "proyectos": 1,
+        "años": "2019-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "160",
+       "name": "Centro de tratamiento las dehesas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 12186510.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "161",
+       "name": "Zonas verdes ensanche de vallecas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1524958.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "162",
+       "name": "Aliviaderos de los estanques de tormentas de abroñigales y la gavia",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2872840.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "163",
+       "name": "Centro de tratamiento la paloma",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 9891029.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "166",
+     "name": "Villaverde",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3425456.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "165",
+       "name": "Depuradora de butarque consolidación de los terrenos",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3425456.0,
+        "proyectos": 1,
+        "años": "2019-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "175",
+   "name": "Salud pública",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 17818143.0,
+    "proyectos": 5
+   },
+   "children": [
+    {
+     "id": "169",
+     "name": "Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3136814.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "168",
+       "name": "Unidades de enterramiento (carabanchel sur)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3136814.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "174",
+     "name": "Ciudad Lineal",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 14681329.0,
+      "proyectos": 4
+     },
+     "children": [
+      {
+       "id": "170",
+       "name": "Renovacion tanatorios-tº M30",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1079540.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "171",
+       "name": "Rehabilitación cementerios cº la almudena",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10230023.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "172",
+       "name": "Acond",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2371766.0,
+        "proyectos": 1,
+        "años": "2023-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "173",
+       "name": "Unidades de enterramiento (almudena)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1000000.0,
+        "proyectos": 1,
+        "años": "2023-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "187",
+   "name": "Sectores productivos",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 59641694.0,
+    "proyectos": 10
+   },
+   "children": [
+    {
+     "id": "186",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 59641694.0,
+      "proyectos": 10
+     },
+     "children": [
+      {
+       "id": "176",
+       "name": "Factoría industrial villa de vallecas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10105312.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "177",
+       "name": "Varios movilidad y servicios comunes",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2522500.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "178",
+       "name": "Asfaltado",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3822577.0,
+        "proyectos": 1,
+        "años": "2025-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "179",
+       "name": "Varios mercados centrales y edificaciones",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5194405.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "180",
+       "name": "Urbanización plaza zona comercial",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2716761.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "181",
+       "name": "Varios ampliación mercamadrid y nuevos proyectos",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 17825398.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "182",
+       "name": "Centro de conocimiento e innovación",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 7554741.0,
+        "proyectos": 1,
+        "años": "2023-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "183",
+       "name": "Aparcamientos",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1100000.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "184",
+       "name": "Nave multiservicio 1",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 7800000.0,
+        "proyectos": 1,
+        "años": "2024-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "185",
+       "name": "Nave multiservicio 2",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1000000.0,
+        "proyectos": 1,
+        "años": "2026-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "205",
+   "name": "Seguridad",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 67162015.0,
+    "proyectos": 9
+   },
+   "children": [
+    {
+     "id": "190",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5394593.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "188",
+       "name": "Parque de bomberos nº 9",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3705421.0,
+        "proyectos": 1,
+        "años": "2023-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "189",
+       "name": "Parque de bomberos número 9, edificio oeste",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1689172.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "192",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 17359325.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "191",
+       "name": "Nuevo aulario del centro de formacion de seguridad y emergencias (cifse)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 17359325.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "194",
+     "name": "Moncloa-Aravaca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1241653.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "193",
+       "name": "Base 0 samur-protección civil",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1241653.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "196",
+     "name": "Moratalaz",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5761179.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "195",
+       "name": "Base samur-proteccion civil y centro de salud del distrito de moratalaz",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5761179.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "198",
+     "name": "Usera",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8162209.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "197",
+       "name": "Edificio avenida orcasur, 51",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8162209.0,
+        "proyectos": 1,
+        "años": "2024-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "200",
+     "name": "Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 7591925.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "199",
+       "name": "Unidad integral de policía municipal de vicálvaro",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 7591925.0,
+        "proyectos": 1,
+        "años": "2022-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "202",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 13635756.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "201",
+       "name": "Complejo logístico y parque de bomberos en la calle el real de san vicente, 61",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13635756.0,
+        "proyectos": 1,
+        "años": "2024-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "204",
+     "name": "Villaverde",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8015375.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "203",
+       "name": "Unidad integral policía municipal del distrito de villaverde, avda",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8015375.0,
+        "proyectos": 1,
+        "años": "2023-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "219",
+   "name": "Servicios sociales",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 53541221.0,
+    "proyectos": 7
+   },
+   "children": [
+    {
+     "id": "208",
+     "name": "Centro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 13552634.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "206",
+       "name": "Centro de bienestar social en el palacio de la duquesa de sueca",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10188340.0,
+        "proyectos": 1,
+        "años": "2022-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "207",
+       "name": "Apartamentos para mayores san francisco, calle jerte, 3",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3364294.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "210",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 6951492.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "209",
+       "name": "Centro de mayores parque europa",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 6951492.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "212",
+     "name": "Puente de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5150000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "211",
+       "name": "Centro municipal de urgencias sociales (cemus)",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5150000.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "214",
+     "name": "Retiro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 9187445.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "213",
+       "name": "Centro de mayores c/ tellez",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 9187445.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "216",
+     "name": "San Blas-Canillejas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 10150000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "215",
+       "name": "Centro de mayores y día las rosas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10150000.0,
+        "proyectos": 1,
+        "años": "2025-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "218",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8549650.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "217",
+       "name": "Casa de familia villa de vallecas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8549650.0,
+        "proyectos": 1,
+        "años": "2022-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "274",
+   "name": "Urbanismo",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 374402799.0,
+    "proyectos": 34
+   },
+   "children": [
+    {
+     "id": "221",
+     "name": "Barajas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 2085925.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "220",
+       "name": "Ámbito castillo de la alameda",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2085925.0,
+        "proyectos": 1,
+        "años": "2022-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "223",
+     "name": "Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 4007456.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "222",
+       "name": "Parque de manolito gafotas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 4007456.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "228",
+     "name": "Centro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 15216583.0,
+      "proyectos": 4
+     },
+     "children": [
+      {
+       "id": "224",
+       "name": "Plaza de jacinto benavente",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2500000.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "225",
+       "name": "Zonas adyacentes jardines de sabatini con la plaza de españa.reurbanización y acondicionamiento",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 7522466.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "226",
+       "name": "Plaza tirso de molina y calles aledañas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2864117.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "227",
+       "name": "Plaza del dos de mayo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2330000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "230",
+     "name": "Chamartín",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 187924173.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "229",
+       "name": "Construcciones plan de negocio madrid nuevo norte",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 187924173.0,
+        "proyectos": 1,
+        "años": "2021-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "232",
+     "name": "Chamberí",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1350000.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "231",
+       "name": "Plaza de chamberí",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1350000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "234",
+     "name": "Ciudad Lineal",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 11059438.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "233",
+       "name": "Cuña norte de o´donnell",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 11059438.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "236",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5254724.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "235",
+       "name": "Parcelas ámbito valdegrulla y paraje valdesenderín",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5254724.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "239",
+     "name": "Hortaleza",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3029502.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "237",
+       "name": "Junta de compensación us 4.10 solana de valdebebas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1381691.0,
+        "proyectos": 1,
+        "años": "2023-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "238",
+       "name": "Calle de san pedro de cardeña, manoteras sur",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1647811.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "242",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3967811.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "240",
+       "name": "Calle de bujalance, colonia del cerro bermejo",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1647811.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "241",
+       "name": "Carretera del barrio de la fortuna",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2320000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "245",
+     "name": "Moratalaz",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 3143147.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "243",
+       "name": "Ámbito de la cuña verde de o´donnell sur",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1500000.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "244",
+       "name": "Calle de la hacienda de pavones, barrio pavones-las latas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1643147.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "247",
+     "name": "Puente de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1868108.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "246",
+       "name": "Entorno del mercado nueva numancia",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1868108.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "250",
+     "name": "Retiro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 7645000.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "248",
+       "name": "Paisaje de la luz",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 3120000.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "249",
+       "name": "Paisaje de la luz",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 4525000.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "253",
+     "name": "Salamanca",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 16399197.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "251",
+       "name": "Plaza de salvador dalí",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1459197.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "252",
+       "name": "Calle de goya",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 14940000.0,
+        "proyectos": 1,
+        "años": "2025-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "256",
+     "name": "San Blas-Canillejas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 8577849.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "254",
+       "name": "Ámbito de la avenida de niza y zonas adyacentes",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1500000.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "255",
+       "name": "Espacios libres en el entorno de la ciudad deportiva de san blas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 7077849.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "258",
+     "name": "Tetuán",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5767925.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "257",
+       "name": "Paseo de la dirección, distrito de tetuan",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 5767925.0,
+        "proyectos": 1,
+        "años": "2024-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "261",
+     "name": "Usera",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 5786714.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "259",
+       "name": "Borde forestal de orcasitas",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 4318586.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "260",
+       "name": "Barrio de orcasur",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1468128.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "264",
+     "name": "Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 46198523.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "262",
+       "name": "Sistemas de compensación",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 28702505.0,
+        "proyectos": 1,
+        "años": "2008-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "263",
+       "name": "Uzp 2.03 desarrollo del este los ahijones",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 17496018.0,
+        "proyectos": 1,
+        "años": "2010-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "267",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 27919535.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "265",
+       "name": "Suelo urbanizable programado 3.01 desarrollo del este valdecarros",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 25349324.0,
+        "proyectos": 1,
+        "años": "2010-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "266",
+       "name": "Obras de urbanización espacios interbloque plan especial colonia urpisa",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 2570211.0,
+        "proyectos": 1,
+        "años": "2025-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "269",
+     "name": "Villa de Vallecas - Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 1623124.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "268",
+       "name": "Ámbito cerro almodóvar ii",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1623124.0,
+        "proyectos": 1,
+        "años": "2024-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "273",
+     "name": "Villaverde",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 15578065.0,
+      "proyectos": 3
+     },
+     "children": [
+      {
+       "id": "270",
+       "name": "Anillo verde de villaverde",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 9307688.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "271",
+       "name": "Ámbito corredor natural y parque fluvial del arroyo de butarque",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 4770377.0,
+        "proyectos": 1,
+        "años": "2021-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "272",
+       "name": "Calle de la hulla e inmediaciones, ámbito arroyo de butarque sur",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 1500000.0,
+        "proyectos": 1,
+        "años": "2025-2025",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "326",
+   "name": "Vivienda",
+   "data": {
+    "tipo": "Línea de inversión",
+    "presupuesto": 872057879.0,
+    "proyectos": 40
+   },
+   "children": [
+    {
+     "id": "276",
+     "name": "Arganzuela",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 41012329.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "275",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 41012329.0,
+        "proyectos": 1,
+        "años": "2025-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "280",
+     "name": "Barajas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 31165520.0,
+      "proyectos": 3
+     },
+     "children": [
+      {
+       "id": "277",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 11991494.0,
+        "proyectos": 1,
+        "años": "2022-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "278",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13087649.0,
+        "proyectos": 1,
+        "años": "2022-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "279",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 6086377.0,
+        "proyectos": 1,
+        "años": "2025-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "284",
+     "name": "Carabanchel",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 43471626.0,
+      "proyectos": 3
+     },
+     "children": [
+      {
+       "id": "281",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8264658.0,
+        "proyectos": 1,
+        "años": "2021-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "282",
+       "name": "Vivienda de protección pública básica alquiler 4.8.2 d de la ue1 del uzi 0.10 “ensanche de carabanchel 35",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 11095677.0,
+        "proyectos": 1,
+        "años": "2023-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "283",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 24111291.0,
+        "proyectos": 1,
+        "años": "2026-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "287",
+     "name": "Fuencarral-El Pardo",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 52340042.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "285",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 11788696.0,
+        "proyectos": 1,
+        "años": "2021-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "286",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 40551346.0,
+        "proyectos": 1,
+        "años": "2026-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "289",
+     "name": "Hortaleza",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 72397306.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "288",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 72397306.0,
+        "proyectos": 1,
+        "años": "2026-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "292",
+     "name": "Latina",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 12833337.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "290",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 4069200.0,
+        "proyectos": 1,
+        "años": "2021-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "291",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8764137.0,
+        "proyectos": 1,
+        "años": "2021-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "294",
+     "name": "Puente de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 13202408.0,
+      "proyectos": 1
+     },
+     "children": [
+      {
+       "id": "293",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13202408.0,
+        "proyectos": 1,
+        "años": "2017-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "299",
+     "name": "Tetuán",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 93176777.0,
+      "proyectos": 4
+     },
+     "children": [
+      {
+       "id": "295",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 24655367.0,
+        "proyectos": 1,
+        "años": "2021-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "296",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 16434564.0,
+        "proyectos": 1,
+        "años": "2021-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "297",
+       "name": "Vivienda de protección pública básica alquiler.paseo dirección 05 C1",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 44525714.0,
+        "proyectos": 1,
+        "años": "2025-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "298",
+       "name": "Vivienda de protección pública básica alquiler.ofelia nieto",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 7561132.0,
+        "proyectos": 1,
+        "años": "2025-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "317",
+     "name": "Vicálvaro",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 383202105.0,
+      "proyectos": 17
+     },
+     "children": [
+      {
+       "id": "300",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 17768862.0,
+        "proyectos": 1,
+        "años": "2019-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "301",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 16250831.0,
+        "proyectos": 1,
+        "años": "2020-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "302",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13908715.0,
+        "proyectos": 1,
+        "años": "2020-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "303",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 14724291.0,
+        "proyectos": 1,
+        "años": "2020-2026",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "304",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 9442992.0,
+        "proyectos": 1,
+        "años": "2020-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "305",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 10621953.0,
+        "proyectos": 1,
+        "años": "2020-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "306",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 13559000.0,
+        "proyectos": 1,
+        "años": "2019-2025",
+        "estado": "Finalizado"
+       },
+       "children": []
+      },
+      {
+       "id": "307",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 15233549.0,
+        "proyectos": 1,
+        "años": "2019-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "308",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 29995507.0,
+        "proyectos": 1,
+        "años": "2021-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "309",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 15819200.0,
+        "proyectos": 1,
+        "años": "2021-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "310",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 16659585.0,
+        "proyectos": 1,
+        "años": "2025-2031",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "311",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 39304888.0,
+        "proyectos": 1,
+        "años": "2025-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "312",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 39304888.0,
+        "proyectos": 1,
+        "años": "2025-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "313",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 39304888.0,
+        "proyectos": 1,
+        "años": "2025-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "314",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 39304888.0,
+        "proyectos": 1,
+        "años": "2025-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "315",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 25999034.0,
+        "proyectos": 1,
+        "años": "2027-2032",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "316",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 25999034.0,
+        "proyectos": 1,
+        "años": "2027-2032",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "322",
+     "name": "Villa de Vallecas",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 96768228.0,
+      "proyectos": 4
+     },
+     "children": [
+      {
+       "id": "318",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 17805937.0,
+        "proyectos": 1,
+        "años": "2021-2027",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "319",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 61363270.0,
+        "proyectos": 1,
+        "años": "2026-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "320",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 9000000.0,
+        "proyectos": 1,
+        "años": "2025-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "321",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 8599021.0,
+        "proyectos": 1,
+        "años": "2025-2029",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "325",
+     "name": "Villaverde",
+     "data": {
+      "tipo": "Distrito",
+      "presupuesto": 32488201.0,
+      "proyectos": 2
+     },
+     "children": [
+      {
+       "id": "323",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 14854029.0,
+        "proyectos": 1,
+        "años": "2026-2030",
+        "estado": "En proceso"
+       },
+       "children": []
+      },
+      {
+       "id": "324",
+       "name": "Vivienda de protección pública básica alquiler",
+       "data": {
+        "tipo": "Proyecto",
+        "presupuesto": 17634172.0,
+        "proyectos": 1,
+        "años": "2021-2028",
+        "estado": "En proceso"
+       },
+       "children": []
+      }
+     ]
     }
    ]
   }
