@@ -16,8 +16,8 @@
       La línea discontinua marca la fecha de los datos (22 de julio de 2026).
       <b>Haz clic en una barra para ver su ficha</b> y usa los botones para reordenar las obras.
     </p>
-    <p><b>Cinco obras ya deberían haber terminado y siguen «en ejecución».</b>
-      Entre ellas, el soterramiento de la Castellana (112 M€), que junto a la cubrición de la M-30 en Ventas
+    <p><b>Cinco obras ya deberían haber terminado y siguen «en ejecución», con entre 6 y 90 días de retraso.</b>
+      Entre ellas, el soterramiento de la Castellana (112 M€, 85 días), que junto a la cubrición de la M-30 en Ventas
       (79 M€) suma tres de cada cuatro euros de estas obras.</p>
 
     <div class="leyenda" id="leyenda"></div>
@@ -108,10 +108,19 @@
         .attr("width", d => x(d.fin) - x(d.inicio))
         .attr("rx", 3)
         .attr("fill", azul);
-      filas.filter(d => d.retraso > 0).append("rect")
-        .attr("x", d => x(d.fin))
-        .attr("width", d => x(fechaDatos) - x(d.fin))
+      // Retraso: como mínimo 4 px de ancho, para que se vean también los de pocos días
+      const conRetraso = filas.filter(d => d.retraso > 0);
+      conRetraso.append("rect")
+        .attr("x", d => Math.min(x(d.fin), x(fechaDatos) - 4))
+        .attr("width", d => Math.max(4, x(fechaDatos) - x(d.fin)))
         .attr("fill", rojo);
+      // Días de retraso, justo después de la línea de la fecha de los datos
+      conRetraso.append("text")
+        .attr("class", "total")
+        .attr("x", x(fechaDatos) + 5)
+        .style("fill", rojo)
+        .style("font-weight", "700")
+        .text(d => `+${d.retraso} días`);
       filas.append("text")
         .attr("class", "total")
         .attr("x", ancho - margen.derecha + 8)
