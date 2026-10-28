@@ -1,103 +1,611 @@
 {
- "name": "NFL",
+ "name": "Ensayos de protonterapia",
  "children": [
   {
-   "name": "AFC",
+   "name": "Por localización",
    "children": [
     {
-     "name": "AFC East",
+     "name": "Hueso",
      "children": [
       {
-       "name": "New England Patriots",
-       "value": 6
+       "name": "General",
+       "mesh": "Bone Neoplasms",
+       "value": 2
       }
      ]
     },
     {
-     "name": "AFC North",
+     "name": "Mama",
      "children": [
       {
-       "name": "Baltimore Ravens",
+       "name": "General",
+       "mesh": "Breast Neoplasms",
+       "value": 27
+      },
+      {
+       "name": "Mama triple negativo",
+       "mesh": "Triple Negative Breast Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Carcinoma in situ de mama",
+       "mesh": "Breast Carcinoma In Situ",
        "value": 2
       },
       {
-       "name": "Pittsburgh Steelers",
-       "value": 2
-      }
-     ]
-    },
-    {
-     "name": "AFC South",
-     "children": [
+       "name": "Carcinoma lobulillar",
+       "mesh": "Carcinoma, Lobular",
+       "value": 1
+      },
       {
-       "name": "Indianapolis Colts",
+       "name": "Carcinoma ductal",
+       "mesh": "Carcinoma, Ductal, Breast",
        "value": 1
       }
      ]
     },
     {
-     "name": "AFC West",
+     "name": "Aparato digestivo",
      "children": [
       {
-       "name": "Kansas City Chiefs",
+       "name": "Carcinoma hepatocelular",
+       "mesh": "Carcinoma, Hepatocellular",
+       "value": 13
+      },
+      {
+       "name": "Esófago",
+       "mesh": "Esophageal Neoplasms",
+       "value": 6
+      },
+      {
+       "name": "Colorrectal",
+       "mesh": "Colorectal Neoplasms",
+       "value": 2
+      },
+      {
+       "name": "Gastrointestinal",
+       "mesh": "Gastrointestinal Neoplasms",
+       "value": 2
+      },
+      {
+       "name": "Ano",
+       "mesh": "Anus Neoplasms",
+       "value": 4
+      },
+      {
+       "name": "Recto",
+       "mesh": "Rectal Neoplasms",
        "value": 3
       },
       {
-       "name": "Denver Broncos",
+       "name": "Hígado",
+       "mesh": "Liver Neoplasms",
+       "value": 8
+      },
+      {
+       "name": "Páncreas",
+       "mesh": "Pancreatic Neoplasms",
+       "value": 13
+      },
+      {
+       "name": "Colon",
+       "mesh": "Colonic Neoplasms",
        "value": 1
+      },
+      {
+       "name": "Esófago escamoso",
+       "mesh": "Esophageal Squamous Cell Carcinoma",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Glándulas endocrinas",
+     "children": [
+      {
+       "name": "Hipófisis",
+       "mesh": "Pituitary Neoplasms",
+       "value": 3
+      },
+      {
+       "name": "Tiroides",
+       "mesh": "Thyroid Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Ovario",
+       "mesh": "Ovarian Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Adenoma hipofisario",
+       "mesh": "Growth Hormone-Secreting Pituitary Adenoma",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Ojo",
+     "children": [
+      {
+       "name": "Retinoblastoma",
+       "mesh": "Retinoblastoma",
+       "value": 2
+      },
+      {
+       "name": "Melanoma uveal",
+       "mesh": "Uveal Melanoma",
+       "value": 1
+      },
+      {
+       "name": "General",
+       "mesh": "Eye Neoplasms",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Cabeza y cuello",
+     "children": [
+      {
+       "name": "General",
+       "mesh": "Head and Neck Neoplasms",
+       "value": 12
+      },
+      {
+       "name": "Parótida",
+       "mesh": "Parotid Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Nasofaringe",
+       "mesh": "Nasopharyngeal Carcinoma",
+       "value": 7
+      },
+      {
+       "name": "Orofaringe",
+       "mesh": "Oropharyngeal Neoplasms",
+       "value": 7
+      },
+      {
+       "name": "Carcinoma escamoso",
+       "mesh": "Squamous Cell Carcinoma of Head and Neck",
+       "value": 10
+      },
+      {
+       "name": "Hipofaringe",
+       "mesh": "Hypopharyngeal Neoplasms",
+       "value": 3
+      },
+      {
+       "name": "Laringe",
+       "mesh": "Laryngeal Neoplasms",
+       "value": 3
+      },
+      {
+       "name": "Boca",
+       "mesh": "Mouth Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Senos paranasales",
+       "mesh": "Paranasal Sinus Neoplasms",
+       "value": 2
+      },
+      {
+       "name": "Glándulas salivales",
+       "mesh": "Salivary Gland Neoplasms",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Sistema nervioso",
+     "children": [
+      {
+       "name": "Cerebro",
+       "mesh": "Brain Neoplasms",
+       "value": 18
+      },
+      {
+       "name": "Meningioma",
+       "mesh": "Meningioma",
+       "value": 7
+      },
+      {
+       "name": "Carcinomatosis meníngea",
+       "mesh": "Meningeal Carcinomatosis",
+       "value": 5
+      },
+      {
+       "name": "Pinealoma",
+       "mesh": "Pinealoma",
+       "value": 2
+      },
+      {
+       "name": "Sistema nervioso central",
+       "mesh": "Central Nervous System Neoplasms",
+       "value": 3
+      },
+      {
+       "name": "Médula espinal",
+       "mesh": "Spinal Cord Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Neurinoma del acústico",
+       "mesh": "Neuroma, Acoustic",
+       "value": 1
+      },
+      {
+       "name": "Glioma pontino",
+       "mesh": "Diffuse Intrinsic Pontine Glioma",
+       "value": 1
+      },
+      {
+       "name": "Meninges",
+       "mesh": "Meningeal Neoplasms",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Piel",
+     "children": [
+      {
+       "name": "Melanoma",
+       "mesh": "Melanoma",
+       "value": 2
+      }
+     ]
+    },
+    {
+     "name": "Tórax",
+     "children": [
+      {
+       "name": "Pulmón",
+       "mesh": "Lung Neoplasms",
+       "value": 13
+      },
+      {
+       "name": "Timo",
+       "mesh": "Thymus Neoplasms",
+       "value": 3
+      },
+      {
+       "name": "Pulmón microcítico",
+       "mesh": "Small Cell Lung Carcinoma",
+       "value": 2
+      },
+      {
+       "name": "No microcítico",
+       "mesh": "Carcinoma, Non-Small-Cell Lung",
+       "value": 25
+      },
+      {
+       "name": "Timoma",
+       "mesh": "Thymoma",
+       "value": 2
+      },
+      {
+       "name": "Mesotelioma",
+       "mesh": "Mesothelioma, Malignant",
+       "value": 2
+      },
+      {
+       "name": "General",
+       "mesh": "Thoracic Neoplasms",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Aparato urogenital",
+     "children": [
+      {
+       "name": "Próstata",
+       "mesh": "Prostatic Neoplasms",
+       "value": 28
+      },
+      {
+       "name": "Cuello uterino",
+       "mesh": "Uterine Cervical Neoplasms",
+       "value": 9
+      },
+      {
+       "name": "Endometrio",
+       "mesh": "Endometrial Neoplasms",
+       "value": 3
+      },
+      {
+       "name": "Útero",
+       "mesh": "Uterine Neoplasms",
+       "value": 2
+      },
+      {
+       "name": "Riñón",
+       "mesh": "Kidney Neoplasms",
+       "value": 1
+      },
+      {
+       "name": "Tumor de Wilms",
+       "mesh": "Wilms Tumor",
+       "value": 2
+      },
+      {
+       "name": "Carcinoma renal",
+       "mesh": "Carcinoma, Renal Cell",
+       "value": 2
       }
      ]
     }
    ]
   },
   {
-   "name": "NFC",
+   "name": "Por tipo de tejido",
    "children": [
     {
-     "name": "NFC East",
+     "name": "Leucemias",
      "children": [
       {
-       "name": "New York Giants",
-       "value": 2
-      },
-      {
-       "name": "Philadelphia Eagles",
-       "value": 2
-      }
-     ]
-    },
-    {
-     "name": "NFC North",
-     "children": [
-      {
-       "name": "Green Bay Packers",
+       "name": "Leucemia mieloide aguda",
+       "mesh": "Leukemia, Myeloid, Acute",
        "value": 1
       }
      ]
     },
     {
-     "name": "NFC South",
+     "name": "Linfomas",
      "children": [
       {
-       "name": "Tampa Bay Buccaneers",
+       "name": "General",
+       "mesh": "Lymphoma",
        "value": 2
       },
       {
-       "name": "New Orleans Saints",
+       "name": "Linfoma no Hodgkin",
+       "mesh": "Lymphoma, Non-Hodgkin",
+       "value": 1
+      },
+      {
+       "name": "Linfoma de Hodgkin",
+       "mesh": "Hodgkin Disease",
+       "value": 4
+      },
+      {
+       "name": "Linfoma B difuso",
+       "mesh": "Lymphoma, Large B-Cell, Diffuse",
+       "value": 1
+      },
+      {
+       "name": "Linfoma folicular",
+       "mesh": "Lymphoma, Follicular",
        "value": 1
       }
      ]
     },
     {
-     "name": "NFC West",
+     "name": "Tumores mixtos",
      "children": [
       {
-       "name": "Los Angeles Rams",
+       "name": "Tumor rabdoide",
+       "mesh": "Rhabdoid Tumor",
+       "value": 1
+      },
+      {
+       "name": "Mioepitelioma",
+       "mesh": "Myoepithelioma",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Sarcomas",
+     "children": [
+      {
+       "name": "Condrosarcoma",
+       "mesh": "Chondrosarcoma",
+       "value": 4
+      },
+      {
+       "name": "Sarcoma",
+       "mesh": "Sarcoma",
+       "value": 9
+      },
+      {
+       "name": "Rabdomiosarcoma",
+       "mesh": "Rhabdomyosarcoma",
        "value": 2
       },
       {
-       "name": "Seattle Seahawks",
+       "name": "Neurofibrosarcoma",
+       "mesh": "Neurofibrosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Tumor de células granulares",
+       "mesh": "Granular Cell Tumor",
+       "value": 1
+      },
+      {
+       "name": "Sarcoma de células claras",
+       "mesh": "Sarcoma, Clear Cell",
+       "value": 1
+      },
+      {
+       "name": "Fibrosarcoma",
+       "mesh": "Fibrosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Osteosarcoma",
+       "mesh": "Osteosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Liposarcoma",
+       "mesh": "Liposarcoma",
+       "value": 1
+      },
+      {
+       "name": "Angiosarcoma",
+       "mesh": "Hemangiosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Tejido adiposo",
+       "mesh": "Neoplasms, Adipose Tissue",
+       "value": 1
+      },
+      {
+       "name": "Leiomiosarcoma",
+       "mesh": "Leiomyosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Liposarcoma mixoide",
+       "mesh": "Liposarcoma, Myxoid",
+       "value": 1
+      },
+      {
+       "name": "Dermatofibrosarcoma",
+       "mesh": "Dermatofibrosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Sarcoma sinovial",
+       "mesh": "Sarcoma, Synovial",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Gliomas y otros",
+     "children": [
+      {
+       "name": "Astrocitoma",
+       "mesh": "Astrocytoma",
+       "value": 3
+      },
+      {
+       "name": "Glioma",
+       "mesh": "Glioma",
+       "value": 6
+      },
+      {
+       "name": "Ganglioglioma",
+       "mesh": "Ganglioglioma",
+       "value": 1
+      },
+      {
+       "name": "General",
+       "mesh": "Neoplasms, Germ Cell and Embryonal",
+       "value": 1
+      },
+      {
+       "name": "Ependimoma",
+       "mesh": "Ependymoma",
+       "value": 3
+      },
+      {
+       "name": "Glioblastoma",
+       "mesh": "Glioblastoma",
+       "value": 6
+      },
+      {
+       "name": "Meduloblastoma",
+       "mesh": "Medulloblastoma",
+       "value": 1
+      },
+      {
+       "name": "Germinoma",
+       "mesh": "Germinoma",
        "value": 2
+      },
+      {
+       "name": "Neuroblastoma",
+       "mesh": "Neuroblastoma",
+       "value": 2
+      },
+      {
+       "name": "Oligodendroglioma",
+       "mesh": "Oligodendroglioma",
+       "value": 1
+      },
+      {
+       "name": "Gliosarcoma",
+       "mesh": "Gliosarcoma",
+       "value": 1
+      },
+      {
+       "name": "Cordoma",
+       "mesh": "Chordoma",
+       "value": 5
+      },
+      {
+       "name": "Neuroendocrino",
+       "mesh": "Neuroendocrine Tumors",
+       "value": 1
+      },
+      {
+       "name": "Craneofaringioma",
+       "mesh": "Craniopharyngioma",
+       "value": 2
+      },
+      {
+       "name": "Ganglioneuroblastoma",
+       "mesh": "Ganglioneuroblastoma",
+       "value": 1
+      },
+      {
+       "name": "Seminoma",
+       "mesh": "Seminoma",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Carcinomas",
+     "children": [
+      {
+       "name": "Carcinoma adenoide quístico",
+       "mesh": "Carcinoma, Adenoid Cystic",
+       "value": 1
+      },
+      {
+       "name": "Colangiocarcinoma",
+       "mesh": "Cholangiocarcinoma",
+       "value": 1
+      },
+      {
+       "name": "Carcinoma",
+       "mesh": "Carcinoma",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Tejido nervioso",
+     "children": [
+      {
+       "name": "Vaina nerviosa",
+       "mesh": "Nerve Sheath Neoplasms",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "name": "Tejido vascular",
+     "children": [
+      {
+       "name": "Hemangioendotelioma epitelioide",
+       "mesh": "Hemangioendothelioma, Epithelioid",
+       "value": 1
+      },
+      {
+       "name": "Tumor glómico",
+       "mesh": "Glomus Tumor",
+       "value": 1
       }
      ]
     }

@@ -3,98 +3,152 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gantt · Quarterbacks de los Packers</title>
+  <title>Gantt · Protones frente a fotones</title>
   <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
   <main>
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
-    <h1>Tres quarterbacks para 27 años</h1>
+    <h1>¿Son mejores los protones? Habrá que esperar</h1>
     <p class="subtitulo">
-      Quarterback titular de los Green Bay Packers en cada partido desde 1999.
-      Cada barra es una etapa: una racha de partidos seguidos como titular.
+      Los 27 ensayos clínicos aleatorizados que comparan la protonterapia con la radioterapia de
+      fotones. Cada fila es un ensayo: la barra oscura va desde que empieza hasta que mide su
+      resultado principal, y la clara es el seguimiento hasta que se cierra. El rombo marca los que
+      ya han terminado.
     </p>
-    <p><b>Favre, Rodgers y Love fueron titulares en 454 de los 477 partidos.</b>
-      Los demás solo aparecen cuando el titular se lesiona o descansa.</p>
+    <p><b>Solo 4 de los 27 han terminado.</b> Duran una mediana de casi 11 años y la mitad terminará
+      después de 2030; el de Oslo, con 25 años de seguimiento, no se cerrará hasta 2055. La prueba
+      definitiva de que los protones dañan menos que los fotones todavía está en marcha.</p>
 
     <div class="leyenda" id="leyenda"></div>
     <div id="grafico"></div>
 
     <p class="fuente">
-      Fuente: resultados de partidos de <a href="https://github.com/nflverse/nflverse-data">nflverse</a>
-      (temporada regular y playoffs, de 1999 a octubre de 2026).
+      Selección: ensayos de protonterapia aleatorizados cuyo título compara protones con fotones
+      (o IMRT, o rayos X), sin los retirados antes de empezar. Las fechas futuras son las previstas por
+      cada ensayo; cuando solo dan año y mes, se toma el día 1. Las barras que pasan de 2040 se cortan.<br>
+      Fuente: <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> (U.S. National Library of Medicine),
+      consultado el 28 de octubre de 2026.
     </p>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script>
-    // Colores: los tres titulares de largo plazo y el resto
-    const colores = { "Titular habitual": "#008300", "Suplente": "#898781" };
-    const grupo = d => d.total_qb >= 50 ? "Titular habitual" : "Suplente";
+    // Dos fases por ensayo: hasta el resultado principal y seguimiento hasta el cierre
+    const colores = { "Hasta el resultado principal": "#2a78d6", "Seguimiento hasta el cierre": "#a9c8ee" };
 
-    for (const g in colores) {
+    for (const fase in colores) {
       d3.select("#leyenda").append("span")
-        .html(`<i style="background:${colores[g]}"></i>`)
-        .append("span").text(g);
+        .html(`<i style="background:${colores[fase]}"></i>`).append("span").text(fase);
     }
+    d3.select("#leyenda").append("span")
+      .html(`<i style="background:#0b0b0b; transform:rotate(45deg); width:10px; height:10px"></i>`)
+      .append("span").text("Terminado");
 
-    d3.csv("../data/gantt_qb.csv", d3.autoType).then(etapas => {
-      // 1. Tamaño del dibujo: una fila de 32 px por quarterback
-      const filas = [...new Set(etapas.map(d => d.qb))];   // en orden de aparición
-      const margen = { arriba: 10, derecha: 90, abajo: 30, izquierda: 120 };
+    const hoy = new Date(2026, 9, 28);      // 28 de octubre de 2026
+    const limite = new Date(2040, 0, 1);    // las barras se cortan aquí
+    const formato = d3.timeFormat("%m/%Y");
+    const recorta = fecha => fecha > limite ? limite : fecha;
+    const miles = n => n.toLocaleString("es-ES");
+
+    d3.csv("../data/gantt.csv", d3.autoType).then(ensayos => {
+      // 1. Tamaño del dibujo: una fila de 24 px por ensayo
+      const margen = { arriba: 24, derecha: 150, abajo: 30, izquierda: 210 };
       const ancho = 800;
-      const alto = margen.arriba + filas.length * 32 + margen.abajo;
+      const alto = margen.arriba + ensayos.length * 24 + margen.abajo;
 
-      // 2. Escalas: el tiempo en horizontal y los quarterbacks en vertical
+      // 2. Escalas: el tiempo en horizontal y los ensayos en vertical
       const x = d3.scaleTime()
-        .domain([new Date(1999, 6, 1), new Date(2026, 11, 31)])
+        .domain([new Date(2009, 0, 1), limite])
         .range([margen.izquierda, ancho - margen.derecha]);
       const y = d3.scaleBand()
-        .domain(filas)
+        .domain(ensayos.map(d => d.ensayo))
         .range([margen.arriba, alto - margen.abajo])
-        .padding(0.3);
+        .padding(0.25);
 
       const svg = d3.select("#grafico").append("svg")
         .attr("viewBox", [0, 0, ancho, alto]);
 
-      // 3. Eje de años abajo, con líneas verticales suaves cada 3 años
+      // 3. Eje de años abajo, con líneas verticales suaves cada 5 años
       svg.append("g")
         .attr("class", "eje")
         .attr("transform", `translate(0, ${alto - margen.abajo})`)
-        .call(d3.axisBottom(x).ticks(d3.timeYear.every(3)).tickSize(-(alto - margen.arriba - margen.abajo)));
+        .call(d3.axisBottom(x).ticks(d3.timeYear.every(5)).tickFormat(d3.timeFormat("%Y"))
+          .tickSize(-(alto - margen.arriba - margen.abajo)));
 
-      // 4. Nombre de cada quarterback a la izquierda
+      // 4. Nombre de cada ensayo a la izquierda (tumor · grupo o acrónimo)
       svg.selectAll("text.fila")
-        .data(filas)
+        .data(ensayos)
         .join("text")
           .attr("class", "fila")
           .attr("x", margen.izquierda - 8)
-          .attr("y", d => y(d) + y.bandwidth() / 2)
-          .text(d => d);
+          .attr("y", d => y(d.ensayo) + y.bandwidth() / 2)
+          .text(d => d.ensayo);
 
-      // 5. Una barra por etapa, desde su primer hasta su último partido
-      //    (como mínimo 4 px de ancho para que se vean las de un solo partido)
-      svg.selectAll("rect")
-        .data(etapas)
+      // 5. Fase 1: desde el inicio hasta el resultado principal
+      svg.selectAll("rect.principal")
+        .data(ensayos)
         .join("rect")
           .attr("x", d => x(d.inicio))
-          .attr("y", d => y(d.qb))
-          .attr("width", d => Math.max(4, x(d.fin) - x(d.inicio)))
+          .attr("y", d => y(d.ensayo))
+          .attr("width", d => x(recorta(d.fin_principal)) - x(d.inicio))
           .attr("height", y.bandwidth())
-          .attr("rx", 3)
-          .attr("fill", d => colores[grupo(d)]);
+          .attr("fill", colores["Hasta el resultado principal"])
+        .append("title")   // al pasar el ratón
+          .text(d => `${d.ensayo} (${d.nct}): inicio ${formato(d.inicio)}, resultado principal ${formato(d.fin_principal)}`);
 
-      // 6. Total de partidos de cada quarterback a la derecha
-      svg.selectAll("text.total")
-        .data(filas)
+      // 6. Fase 2: seguimiento desde el resultado principal hasta el cierre
+      svg.selectAll("rect.seguimiento")
+        .data(ensayos.filter(d => d.fin > d.fin_principal))
+        .join("rect")
+          .attr("x", d => x(recorta(d.fin_principal)))
+          .attr("y", d => y(d.ensayo))
+          .attr("width", d => x(recorta(d.fin)) - x(recorta(d.fin_principal)))
+          .attr("height", y.bandwidth())
+          .attr("fill", colores["Seguimiento hasta el cierre"])
+        .append("title")
+          .text(d => `${d.ensayo} (${d.nct}): cierre ${formato(d.fin)}`);
+
+      // Las barras cortadas llevan su año de cierre dentro, al final
+      svg.selectAll("text.cortada")
+        .data(ensayos.filter(d => d.fin > limite))
+        .join("text")
+          .attr("class", "total")
+          .attr("x", x(limite) - 4)
+          .attr("y", d => y(d.ensayo) + y.bandwidth() / 2)
+          .style("text-anchor", "end")
+          .text(d => `→ ${d.fin.getFullYear()}`);
+
+      // 7. Hito: rombo al final de los ensayos terminados
+      const lado = 9;
+      svg.selectAll("rect.hito")
+        .data(ensayos.filter(d => d.estado === "terminado"))
+        .join("rect")
+          .attr("width", lado)
+          .attr("height", lado)
+          .attr("transform", d => `translate(${x(d.fin)}, ${y(d.ensayo) + y.bandwidth() / 2}) rotate(45) translate(${-lado / 2}, ${-lado / 2})`)
+          .attr("fill", "#0b0b0b");
+
+      // 8. Pacientes y estado a la derecha
+      svg.selectAll("text.derecha")
+        .data(ensayos)
         .join("text")
           .attr("class", "total")
           .attr("x", ancho - margen.derecha + 8)
-          .attr("y", d => y(d) + y.bandwidth() / 2)
-          .text(d => {
-            const total = etapas.find(e => e.qb === d).total_qb;
-            return total === 1 ? "1 partido" : total + " partidos";
-          });
+          .attr("y", d => y(d.ensayo) + y.bandwidth() / 2)
+          .text(d => `${miles(d.pacientes)} pac. · ${d.estado}`);
+
+      // 9. Línea del día de hoy
+      svg.append("line")
+        .attr("x1", x(hoy)).attr("x2", x(hoy))
+        .attr("y1", margen.arriba - 6).attr("y2", alto - margen.abajo)
+        .attr("stroke", "#0b0b0b")
+        .attr("stroke-dasharray", "4 3");
+      svg.append("text")
+        .attr("class", "total")
+        .attr("x", x(hoy) + 4)
+        .attr("y", margen.arriba - 10)
+        .text("hoy");
     });
   </script>
 </body>

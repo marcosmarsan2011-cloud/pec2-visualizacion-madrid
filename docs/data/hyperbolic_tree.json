@@ -1,106 +1,41 @@
 {
- "id": "0",
- "name": "Bill Belichick",
+ "id": "C04",
+ "name": "Cáncer (neoplasias)",
  "data": {
-  "equipos": "Cleveland Browns (1991–1995), New England Patriots (2000–2023), North Carolina (2025-present)",
-  "partidos_nfl": 429
+  "codigo": "C04",
+  "ensayos": 260
  },
  "children": [
   {
-   "id": "1",
-   "name": "Nick Saban",
+   "id": "C04.557",
+   "name": "Por tipo de tejido",
    "data": {
-    "equipos": "Toledo (1990), Michigan State (1995–1999), LSU (2000–2004), Miami Dolphins (2005–2006), Alabama (2007–2023)",
-    "partidos_nfl": 32
+    "codigo": "C04.557",
+    "ensayos": 121
    },
    "children": [
     {
-     "id": "3",
-     "name": "Bobby Williams",
+     "id": "C04.557.337",
+     "name": "Leucemias",
      "data": {
-      "equipos": "Michigan State (2000–2002)",
-      "partidos_nfl": 0
+      "codigo": "C04.557.337",
+      "ensayos": 1
      },
      "children": [
       {
-       "id": "5",
-       "name": "Ben McAdoo",
+       "id": "C04.557.337.539",
+       "name": "Leukemia, Myeloid",
        "data": {
-        "equipos": "New York Giants (2016–2017)",
-        "partidos_nfl": 29
-       },
-       "children": []
-      },
-      {
-       "id": "6",
-       "name": "Robert Saleh",
-       "data": {
-        "equipos": "New York Jets (2021–2024), Tennessee Titans (2026-present)",
-        "partidos_nfl": 75
-       },
-       "children": []
-      }
-     ]
-    },
-    {
-     "id": "14",
-     "name": "Scott Linehan",
-     "data": {
-      "equipos": "St. Louis Rams (2006–2008)",
-      "partidos_nfl": 36
-     },
-     "children": []
-    },
-    {
-     "id": "15",
-     "name": "Derek Dooley",
-     "data": {
-      "equipos": "Louisiana Tech (2007–2009), Tennessee (2010–2012)",
-      "partidos_nfl": 0
-     },
-     "children": [
-      {
-       "id": "16",
-       "name": "Brandon Staley",
-       "data": {
-        "equipos": "San Diego Chargers, (2021–2023)",
-        "partidos_nfl": 49
-       },
-       "children": []
-      }
-     ]
-    },
-    {
-     "id": "23",
-     "name": "Josh McDaniels",
-     "data": {
-      "equipos": "Denver Broncos (2009–2010), Las Vegas Raiders (2022–2023) (first served under Saban)",
-      "partidos_nfl": 53
-     },
-     "children": []
-    },
-    {
-     "id": "25",
-     "name": "Jimbo Fisher",
-     "data": {
-      "equipos": "Florida State (2010–2017), Texas A&M (2018–2023)",
-      "partidos_nfl": 0
-     },
-     "children": [
-      {
-       "id": "26",
-       "name": "Bobby Petrino",
-       "data": {
-        "equipos": "Louisville (2003–2006; 2014–2018), Atlanta Falcons (2007), Arkansas (2008–2011), Western Kentucky (2013), Missouri State (2020–2022)",
-        "partidos_nfl": 12
+        "codigo": "C04.557.337.539",
+        "ensayos": 1
        },
        "children": [
         {
-         "id": "29",
-         "name": "Jonathan Gannon",
+         "id": "C04.557.337.539.275",
+         "name": "Leucemia mieloide aguda",
          "data": {
-          "equipos": "Arizona Cardinals (2023–2025)",
-          "partidos_nfl": 58
+          "codigo": "C04.557.337.539.275",
+          "ensayos": 1
          },
          "children": []
         }
@@ -109,252 +44,1682 @@
      ]
     },
     {
-     "id": "34",
-     "name": "Jason Garrett",
+     "id": "C04.557.386",
+     "name": "Linfomas",
      "data": {
-      "equipos": "Dallas Cowboys (2010–2019)",
-      "partidos_nfl": 157
-     },
-     "children": []
-    },
-    {
-     "id": "36",
-     "name": "Pat Shurmur",
-     "data": {
-      "equipos": "Cleveland Browns (2011–2012), New York Giants (2018–2019)",
-      "partidos_nfl": 65
-     },
-     "children": []
-    },
-    {
-     "id": "43",
-     "name": "Mike Mularkey",
-     "data": {
-      "equipos": "Jacksonville Jaguars (2012), Tennessee Titans (2016–2017)",
-      "partidos_nfl": 82
-     },
-     "children": []
-    },
-    {
-     "id": "48",
-     "name": "Dan Quinn",
-     "data": {
-      "equipos": "Atlanta Falcons (2015–2020), Washington Commanders (2024-present)",
-      "partidos_nfl": 133
+      "codigo": "C04.557.386",
+      "ensayos": 8
      },
      "children": [
       {
-       "id": "49",
-       "name": "Kyle Shanahan",
+       "id": "C04.557.386.355",
+       "name": "Linfoma de Hodgkin",
        "data": {
-        "equipos": "San Francisco 49ers (2017–present)",
-        "partidos_nfl": 170
+        "codigo": "C04.557.386.355",
+        "ensayos": 6
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.386.480",
+       "name": "Linfoma no Hodgkin",
+       "data": {
+        "codigo": "C04.557.386.480",
+        "ensayos": 4
        },
        "children": [
         {
-         "id": "50",
-         "name": "Jeff Hafley",
+         "id": "C04.557.386.480.150",
+         "name": "Lymphoma, B-Cell",
          "data": {
-          "equipos": "Boston College (2020–2023), Miami Dolphins (2026-present)",
-          "partidos_nfl": 6
+          "codigo": "C04.557.386.480.150",
+          "ensayos": 1
+         },
+         "children": [
+          {
+           "id": "C04.557.386.480.150.585",
+           "name": "Linfoma B difuso",
+           "data": {
+            "codigo": "C04.557.386.480.150.585",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.386.480.350",
+         "name": "Linfoma folicular",
+         "data": {
+          "codigo": "C04.557.386.480.350",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.557.435",
+     "name": "Tumores mixtos",
+     "data": {
+      "codigo": "C04.557.435",
+      "ensayos": 6
+     },
+     "children": [
+      {
+       "id": "C04.557.435.585",
+       "name": "Mioepitelioma",
+       "data": {
+        "codigo": "C04.557.435.585",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.435.595",
+       "name": "Tumor de Wilms",
+       "data": {
+        "codigo": "C04.557.435.595",
+        "ensayos": 2
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.435.710",
+       "name": "Tumor rabdoide",
+       "data": {
+        "codigo": "C04.557.435.710",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.435.850",
+       "name": "Timoma",
+       "data": {
+        "codigo": "C04.557.435.850",
+        "ensayos": 2
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "C04.557.450",
+     "name": "Sarcomas",
+     "data": {
+      "codigo": "C04.557.450",
+      "ensayos": 19
+     },
+     "children": [
+      {
+       "id": "C04.557.450.550",
+       "name": "Tejido adiposo",
+       "data": {
+        "codigo": "C04.557.450.550",
+        "ensayos": 1
+       },
+       "children": [
+        {
+         "id": "C04.557.450.550.420",
+         "name": "Liposarcoma",
+         "data": {
+          "codigo": "C04.557.450.550.420",
+          "ensayos": 1
+         },
+         "children": [
+          {
+           "id": "C04.557.450.550.420.425",
+           "name": "Liposarcoma mixoide",
+           "data": {
+            "codigo": "C04.557.450.550.420.425",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.557.450.565",
+       "name": "Neoplasms, Connective Tissue",
+       "data": {
+        "codigo": "C04.557.450.565",
+        "ensayos": 7
+       },
+       "children": [
+        {
+         "id": "C04.557.450.565.280",
+         "name": "Condrosarcoma",
+         "data": {
+          "codigo": "C04.557.450.565.280",
+          "ensayos": 4
          },
          "children": []
         },
         {
-         "id": "51",
-         "name": "Robert Saleh",
+         "id": "C04.557.450.565.575",
+         "name": "Neoplasms, Bone Tissue",
          "data": {
-          "equipos": "New York Jets (2021–2024), Tennessee Titans (2026-present)",
-          "partidos_nfl": 75
+          "codigo": "C04.557.450.565.575",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.450.565.575.650",
+           "name": "Osteosarcoma",
+           "data": {
+            "codigo": "C04.557.450.565.575.650",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.450.565.575.650.800",
+             "name": "Sarcoma, Ewing",
+             "data": {
+              "codigo": "C04.557.450.565.575.650.800",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "C04.557.450.565.590",
+         "name": "Neoplasms, Fibrous Tissue",
+         "data": {
+          "codigo": "C04.557.450.565.590",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.450.565.590.350",
+           "name": "Fibrosarcoma",
+           "data": {
+            "codigo": "C04.557.450.565.590.350",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.450.565.590.350.320",
+             "name": "Dermatofibrosarcoma",
+             "data": {
+              "codigo": "C04.557.450.565.590.350.320",
+              "ensayos": 1
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.450.565.590.350.590",
+             "name": "Neurofibrosarcoma",
+             "data": {
+              "codigo": "C04.557.450.565.590.350.590",
+              "ensayos": 2
+             },
+             "children": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "C04.557.450.565.800",
+         "name": "Sarcoma de células claras",
+         "data": {
+          "codigo": "C04.557.450.565.800",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.565.835",
+         "name": "Sarcoma sinovial",
+         "data": {
+          "codigo": "C04.557.450.565.835",
+          "ensayos": 1
          },
          "children": []
         }
        ]
       },
       {
-       "id": "53",
-       "name": "Matt LaFleur",
+       "id": "C04.557.450.590",
+       "name": "Neoplasms, Muscle Tissue",
        "data": {
-        "equipos": "Green Bay Packers (2019–present)",
-        "partidos_nfl": 133
+        "codigo": "C04.557.450.590",
+        "ensayos": 4
        },
        "children": [
         {
-         "id": "54",
-         "name": "Nathaniel Hackett",
+         "id": "C04.557.450.590.350",
+         "name": "Tumor de células granulares",
          "data": {
-          "equipos": "Denver Broncos (2022)",
-          "partidos_nfl": 15
+          "codigo": "C04.557.450.590.350",
+          "ensayos": 1
          },
          "children": []
+        },
+        {
+         "id": "C04.557.450.590.455",
+         "name": "Leiomiosarcoma",
+         "data": {
+          "codigo": "C04.557.450.590.455",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.590.550",
+         "name": "Myosarcoma",
+         "data": {
+          "codigo": "C04.557.450.590.550",
+          "ensayos": 3
+         },
+         "children": [
+          {
+           "id": "C04.557.450.590.550.660",
+           "name": "Rabdomiosarcoma",
+           "data": {
+            "codigo": "C04.557.450.590.550.660",
+            "ensayos": 3
+           },
+           "children": []
+          }
+         ]
         }
        ]
       },
       {
-       "id": "55",
-       "name": "Mike McDaniel",
+       "id": "C04.557.450.795",
+       "name": "Sarcoma",
        "data": {
-        "equipos": "Miami Dolphins (2022–2025)",
-        "partidos_nfl": 70
-       },
-       "children": []
-      }
-     ]
-    },
-    {
-     "id": "56",
-     "name": "Adam Gase",
-     "data": {
-      "equipos": "Miami Dolphins (2016–2018), New York Jets (2019–2020)",
-      "partidos_nfl": 81
-     },
-     "children": []
-    },
-    {
-     "id": "66",
-     "name": "Mel Tucker",
-     "data": {
-      "equipos": "Colorado (2019), Michigan State (2020–2023)",
-      "partidos_nfl": 5
-     },
-     "children": []
-    },
-    {
-     "id": "67",
-     "name": "Freddie Kitchens",
-     "data": {
-      "equipos": "Cleveland Browns (2019)",
-      "partidos_nfl": 16
-     },
-     "children": []
-    },
-    {
-     "id": "68",
-     "name": "Joe Judge",
-     "data": {
-      "equipos": "New York Giants (2020–2021) (first served under Saban)",
-      "partidos_nfl": 33
-     },
-     "children": []
-    }
-   ]
-  },
-  {
-   "id": "69",
-   "name": "Rod Dowhower",
-   "data": {
-    "equipos": "Vanderbilt (1995-1996)",
-    "partidos_nfl": 0
-   },
-   "children": [
-    {
-     "id": "70",
-     "name": "Ken Whisenhunt",
-     "data": {
-      "equipos": "Arizona Cardinals (2007–2012), Tennessee Titans (2014–2015)",
-      "partidos_nfl": 134
-     },
-     "children": [
-      {
-       "id": "71",
-       "name": "Frank Reich",
-       "data": {
-        "equipos": "Indianapolis Colts (2018–2022), Carolina Panthers (2023)",
-        "partidos_nfl": 88
-       },
-       "children": []
-      },
-      {
-       "id": "72",
-       "name": "Arthur Smith",
-       "data": {
-        "equipos": "Atlanta Falcons (2021-2023)",
-        "partidos_nfl": 51
-       },
-       "children": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "73",
-   "name": "Pat Hill",
-   "data": {
-    "equipos": "Fresno State (1997–2011)",
-    "partidos_nfl": 0
-   },
-   "children": [
-    {
-     "id": "74",
-     "name": "Lane Kiffin",
-     "data": {
-      "equipos": "Oakland Raiders (2007-2008), Tennessee (2009), USC (2010-2013), Florida Atlantic (2017-2019), Ole Miss (2020-present)",
-      "partidos_nfl": 20
-     },
-     "children": [
-      {
-       "id": "75",
-       "name": "Tom Cable",
-       "data": {
-        "equipos": "Oakland Raiders (2008–2010)",
-        "partidos_nfl": 44
+        "codigo": "C04.557.450.795",
+        "ensayos": 19
        },
        "children": [
         {
-         "id": "76",
-         "name": "Hue Jackson",
+         "id": "C04.557.450.795.300",
+         "name": "Condrosarcoma",
          "data": {
-          "equipos": "Oakland Raiders (2011), Cleveland Browns (2016–2018)",
-          "partidos_nfl": 56
+          "codigo": "C04.557.450.795.300",
+          "ensayos": 4
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.795.350",
+         "name": "Fibrosarcoma",
+         "data": {
+          "codigo": "C04.557.450.795.350",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.450.795.350.320",
+           "name": "Dermatofibrosarcoma",
+           "data": {
+            "codigo": "C04.557.450.795.350.320",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.450.795.350.590",
+           "name": "Neurofibrosarcoma",
+           "data": {
+            "codigo": "C04.557.450.795.350.590",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.450.795.390",
+         "name": "Angiosarcoma",
+         "data": {
+          "codigo": "C04.557.450.795.390",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.795.455",
+         "name": "Leiomiosarcoma",
+         "data": {
+          "codigo": "C04.557.450.795.455",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.795.465",
+         "name": "Liposarcoma",
+         "data": {
+          "codigo": "C04.557.450.795.465",
+          "ensayos": 1
+         },
+         "children": [
+          {
+           "id": "C04.557.450.795.465.425",
+           "name": "Liposarcoma mixoide",
+           "data": {
+            "codigo": "C04.557.450.795.465.425",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.450.795.550",
+         "name": "Myosarcoma",
+         "data": {
+          "codigo": "C04.557.450.795.550",
+          "ensayos": 3
+         },
+         "children": [
+          {
+           "id": "C04.557.450.795.550.660",
+           "name": "Rabdomiosarcoma",
+           "data": {
+            "codigo": "C04.557.450.795.550.660",
+            "ensayos": 3
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.450.795.620",
+         "name": "Osteosarcoma",
+         "data": {
+          "codigo": "C04.557.450.795.620",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.450.795.620.800",
+           "name": "Sarcoma, Ewing",
+           "data": {
+            "codigo": "C04.557.450.795.620.800",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.450.795.800",
+         "name": "Sarcoma de células claras",
+         "data": {
+          "codigo": "C04.557.450.795.800",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.795.850",
+         "name": "Sarcoma, Kaposi",
+         "data": {
+          "codigo": "C04.557.450.795.850",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.450.795.875",
+         "name": "Sarcoma sinovial",
+         "data": {
+          "codigo": "C04.557.450.795.875",
+          "ensayos": 1
          },
          "children": []
         }
        ]
       }
      ]
-    }
-   ]
-  },
-  {
-   "id": "84",
-   "name": "Kirk Ferentz",
-   "data": {
-    "equipos": "Iowa (1999–present)",
-    "partidos_nfl": 0
-   },
-   "children": [
+    },
     {
-     "id": "96",
-     "name": "Joe Philbin",
+     "id": "C04.557.465",
+     "name": "Gliomas y otros",
      "data": {
-      "equipos": "Miami Dolphins (2012–2015)",
-      "partidos_nfl": 68
+      "codigo": "C04.557.465",
+      "ensayos": 46
      },
      "children": [
       {
-       "id": "97",
-       "name": "Dan Campbell",
+       "id": "C04.557.465.220",
+       "name": "Cordoma",
        "data": {
-        "equipos": "Detroit Lions (2021–present)",
-        "partidos_nfl": 95
+        "codigo": "C04.557.465.220",
+        "ensayos": 5
        },
        "children": []
       },
       {
-       "id": "98",
-       "name": "Zac Taylor",
+       "id": "C04.557.465.330",
+       "name": "Germinoma",
        "data": {
-        "equipos": "Cincinnati Bengals (2019–present)",
-        "partidos_nfl": 129
+        "codigo": "C04.557.465.330",
+        "ensayos": 3
        },
        "children": [
         {
-         "id": "99",
-         "name": "Brian Callahan",
+         "id": "C04.557.465.330.800",
+         "name": "Seminoma",
          "data": {
-          "equipos": "Tennessee Titans (2024-2025)",
-          "partidos_nfl": 34
+          "codigo": "C04.557.465.330.800",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.557.465.625",
+       "name": "Neuroectodermal Tumors",
+       "data": {
+        "codigo": "C04.557.465.625",
+        "ensayos": 38
+       },
+       "children": [
+        {
+         "id": "C04.557.465.625.200",
+         "name": "Craneofaringioma",
+         "data": {
+          "codigo": "C04.557.465.625.200",
+          "ensayos": 3
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.465.625.600",
+         "name": "Neoplasms, Neuroepithelial",
+         "data": {
+          "codigo": "C04.557.465.625.600",
+          "ensayos": 30
+         },
+         "children": [
+          {
+           "id": "C04.557.465.625.600.380",
+           "name": "Glioma",
+           "data": {
+            "codigo": "C04.557.465.625.600.380",
+            "ensayos": 24
+           },
+           "children": [
+            {
+             "id": "C04.557.465.625.600.380.080",
+             "name": "Astrocitoma",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.080",
+              "ensayos": 14
+             },
+             "children": [
+              {
+               "id": "C04.557.465.625.600.380.080.335",
+               "name": "Glioblastoma",
+               "data": {
+                "codigo": "C04.557.465.625.600.380.080.335",
+                "ensayos": 9
+               },
+               "children": []
+              }
+             ]
+            },
+            {
+             "id": "C04.557.465.625.600.380.185",
+             "name": "Glioma pontino",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.185",
+              "ensayos": 1
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.465.625.600.380.290",
+             "name": "Ependimoma",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.290",
+              "ensayos": 5
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.465.625.600.380.350",
+             "name": "Ganglioglioma",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.350",
+              "ensayos": 2
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.465.625.600.380.400",
+             "name": "Gliosarcoma",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.400",
+              "ensayos": 1
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.465.625.600.380.515",
+             "name": "Meduloblastoma",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.515",
+              "ensayos": 2
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.465.625.600.380.590",
+             "name": "Oligodendroglioma",
+             "data": {
+              "codigo": "C04.557.465.625.600.380.590",
+              "ensayos": 2
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.557.465.625.600.590",
+           "name": "Neuroectodermal Tumors, Primitive",
+           "data": {
+            "codigo": "C04.557.465.625.600.590",
+            "ensayos": 6
+           },
+           "children": [
+            {
+             "id": "C04.557.465.625.600.590.500",
+             "name": "Meduloblastoma",
+             "data": {
+              "codigo": "C04.557.465.625.600.590.500",
+              "ensayos": 2
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.465.625.600.590.650",
+             "name": "Neuroectodermal Tumors, Primitive, Peripheral",
+             "data": {
+              "codigo": "C04.557.465.625.600.590.650",
+              "ensayos": 4
+             },
+             "children": [
+              {
+               "id": "C04.557.465.625.600.590.650.550",
+               "name": "Neuroblastoma",
+               "data": {
+                "codigo": "C04.557.465.625.600.590.650.550",
+                "ensayos": 4
+               },
+               "children": [
+                {
+                 "id": "C04.557.465.625.600.590.650.550.150",
+                 "name": "Esthesioneuroblastoma, Olfactory",
+                 "data": {
+                  "codigo": "C04.557.465.625.600.590.650.550.150",
+                  "ensayos": 2
+                 },
+                 "children": []
+                },
+                {
+                 "id": "C04.557.465.625.600.590.650.550.300",
+                 "name": "Ganglioneuroblastoma",
+                 "data": {
+                  "codigo": "C04.557.465.625.600.590.650.550.300",
+                  "ensayos": 1
+                 },
+                 "children": []
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "C04.557.465.625.600.657",
+           "name": "Pinealoma",
+           "data": {
+            "codigo": "C04.557.465.625.600.657",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.465.625.600.725",
+           "name": "Retinoblastoma",
+           "data": {
+            "codigo": "C04.557.465.625.600.725",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.465.625.650",
+         "name": "Neuroendocrino",
+         "data": {
+          "codigo": "C04.557.465.625.650",
+          "ensayos": 6
+         },
+         "children": [
+          {
+           "id": "C04.557.465.625.650.200",
+           "name": "Carcinoid Tumor",
+           "data": {
+            "codigo": "C04.557.465.625.650.200",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.465.625.650.510",
+           "name": "Melanoma",
+           "data": {
+            "codigo": "C04.557.465.625.650.510",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.465.625.650.510.762",
+             "name": "Melanoma uveal",
+             "data": {
+              "codigo": "C04.557.465.625.650.510.762",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.557.465.625.650.595",
+           "name": "Neurilemmoma",
+           "data": {
+            "codigo": "C04.557.465.625.650.595",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.465.625.650.595.610",
+             "name": "Neurinoma del acústico",
+             "data": {
+              "codigo": "C04.557.465.625.650.595.610",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.557.470",
+     "name": "Carcinomas",
+     "data": {
+      "codigo": "C04.557.470",
+      "ensayos": 77
+     },
+     "children": [
+      {
+       "id": "C04.557.470.035",
+       "name": "Adenoma",
+       "data": {
+        "codigo": "C04.557.470.035",
+        "ensayos": 3
+       },
+       "children": [
+        {
+         "id": "C04.557.470.035.415",
+         "name": "Adenoma hipofisario",
+         "data": {
+          "codigo": "C04.557.470.035.415",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.470.035.510",
+         "name": "Mesothelioma",
+         "data": {
+          "codigo": "C04.557.470.035.510",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.470.035.510.757",
+           "name": "Mesotelioma",
+           "data": {
+            "codigo": "C04.557.470.035.510.757",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.557.470.200",
+       "name": "Carcinoma",
+       "data": {
+        "codigo": "C04.557.470.200",
+        "ensayos": 47
+       },
+       "children": [
+        {
+         "id": "C04.557.470.200.025",
+         "name": "Adenocarcinoma",
+         "data": {
+          "codigo": "C04.557.470.200.025",
+          "ensayos": 25
+         },
+         "children": [
+          {
+           "id": "C04.557.470.200.025.200",
+           "name": "Carcinoid Tumor",
+           "data": {
+            "codigo": "C04.557.470.200.025.200",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.220",
+           "name": "Carcinoma adenoide quístico",
+           "data": {
+            "codigo": "C04.557.470.200.025.220",
+            "ensayos": 3
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.232",
+           "name": "Carcinoma, Ductal",
+           "data": {
+            "codigo": "C04.557.470.200.025.232",
+            "ensayos": 1
+           },
+           "children": [
+            {
+             "id": "C04.557.470.200.025.232.500",
+             "name": "Carcinoma ductal",
+             "data": {
+              "codigo": "C04.557.470.200.025.232.500",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.557.470.200.025.255",
+           "name": "Carcinoma hepatocelular",
+           "data": {
+            "codigo": "C04.557.470.200.025.255",
+            "ensayos": 13
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.275",
+           "name": "Carcinoma, Intraductal, Noninfiltrating",
+           "data": {
+            "codigo": "C04.557.470.200.025.275",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.305",
+           "name": "Carcinoma lobulillar",
+           "data": {
+            "codigo": "C04.557.470.200.025.305",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.340",
+           "name": "Carcinoma, Mucoepidermoid",
+           "data": {
+            "codigo": "C04.557.470.200.025.340",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.390",
+           "name": "Carcinoma renal",
+           "data": {
+            "codigo": "C04.557.470.200.025.390",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.025.450",
+           "name": "Colangiocarcinoma",
+           "data": {
+            "codigo": "C04.557.470.200.025.450",
+            "ensayos": 3
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.470.200.240",
+         "name": "Carcinoma in Situ",
+         "data": {
+          "codigo": "C04.557.470.200.240",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.470.200.240.187",
+           "name": "Carcinoma in situ de mama",
+           "data": {
+            "codigo": "C04.557.470.200.240.187",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.470.200.240.187.250",
+             "name": "Carcinoma, Intraductal, Noninfiltrating",
+             "data": {
+              "codigo": "C04.557.470.200.240.187.250",
+              "ensayos": 2
+             },
+             "children": []
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "C04.557.470.200.260",
+         "name": "Carcinoma, Large Cell",
+         "data": {
+          "codigo": "C04.557.470.200.260",
+          "ensayos": 1
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.470.200.400",
+         "name": "Carcinoma, Squamous Cell",
+         "data": {
+          "codigo": "C04.557.470.200.400",
+          "ensayos": 17
+         },
+         "children": [
+          {
+           "id": "C04.557.470.200.400.330",
+           "name": "Esófago escamoso",
+           "data": {
+            "codigo": "C04.557.470.200.400.330",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.200.400.565",
+           "name": "Carcinoma escamoso",
+           "data": {
+            "codigo": "C04.557.470.200.400.565",
+            "ensayos": 10
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.470.200.623",
+         "name": "Nasofaringe",
+         "data": {
+          "codigo": "C04.557.470.200.623",
+          "ensayos": 7
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.557.470.590",
+       "name": "Neoplasms, Cystic, Mucinous, and Serous",
+       "data": {
+        "codigo": "C04.557.470.590",
+        "ensayos": 1
+       },
+       "children": [
+        {
+         "id": "C04.557.470.590.340",
+         "name": "Carcinoma, Mucoepidermoid",
+         "data": {
+          "codigo": "C04.557.470.590.340",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.557.470.615",
+       "name": "Neoplasms, Ductal, Lobular, and Medullary",
+       "data": {
+        "codigo": "C04.557.470.615",
+        "ensayos": 2
+       },
+       "children": [
+        {
+         "id": "C04.557.470.615.132",
+         "name": "Carcinoma, Ductal",
+         "data": {
+          "codigo": "C04.557.470.615.132",
+          "ensayos": 1
+         },
+         "children": [
+          {
+           "id": "C04.557.470.615.132.500",
+           "name": "Carcinoma ductal",
+           "data": {
+            "codigo": "C04.557.470.615.132.500",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.470.615.275",
+         "name": "Carcinoma, Intraductal, Noninfiltrating",
+         "data": {
+          "codigo": "C04.557.470.615.275",
+          "ensayos": 2
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.470.615.305",
+         "name": "Carcinoma lobulillar",
+         "data": {
+          "codigo": "C04.557.470.615.305",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.557.470.660",
+       "name": "Neoplasms, Mesothelial",
+       "data": {
+        "codigo": "C04.557.470.660",
+        "ensayos": 2
+       },
+       "children": [
+        {
+         "id": "C04.557.470.660.510",
+         "name": "Mesothelioma",
+         "data": {
+          "codigo": "C04.557.470.660.510",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.470.660.510.757",
+           "name": "Mesotelioma",
+           "data": {
+            "codigo": "C04.557.470.660.510.757",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.557.470.670",
+       "name": "Neoplasms, Neuroepithelial",
+       "data": {
+        "codigo": "C04.557.470.670",
+        "ensayos": 30
+       },
+       "children": [
+        {
+         "id": "C04.557.470.670.380",
+         "name": "Glioma",
+         "data": {
+          "codigo": "C04.557.470.670.380",
+          "ensayos": 24
+         },
+         "children": [
+          {
+           "id": "C04.557.470.670.380.080",
+           "name": "Astrocitoma",
+           "data": {
+            "codigo": "C04.557.470.670.380.080",
+            "ensayos": 14
+           },
+           "children": [
+            {
+             "id": "C04.557.470.670.380.080.335",
+             "name": "Glioblastoma",
+             "data": {
+              "codigo": "C04.557.470.670.380.080.335",
+              "ensayos": 9
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.557.470.670.380.185",
+           "name": "Glioma pontino",
+           "data": {
+            "codigo": "C04.557.470.670.380.185",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.670.380.290",
+           "name": "Ependimoma",
+           "data": {
+            "codigo": "C04.557.470.670.380.290",
+            "ensayos": 5
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.670.380.350",
+           "name": "Ganglioglioma",
+           "data": {
+            "codigo": "C04.557.470.670.380.350",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.670.380.400",
+           "name": "Gliosarcoma",
+           "data": {
+            "codigo": "C04.557.470.670.380.400",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.670.380.515",
+           "name": "Meduloblastoma",
+           "data": {
+            "codigo": "C04.557.470.670.380.515",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.670.380.590",
+           "name": "Oligodendroglioma",
+           "data": {
+            "codigo": "C04.557.470.670.380.590",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.470.670.590",
+         "name": "Neuroectodermal Tumors, Primitive",
+         "data": {
+          "codigo": "C04.557.470.670.590",
+          "ensayos": 6
+         },
+         "children": [
+          {
+           "id": "C04.557.470.670.590.500",
+           "name": "Meduloblastoma",
+           "data": {
+            "codigo": "C04.557.470.670.590.500",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.470.670.590.650",
+           "name": "Neuroectodermal Tumors, Primitive, Peripheral",
+           "data": {
+            "codigo": "C04.557.470.670.590.650",
+            "ensayos": 4
+           },
+           "children": [
+            {
+             "id": "C04.557.470.670.590.650.550",
+             "name": "Neuroblastoma",
+             "data": {
+              "codigo": "C04.557.470.670.590.650.550",
+              "ensayos": 4
+             },
+             "children": [
+              {
+               "id": "C04.557.470.670.590.650.550.150",
+               "name": "Esthesioneuroblastoma, Olfactory",
+               "data": {
+                "codigo": "C04.557.470.670.590.650.550.150",
+                "ensayos": 2
+               },
+               "children": []
+              },
+              {
+               "id": "C04.557.470.670.590.650.550.300",
+               "name": "Ganglioneuroblastoma",
+               "data": {
+                "codigo": "C04.557.470.670.590.650.550.300",
+                "ensayos": 1
+               },
+               "children": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "C04.557.470.670.657",
+         "name": "Pinealoma",
+         "data": {
+          "codigo": "C04.557.470.670.657",
+          "ensayos": 2
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.470.670.725",
+         "name": "Retinoblastoma",
+         "data": {
+          "codigo": "C04.557.470.670.725",
+          "ensayos": 2
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.557.470.700",
+       "name": "Neoplasms, Squamous Cell",
+       "data": {
+        "codigo": "C04.557.470.700",
+        "ensayos": 7
+       },
+       "children": [
+        {
+         "id": "C04.557.470.700.400",
+         "name": "Carcinoma, Squamous Cell",
+         "data": {
+          "codigo": "C04.557.470.700.400",
+          "ensayos": 7
+         },
+         "children": [
+          {
+           "id": "C04.557.470.700.400.565",
+           "name": "Esófago escamoso",
+           "data": {
+            "codigo": "C04.557.470.700.400.565",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.557.580",
+     "name": "Tejido nervioso",
+     "data": {
+      "codigo": "C04.557.580",
+      "ensayos": 46
+     },
+     "children": [
+      {
+       "id": "C04.557.580.520",
+       "name": "Meningioma",
+       "data": {
+        "codigo": "C04.557.580.520",
+        "ensayos": 7
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.580.600",
+       "name": "Vaina nerviosa",
+       "data": {
+        "codigo": "C04.557.580.600",
+        "ensayos": 4
+       },
+       "children": [
+        {
+         "id": "C04.557.580.600.580",
+         "name": "Neurofibroma",
+         "data": {
+          "codigo": "C04.557.580.600.580",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.580.600.580.795",
+           "name": "Neurofibrosarcoma",
+           "data": {
+            "codigo": "C04.557.580.600.580.795",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.580.600.610",
+         "name": "Neuroma",
+         "data": {
+          "codigo": "C04.557.580.600.610",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.557.580.600.610.595",
+           "name": "Neurilemmoma",
+           "data": {
+            "codigo": "C04.557.580.600.610.595",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.580.600.610.595.610",
+             "name": "Neurinoma del acústico",
+             "data": {
+              "codigo": "C04.557.580.600.610.595.610",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.557.580.625",
+       "name": "Neuroectodermal Tumors",
+       "data": {
+        "codigo": "C04.557.580.625",
+        "ensayos": 38
+       },
+       "children": [
+        {
+         "id": "C04.557.580.625.200",
+         "name": "Craneofaringioma",
+         "data": {
+          "codigo": "C04.557.580.625.200",
+          "ensayos": 3
+         },
+         "children": []
+        },
+        {
+         "id": "C04.557.580.625.600",
+         "name": "Neoplasms, Neuroepithelial",
+         "data": {
+          "codigo": "C04.557.580.625.600",
+          "ensayos": 30
+         },
+         "children": [
+          {
+           "id": "C04.557.580.625.600.380",
+           "name": "Glioma",
+           "data": {
+            "codigo": "C04.557.580.625.600.380",
+            "ensayos": 24
+           },
+           "children": [
+            {
+             "id": "C04.557.580.625.600.380.080",
+             "name": "Astrocitoma",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.080",
+              "ensayos": 14
+             },
+             "children": [
+              {
+               "id": "C04.557.580.625.600.380.080.335",
+               "name": "Glioblastoma",
+               "data": {
+                "codigo": "C04.557.580.625.600.380.080.335",
+                "ensayos": 9
+               },
+               "children": []
+              }
+             ]
+            },
+            {
+             "id": "C04.557.580.625.600.380.185",
+             "name": "Glioma pontino",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.185",
+              "ensayos": 1
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.580.625.600.380.290",
+             "name": "Ependimoma",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.290",
+              "ensayos": 5
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.580.625.600.380.350",
+             "name": "Ganglioglioma",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.350",
+              "ensayos": 2
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.580.625.600.380.400",
+             "name": "Gliosarcoma",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.400",
+              "ensayos": 1
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.580.625.600.380.515",
+             "name": "Meduloblastoma",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.515",
+              "ensayos": 2
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.580.625.600.380.590",
+             "name": "Oligodendroglioma",
+             "data": {
+              "codigo": "C04.557.580.625.600.380.590",
+              "ensayos": 2
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.557.580.625.600.590",
+           "name": "Neuroectodermal Tumors, Primitive",
+           "data": {
+            "codigo": "C04.557.580.625.600.590",
+            "ensayos": 6
+           },
+           "children": [
+            {
+             "id": "C04.557.580.625.600.590.500",
+             "name": "Meduloblastoma",
+             "data": {
+              "codigo": "C04.557.580.625.600.590.500",
+              "ensayos": 2
+             },
+             "children": []
+            },
+            {
+             "id": "C04.557.580.625.600.590.650",
+             "name": "Neuroectodermal Tumors, Primitive, Peripheral",
+             "data": {
+              "codigo": "C04.557.580.625.600.590.650",
+              "ensayos": 4
+             },
+             "children": [
+              {
+               "id": "C04.557.580.625.600.590.650.550",
+               "name": "Neuroblastoma",
+               "data": {
+                "codigo": "C04.557.580.625.600.590.650.550",
+                "ensayos": 4
+               },
+               "children": [
+                {
+                 "id": "C04.557.580.625.600.590.650.550.150",
+                 "name": "Esthesioneuroblastoma, Olfactory",
+                 "data": {
+                  "codigo": "C04.557.580.625.600.590.650.550.150",
+                  "ensayos": 2
+                 },
+                 "children": []
+                },
+                {
+                 "id": "C04.557.580.625.600.590.650.550.300",
+                 "name": "Ganglioneuroblastoma",
+                 "data": {
+                  "codigo": "C04.557.580.625.600.590.650.550.300",
+                  "ensayos": 1
+                 },
+                 "children": []
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "C04.557.580.625.600.657",
+           "name": "Pinealoma",
+           "data": {
+            "codigo": "C04.557.580.625.600.657",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.580.625.600.725",
+           "name": "Retinoblastoma",
+           "data": {
+            "codigo": "C04.557.580.625.600.725",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.557.580.625.650",
+         "name": "Neuroendocrino",
+         "data": {
+          "codigo": "C04.557.580.625.650",
+          "ensayos": 6
+         },
+         "children": [
+          {
+           "id": "C04.557.580.625.650.200",
+           "name": "Carcinoid Tumor",
+           "data": {
+            "codigo": "C04.557.580.625.650.200",
+            "ensayos": 1
+           },
+           "children": []
+          },
+          {
+           "id": "C04.557.580.625.650.510",
+           "name": "Melanoma",
+           "data": {
+            "codigo": "C04.557.580.625.650.510",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.580.625.650.510.762",
+             "name": "Melanoma uveal",
+             "data": {
+              "codigo": "C04.557.580.625.650.510.762",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.557.580.625.650.595",
+           "name": "Neurilemmoma",
+           "data": {
+            "codigo": "C04.557.580.625.650.595",
+            "ensayos": 2
+           },
+           "children": [
+            {
+             "id": "C04.557.580.625.650.595.610",
+             "name": "Neurinoma del acústico",
+             "data": {
+              "codigo": "C04.557.580.625.650.595.610",
+              "ensayos": 1
+             },
+             "children": []
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.557.645",
+     "name": "Tejido vascular",
+     "data": {
+      "codigo": "C04.557.645",
+      "ensayos": 9
+     },
+     "children": [
+      {
+       "id": "C04.557.645.350",
+       "name": "Tumor glómico",
+       "data": {
+        "codigo": "C04.557.645.350",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.645.375",
+       "name": "Hemangioma",
+       "data": {
+        "codigo": "C04.557.645.375",
+        "ensayos": 1
+       },
+       "children": [
+        {
+         "id": "C04.557.645.375.370",
+         "name": "Hemangioendothelioma",
+         "data": {
+          "codigo": "C04.557.645.375.370",
+          "ensayos": 1
+         },
+         "children": [
+          {
+           "id": "C04.557.645.375.370.380",
+           "name": "Hemangioendotelioma epitelioide",
+           "data": {
+            "codigo": "C04.557.645.375.370.380",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.557.645.380",
+       "name": "Hemangiopericytoma",
+       "data": {
+        "codigo": "C04.557.645.380",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.645.390",
+       "name": "Angiosarcoma",
+       "data": {
+        "codigo": "C04.557.645.390",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.645.520",
+       "name": "Meningioma",
+       "data": {
+        "codigo": "C04.557.645.520",
+        "ensayos": 7
+       },
+       "children": []
+      },
+      {
+       "id": "C04.557.645.750",
+       "name": "Sarcoma, Kaposi",
+       "data": {
+        "codigo": "C04.557.645.750",
+        "ensayos": 1
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "C04.557.665",
+     "name": "Nevi and Melanomas",
+     "data": {
+      "codigo": "C04.557.665",
+      "ensayos": 2
+     },
+     "children": [
+      {
+       "id": "C04.557.665.510",
+       "name": "Melanoma",
+       "data": {
+        "codigo": "C04.557.665.510",
+        "ensayos": 2
+       },
+       "children": [
+        {
+         "id": "C04.557.665.510.762",
+         "name": "Melanoma uveal",
+         "data": {
+          "codigo": "C04.557.665.510.762",
+          "ensayos": 1
          },
          "children": []
         }
@@ -365,121 +1730,893 @@
    ]
   },
   {
-   "id": "100",
-   "name": "Al Groh",
+   "id": "C04.588",
+   "name": "Por localización",
    "data": {
-    "equipos": "New York Jets (2000), Virginia (2001–2009)",
-    "partidos_nfl": 16
+    "codigo": "C04.588",
+    "ensayos": 202
    },
    "children": [
     {
-     "id": "101",
-     "name": "Mike Nolan",
+     "id": "C04.588.149",
+     "name": "Hueso",
      "data": {
-      "equipos": "San Francisco 49ers (2005–2008)",
-      "partidos_nfl": 55
+      "codigo": "C04.588.149",
+      "ensayos": 2
+     },
+     "children": []
+    },
+    {
+     "id": "C04.588.180",
+     "name": "Mama",
+     "data": {
+      "codigo": "C04.588.180",
+      "ensayos": 27
      },
      "children": [
       {
-       "id": "102",
-       "name": "Mike McCarthy",
+       "id": "C04.588.180.130",
+       "name": "Carcinoma in situ de mama",
        "data": {
-        "equipos": "Green Bay Packers (2006–2018), Dallas Cowboys (2020–present)",
-        "partidos_nfl": 317
+        "codigo": "C04.588.180.130",
+        "ensayos": 2
        },
        "children": []
       },
       {
-       "id": "103",
-       "name": "Mike Singletary",
+       "id": "C04.588.180.390",
+       "name": "Carcinoma ductal",
        "data": {
-        "equipos": "San Francisco 49ers (2009–2010)",
-        "partidos_nfl": 40
+        "codigo": "C04.588.180.390",
+        "ensayos": 1
        },
        "children": []
       },
       {
-       "id": "104",
-       "name": "Vance Joseph",
+       "id": "C04.588.180.437",
+       "name": "Carcinoma lobulillar",
        "data": {
-        "equipos": "Denver Broncos (2017–2018)",
-        "partidos_nfl": 32
+        "codigo": "C04.588.180.437",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.588.180.788",
+       "name": "Mama triple negativo",
+       "data": {
+        "codigo": "C04.588.180.788",
+        "ensayos": 1
        },
        "children": []
       }
      ]
     },
     {
-     "id": "105",
-     "name": "Ron Prince",
+     "id": "C04.588.274",
+     "name": "Aparato digestivo",
      "data": {
-      "equipos": "Kansas State (2006–2008), Howard (2019)",
-      "partidos_nfl": 0
+      "codigo": "C04.588.274",
+      "ensayos": 48
      },
      "children": [
       {
-       "id": "106",
-       "name": "Raheem Morris",
+       "id": "C04.588.274.476",
+       "name": "Gastrointestinal",
        "data": {
-        "equipos": "Tampa Bay Buccaneers (2009–2011), Atlanta Falcons (2024-2025)",
-        "partidos_nfl": 100
+        "codigo": "C04.588.274.476",
+        "ensayos": 18
+       },
+       "children": [
+        {
+         "id": "C04.588.274.476.205",
+         "name": "Esófago",
+         "data": {
+          "codigo": "C04.588.274.476.205",
+          "ensayos": 7
+         },
+         "children": [
+          {
+           "id": "C04.588.274.476.205.500",
+           "name": "Esófago escamoso",
+           "data": {
+            "codigo": "C04.588.274.476.205.500",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.588.274.476.411",
+         "name": "Intestinal Neoplasms",
+         "data": {
+          "codigo": "C04.588.274.476.411",
+          "ensayos": 9
+         },
+         "children": [
+          {
+           "id": "C04.588.274.476.411.307",
+           "name": "Colorrectal",
+           "data": {
+            "codigo": "C04.588.274.476.411.307",
+            "ensayos": 9
+           },
+           "children": [
+            {
+             "id": "C04.588.274.476.411.307.180",
+             "name": "Colon",
+             "data": {
+              "codigo": "C04.588.274.476.411.307.180",
+              "ensayos": 1
+             },
+             "children": []
+            },
+            {
+             "id": "C04.588.274.476.411.307.790",
+             "name": "Recto",
+             "data": {
+              "codigo": "C04.588.274.476.411.307.790",
+              "ensayos": 7
+             },
+             "children": [
+              {
+               "id": "C04.588.274.476.411.307.790.040",
+               "name": "Ano",
+               "data": {
+                "codigo": "C04.588.274.476.411.307.790.040",
+                "ensayos": 4
+               },
+               "children": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.588.274.623",
+       "name": "Hígado",
+       "data": {
+        "codigo": "C04.588.274.623",
+        "ensayos": 19
+       },
+       "children": [
+        {
+         "id": "C04.588.274.623.160",
+         "name": "Carcinoma hepatocelular",
+         "data": {
+          "codigo": "C04.588.274.623.160",
+          "ensayos": 13
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.274.761",
+       "name": "Páncreas",
+       "data": {
+        "codigo": "C04.588.274.761",
+        "ensayos": 13
        },
        "children": []
       }
      ]
     },
     {
-     "id": "113",
-     "name": "Al Golden",
+     "id": "C04.588.322",
+     "name": "Glándulas endocrinas",
      "data": {
-      "equipos": "Temple (2006–2010), Miami (2011–2015)",
-      "partidos_nfl": 0
+      "codigo": "C04.588.322",
+      "ensayos": 16
      },
      "children": [
       {
-       "id": "114",
-       "name": "Matt Rhule",
+       "id": "C04.588.322.455",
+       "name": "Ovario",
        "data": {
-        "equipos": "Temple (2013–2016), Baylor (2017–2020), Carolina Panthers (2020–2022), Nebraska (2023-present)",
-        "partidos_nfl": 38
+        "codigo": "C04.588.322.455",
+        "ensayos": 1
+       },
+       "children": []
+      },
+      {
+       "id": "C04.588.322.475",
+       "name": "Páncreas",
+       "data": {
+        "codigo": "C04.588.322.475",
+        "ensayos": 13
+       },
+       "children": []
+      },
+      {
+       "id": "C04.588.322.609",
+       "name": "Hipófisis",
+       "data": {
+        "codigo": "C04.588.322.609",
+        "ensayos": 3
+       },
+       "children": [
+        {
+         "id": "C04.588.322.609.292",
+         "name": "Adenoma hipofisario",
+         "data": {
+          "codigo": "C04.588.322.609.292",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.322.894",
+       "name": "Tiroides",
+       "data": {
+        "codigo": "C04.588.322.894",
+        "ensayos": 1
        },
        "children": []
       }
      ]
     },
     {
-     "id": "125",
-     "name": "Todd Haley",
+     "id": "C04.588.364",
+     "name": "Ojo",
      "data": {
-      "equipos": "Kansas City Chiefs (2009–2011)",
-      "partidos_nfl": 46
+      "codigo": "C04.588.364",
+      "ensayos": 3
      },
      "children": [
       {
-       "id": "126",
-       "name": "Nick Sirianni",
+       "id": "C04.588.364.818",
+       "name": "Retinal Neoplasms",
        "data": {
-        "equipos": "Philadelphia Eagles (2021–present)",
-        "partidos_nfl": 101
+        "codigo": "C04.588.364.818",
+        "ensayos": 2
+       },
+       "children": [
+        {
+         "id": "C04.588.364.818.760",
+         "name": "Retinoblastoma",
+         "data": {
+          "codigo": "C04.588.364.818.760",
+          "ensayos": 2
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.364.978",
+       "name": "Uveal Neoplasms",
+       "data": {
+        "codigo": "C04.588.364.978",
+        "ensayos": 1
+       },
+       "children": [
+        {
+         "id": "C04.588.364.978.312",
+         "name": "Melanoma uveal",
+         "data": {
+          "codigo": "C04.588.364.978.312",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.588.443",
+     "name": "Cabeza y cuello",
+     "data": {
+      "codigo": "C04.588.443",
+      "ensayos": 38
+     },
+     "children": [
+      {
+       "id": "C04.588.443.177",
+       "name": "Carcinoma escamoso",
+       "data": {
+        "codigo": "C04.588.443.177",
+        "ensayos": 10
+       },
+       "children": []
+      },
+      {
+       "id": "C04.588.443.353",
+       "name": "Esófago",
+       "data": {
+        "codigo": "C04.588.443.353",
+        "ensayos": 7
+       },
+       "children": [
+        {
+         "id": "C04.588.443.353.500",
+         "name": "Esófago escamoso",
+         "data": {
+          "codigo": "C04.588.443.353.500",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.443.591",
+       "name": "Boca",
+       "data": {
+        "codigo": "C04.588.443.591",
+        "ensayos": 2
+       },
+       "children": [
+        {
+         "id": "C04.588.443.591.824",
+         "name": "Glándulas salivales",
+         "data": {
+          "codigo": "C04.588.443.591.824",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.588.443.591.824.695",
+           "name": "Parótida",
+           "data": {
+            "codigo": "C04.588.443.591.824.695",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.588.443.665",
+       "name": "Otorhinolaryngologic Neoplasms",
+       "data": {
+        "codigo": "C04.588.443.665",
+        "ensayos": 15
+       },
+       "children": [
+        {
+         "id": "C04.588.443.665.481",
+         "name": "Laringe",
+         "data": {
+          "codigo": "C04.588.443.665.481",
+          "ensayos": 3
+         },
+         "children": []
+        },
+        {
+         "id": "C04.588.443.665.650",
+         "name": "Nose Neoplasms",
+         "data": {
+          "codigo": "C04.588.443.665.650",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.588.443.665.650.693",
+           "name": "Senos paranasales",
+           "data": {
+            "codigo": "C04.588.443.665.650.693",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.588.443.665.710",
+         "name": "Pharyngeal Neoplasms",
+         "data": {
+          "codigo": "C04.588.443.665.710",
+          "ensayos": 14
+         },
+         "children": [
+          {
+           "id": "C04.588.443.665.710.485",
+           "name": "Hipofaringe",
+           "data": {
+            "codigo": "C04.588.443.665.710.485",
+            "ensayos": 3
+           },
+           "children": []
+          },
+          {
+           "id": "C04.588.443.665.710.650",
+           "name": "Nasopharyngeal Neoplasms",
+           "data": {
+            "codigo": "C04.588.443.665.710.650",
+            "ensayos": 7
+           },
+           "children": [
+            {
+             "id": "C04.588.443.665.710.650.500",
+             "name": "Nasofaringe",
+             "data": {
+              "codigo": "C04.588.443.665.710.650.500",
+              "ensayos": 7
+             },
+             "children": []
+            }
+           ]
+          },
+          {
+           "id": "C04.588.443.665.710.684",
+           "name": "Orofaringe",
+           "data": {
+            "codigo": "C04.588.443.665.710.684",
+            "ensayos": 7
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.588.443.915",
+       "name": "Tiroides",
+       "data": {
+        "codigo": "C04.588.443.915",
+        "ensayos": 1
        },
        "children": []
       }
      ]
     },
     {
-     "id": "129",
-     "name": "Todd Bowles",
+     "id": "C04.588.614",
+     "name": "Sistema nervioso",
      "data": {
-      "equipos": "New York Jets (2015–2018), Tampa Bay Buccaneers (2022–present)",
-      "partidos_nfl": 146
+      "codigo": "C04.588.614",
+      "ensayos": 34
      },
      "children": [
       {
-       "id": "130",
-       "name": "Dave Canales",
+       "id": "C04.588.614.250",
+       "name": "Sistema nervioso central",
        "data": {
-        "equipos": "Carolina Panthers (2024–present)",
-        "partidos_nfl": 41
+        "codigo": "C04.588.614.250",
+        "ensayos": 33
+       },
+       "children": [
+        {
+         "id": "C04.588.614.250.195",
+         "name": "Cerebro",
+         "data": {
+          "codigo": "C04.588.614.250.195",
+          "ensayos": 20
+         },
+         "children": [
+          {
+           "id": "C04.588.614.250.195.411",
+           "name": "Infratentorial Neoplasms",
+           "data": {
+            "codigo": "C04.588.614.250.195.411",
+            "ensayos": 1
+           },
+           "children": [
+            {
+             "id": "C04.588.614.250.195.411.100",
+             "name": "Brain Stem Neoplasms",
+             "data": {
+              "codigo": "C04.588.614.250.195.411.100",
+              "ensayos": 1
+             },
+             "children": [
+              {
+               "id": "C04.588.614.250.195.411.100.500",
+               "name": "Glioma pontino",
+               "data": {
+                "codigo": "C04.588.614.250.195.411.100.500",
+                "ensayos": 1
+               },
+               "children": []
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "C04.588.614.250.195.766",
+           "name": "Pinealoma",
+           "data": {
+            "codigo": "C04.588.614.250.195.766",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.588.614.250.195.885",
+           "name": "Supratentorial Neoplasms",
+           "data": {
+            "codigo": "C04.588.614.250.195.885",
+            "ensayos": 3
+           },
+           "children": [
+            {
+             "id": "C04.588.614.250.195.885.500",
+             "name": "Hypothalamic Neoplasms",
+             "data": {
+              "codigo": "C04.588.614.250.195.885.500",
+              "ensayos": 3
+             },
+             "children": [
+              {
+               "id": "C04.588.614.250.195.885.500.600",
+               "name": "Hipófisis",
+               "data": {
+                "codigo": "C04.588.614.250.195.885.500.600",
+                "ensayos": 3
+               },
+               "children": []
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "id": "C04.588.614.250.580",
+         "name": "Meninges",
+         "data": {
+          "codigo": "C04.588.614.250.580",
+          "ensayos": 13
+         },
+         "children": [
+          {
+           "id": "C04.588.614.250.580.150",
+           "name": "Carcinomatosis meníngea",
+           "data": {
+            "codigo": "C04.588.614.250.580.150",
+            "ensayos": 5
+           },
+           "children": []
+          },
+          {
+           "id": "C04.588.614.250.580.500",
+           "name": "Meningioma",
+           "data": {
+            "codigo": "C04.588.614.250.580.500",
+            "ensayos": 7
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.588.614.250.803",
+         "name": "Médula espinal",
+         "data": {
+          "codigo": "C04.588.614.250.803",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.614.300",
+       "name": "Cranial Nerve Neoplasms",
+       "data": {
+        "codigo": "C04.588.614.300",
+        "ensayos": 1
+       },
+       "children": [
+        {
+         "id": "C04.588.614.300.015",
+         "name": "Neurinoma del acústico",
+         "data": {
+          "codigo": "C04.588.614.300.015",
+          "ensayos": 1
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.614.596",
+       "name": "Peripheral Nervous System Neoplasms",
+       "data": {
+        "codigo": "C04.588.614.596",
+        "ensayos": 1
+       },
+       "children": [
+        {
+         "id": "C04.588.614.596.240",
+         "name": "Cranial Nerve Neoplasms",
+         "data": {
+          "codigo": "C04.588.614.596.240",
+          "ensayos": 1
+         },
+         "children": [
+          {
+           "id": "C04.588.614.596.240.015",
+           "name": "Neurinoma del acústico",
+           "data": {
+            "codigo": "C04.588.614.596.240.015",
+            "ensayos": 1
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.588.805",
+     "name": "Piel",
+     "data": {
+      "codigo": "C04.588.805",
+      "ensayos": 2
+     },
+     "children": [
+      {
+       "id": "C04.588.805.377",
+       "name": "Melanoma",
+       "data": {
+        "codigo": "C04.588.805.377",
+        "ensayos": 2
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "id": "C04.588.894",
+     "name": "Tórax",
+     "data": {
+      "codigo": "C04.588.894",
+      "ensayos": 33
+     },
+     "children": [
+      {
+       "id": "C04.588.894.797",
+       "name": "Respiratory Tract Neoplasms",
+       "data": {
+        "codigo": "C04.588.894.797",
+        "ensayos": 30
+       },
+       "children": [
+        {
+         "id": "C04.588.894.797.520",
+         "name": "Pulmón",
+         "data": {
+          "codigo": "C04.588.894.797.520",
+          "ensayos": 30
+         },
+         "children": [
+          {
+           "id": "C04.588.894.797.520.109",
+           "name": "Bronchial Neoplasms",
+           "data": {
+            "codigo": "C04.588.894.797.520.109",
+            "ensayos": 26
+           },
+           "children": [
+            {
+             "id": "C04.588.894.797.520.109.220",
+             "name": "Carcinoma, Bronchogenic",
+             "data": {
+              "codigo": "C04.588.894.797.520.109.220",
+              "ensayos": 26
+             },
+             "children": [
+              {
+               "id": "C04.588.894.797.520.109.220.249",
+               "name": "No microcítico",
+               "data": {
+                "codigo": "C04.588.894.797.520.109.220.249",
+                "ensayos": 25
+               },
+               "children": []
+              },
+              {
+               "id": "C04.588.894.797.520.109.220.624",
+               "name": "Pulmón microcítico",
+               "data": {
+                "codigo": "C04.588.894.797.520.109.220.624",
+                "ensayos": 2
+               },
+               "children": []
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "id": "C04.588.894.797.520.173",
+           "name": "Mesotelioma",
+           "data": {
+            "codigo": "C04.588.894.797.520.173",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        },
+        {
+         "id": "C04.588.894.797.640",
+         "name": "Pleural Neoplasms",
+         "data": {
+          "codigo": "C04.588.894.797.640",
+          "ensayos": 2
+         },
+         "children": [
+          {
+           "id": "C04.588.894.797.640.350",
+           "name": "Mesotelioma",
+           "data": {
+            "codigo": "C04.588.894.797.640.350",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.588.894.949",
+       "name": "Timo",
+       "data": {
+        "codigo": "C04.588.894.949",
+        "ensayos": 3
+       },
+       "children": [
+        {
+         "id": "C04.588.894.949.500",
+         "name": "Timoma",
+         "data": {
+          "codigo": "C04.588.894.949.500",
+          "ensayos": 2
+         },
+         "children": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "C04.588.945",
+     "name": "Aparato urogenital",
+     "data": {
+      "codigo": "C04.588.945",
+      "ensayos": 41
+     },
+     "children": [
+      {
+       "id": "C04.588.945.418",
+       "name": "Genital Neoplasms, Female",
+       "data": {
+        "codigo": "C04.588.945.418",
+        "ensayos": 10
+       },
+       "children": [
+        {
+         "id": "C04.588.945.418.948",
+         "name": "Útero",
+         "data": {
+          "codigo": "C04.588.945.418.948",
+          "ensayos": 10
+         },
+         "children": [
+          {
+           "id": "C04.588.945.418.948.585",
+           "name": "Endometrio",
+           "data": {
+            "codigo": "C04.588.945.418.948.585",
+            "ensayos": 3
+           },
+           "children": []
+          },
+          {
+           "id": "C04.588.945.418.948.850",
+           "name": "Cuello uterino",
+           "data": {
+            "codigo": "C04.588.945.418.948.850",
+            "ensayos": 9
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "C04.588.945.440",
+       "name": "Genital Neoplasms, Male",
+       "data": {
+        "codigo": "C04.588.945.440",
+        "ensayos": 28
+       },
+       "children": [
+        {
+         "id": "C04.588.945.440.770",
+         "name": "Próstata",
+         "data": {
+          "codigo": "C04.588.945.440.770",
+          "ensayos": 28
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "id": "C04.588.945.947",
+       "name": "Urologic Neoplasms",
+       "data": {
+        "codigo": "C04.588.945.947",
+        "ensayos": 4
+       },
+       "children": [
+        {
+         "id": "C04.588.945.947.535",
+         "name": "Riñón",
+         "data": {
+          "codigo": "C04.588.945.947.535",
+          "ensayos": 4
+         },
+         "children": [
+          {
+           "id": "C04.588.945.947.535.160",
+           "name": "Carcinoma renal",
+           "data": {
+            "codigo": "C04.588.945.947.535.160",
+            "ensayos": 2
+           },
+           "children": []
+          },
+          {
+           "id": "C04.588.945.947.535.585",
+           "name": "Tumor de Wilms",
+           "data": {
+            "codigo": "C04.588.945.947.535.585",
+            "ensayos": 2
+           },
+           "children": []
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C04.697",
+   "name": "Procesos neoplásicos",
+   "data": {
+    "codigo": "C04.697",
+    "ensayos": 5
+   },
+   "children": [
+    {
+     "id": "C04.697.650",
+     "name": "Neoplasm Metastasis",
+     "data": {
+      "codigo": "C04.697.650",
+      "ensayos": 5
+     },
+     "children": [
+      {
+       "id": "C04.697.650.560",
+       "name": "Lymphatic Metastasis",
+       "data": {
+        "codigo": "C04.697.650.560",
+        "ensayos": 1
        },
        "children": []
       }
@@ -488,135 +2625,23 @@
    ]
   },
   {
-   "id": "136",
-   "name": "Romeo Crennel",
+   "id": "C04.700",
+   "name": "Síndromes hereditarios",
    "data": {
-    "equipos": "Cleveland Browns (2005–2008), Kansas City Chiefs (2011–2012)",
-    "partidos_nfl": 95
+    "codigo": "C04.700",
+    "ensayos": 2
    },
    "children": [
     {
-     "id": "137",
-     "name": "Anthony Lynn",
+     "id": "C04.700.900",
+     "name": "Tumor de Wilms",
      "data": {
-      "equipos": "Los Angeles Chargers (2017–2020)",
-      "partidos_nfl": 67
+      "codigo": "C04.700.900",
+      "ensayos": 2
      },
      "children": []
     }
    ]
-  },
-  {
-   "id": "138",
-   "name": "Eric Mangini",
-   "data": {
-    "equipos": "New York Jets (2006–2008), Cleveland Browns (2009–2010)",
-    "partidos_nfl": 81
-   },
-   "children": [
-    {
-     "id": "140",
-     "name": "Matt Eberflus",
-     "data": {
-      "equipos": "Chicago Bears (2022–2024)",
-      "partidos_nfl": 51
-     },
-     "children": []
-    }
-   ]
-  },
-  {
-   "id": "141",
-   "name": "Jim Schwartz",
-   "data": {
-    "equipos": "Detroit Lions (2009–2013)",
-    "partidos_nfl": 81
-   },
-   "children": []
-  },
-  {
-   "id": "143",
-   "name": "Josh McDaniels",
-   "data": {
-    "equipos": "Denver Broncos (2009–2010), Las Vegas Raiders (2022–2023)",
-    "partidos_nfl": 53
-   },
-   "children": [
-    {
-     "id": "144",
-     "name": "Mike McCoy",
-     "data": {
-      "equipos": "San Diego Chargers (2013–2016)",
-      "partidos_nfl": 66
-     },
-     "children": [
-      {
-       "id": "145",
-       "name": "Shane Steichen",
-       "data": {
-        "equipos": "Indianapolis Colts (2023–present)",
-        "partidos_nfl": 58
-       },
-       "children": []
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "151",
-   "name": "Bill O'Brien",
-   "data": {
-    "equipos": "Penn State (2012–2013), Houston Texans (2014–2020)",
-    "partidos_nfl": 106
-   },
-   "children": [
-    {
-     "id": "154",
-     "name": "Mike Vrabel",
-     "data": {
-      "equipos": "Tennessee Titans (2018–2023), New England Patriots (2025-present) (played under Belichick first)",
-      "partidos_nfl": 132
-     },
-     "children": []
-    }
-   ]
-  },
-  {
-   "id": "155",
-   "name": "Matt Patricia",
-   "data": {
-    "equipos": "Detroit Lions (2018–2020)",
-    "partidos_nfl": 43
-   },
-   "children": []
-  },
-  {
-   "id": "156",
-   "name": "Brian Flores",
-   "data": {
-    "equipos": "Miami Dolphins (2019–2021)",
-    "partidos_nfl": 49
-   },
-   "children": []
-  },
-  {
-   "id": "158",
-   "name": "Joe Judge",
-   "data": {
-    "equipos": "New York Giants (2020–2021)",
-    "partidos_nfl": 33
-   },
-   "children": []
-  },
-  {
-   "id": "161",
-   "name": "Brian Daboll",
-   "data": {
-    "equipos": "New York Giants (2022–2025)",
-    "partidos_nfl": 70
-   },
-   "children": []
   }
  ]
 }

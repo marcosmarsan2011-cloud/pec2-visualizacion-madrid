@@ -3,59 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hyperbolic Tree · Árbol de Belichick</title>
+  <title>Hyperbolic Tree · Tumores tratados con protones</title>
   <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
   <main>
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
-    <h1>El árbol de entrenadores de Bill Belichick</h1>
+    <h1>El mapa de la protonterapia</h1>
     <p class="subtitulo">
-      Cada punto es un entrenador que antes fue ayudante de su "padre" en el árbol.
-      De Belichick salen 14 entrenadores, de ellos salen otros, y así hasta 5 generaciones y 66 entrenadores
-      que han dirigido en la NFL.
+      Todos los tumores que estudian los ensayos clínicos de protonterapia, colocados en la rama del cáncer
+      del tesauro médico MeSH: 280 categorías en hasta 9 niveles, de «Cáncer» a tumores concretos como el
+      melanoma uveal o el cordoma. Cada punto muestra cuántos ensayos caen en esa categoría o por debajo.
       <b>Haz clic en un nombre para llevarlo al centro</b>: el árbol se recoloca y lo que está lejos se comprime hacia el borde.
     </p>
+    <p><b>El MeSH clasifica los tumores de dos formas: por dónde están y por el tejido del que nacen.</b>
+      Por eso el meningioma aparece tres veces: en «Sistema nervioso», en «Tejido nervioso» y en «Tejido vascular». De los 260 ensayos
+      con un tumor clasificado, 202 caen en la rama por localización y 121 en la de tipo de tejido.</p>
 
     <div class="leyenda" id="leyenda"></div>
 
-    <!-- Ficha del entrenador que está en el centro -->
+    <!-- Ficha de la categoría que está en el centro -->
     <div id="ficha"></div>
 
     <!-- Aquí JIT dibuja el árbol -->
     <div id="grafico"></div>
 
     <p class="fuente">
-      Fuente: estructura del árbol del artículo
-      <a href="https://en.wikipedia.org/wiki/Coaching_tree">Coaching tree</a> de Wikipedia (versión del 25/10/2026);
-      partidos dirigidos en la NFL desde 1999 de <a href="https://github.com/nflverse/nflverse-data">nflverse</a>.
+      Los nombres de los grupos y de los tumores más frecuentes están traducidos; el resto conserva su nombre oficial MeSH en inglés.
+      Una enfermedad puede aparecer en varias ramas (el MeSH permite varios padres), por eso hay nombres repetidos.<br>
+      Fuente: ensayos de <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> con una intervención
+      de protones (consultado el 28 de octubre de 2026) y árbol MeSH 2025 de la
+      <a href="https://www.nlm.nih.gov/mesh/">U.S. National Library of Medicine</a>.
     </p>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jit/2.0.2/jit.min.js"></script>
   <script>
-    // Color de cada punto: entrenadores con partidos en la NFL o "puentes" universitarios
-    const colores = { "Ha dirigido en la NFL": "#2a78d6", "Solo universidad (puente hacia sus discípulos)": "#898781" };
+    // Color de cada punto según la rama de la que cuelga
+    const colores = { "Por localización": "#2a78d6", "Por tipo de tejido": "#eb6834", "Otras": "#898781", "Raíz": "#0b0b0b" };
 
     const leyenda = document.getElementById("leyenda");
-    for (const texto in colores) {
+    for (const texto of ["Por localización", "Por tipo de tejido", "Otras"]) {
       leyenda.insertAdjacentHTML("beforeend", `<span><i style="background:${colores[texto]}"></i>${texto}</span>`);
     }
 
-    // Muestra en la ficha los datos del entrenador elegido
+    // Muestra en la ficha los datos de la categoría elegida
     function mostrarFicha(nodo) {
       const ficha = document.getElementById("ficha");
-      ficha.innerHTML = "<b></b><br><span class='equipos'></span><br><span class='partidos'></span>";
+      ficha.innerHTML = "<b></b><br><span class='codigo'></span><br><span class='ensayos'></span>";
       ficha.querySelector("b").textContent = nodo.name;
-      ficha.querySelector(".equipos").textContent = nodo.data.equipos;
-      ficha.querySelector(".partidos").textContent = nodo.data.partidos_nfl > 0
-        ? nodo.data.partidos_nfl + " partidos dirigidos en la NFL desde 1999"
-        : "Sin partidos en la NFL desde 1999";
+      ficha.querySelector(".codigo").textContent = "Código MeSH: " + nodo.data.codigo;
+      ficha.querySelector(".ensayos").textContent = nodo.data.ensayos === 1
+        ? "1 ensayo de protonterapia"
+        : nodo.data.ensayos + " ensayos de protonterapia";
     }
 
     // Pone el color a cada nodo del árbol (JIT lo lee de data.$color)
     function colorear(nodo) {
-      const tipo = nodo.data.partidos_nfl > 0 ? "Ha dirigido en la NFL" : "Solo universidad (puente hacia sus discípulos)";
+      const codigo = nodo.data.codigo;
+      const tipo = codigo === "C04" ? "Raíz"
+        : codigo.startsWith("C04.588") ? "Por localización"
+        : codigo.startsWith("C04.557") ? "Por tipo de tejido"
+        : "Otras";
       nodo.data.$color = colores[tipo];
       nodo.children.forEach(colorear);
     }
@@ -71,8 +80,8 @@
           injectInto: "grafico",
           width: lado,
           height: lado,
-          Node: { dim: 9, overridable: true },        // tamaño de los puntos; el color sale de data.$color
-          Edge: { lineWidth: 2, color: "#c3c2b7" },   // líneas entre mentor y ayudante
+          Node: { dim: 7, overridable: true },        // tamaño de los puntos; el color sale de data.$color
+          Edge: { lineWidth: 1.5, color: "#c3c2b7" }, // líneas entre categoría y subcategoría
           duration: 700,                              // duración de la animación al hacer clic
 
           // 2. Crear la etiqueta (nombre) de cada nodo y hacerla clicable
@@ -88,7 +97,7 @@
           // 3. Tamaño del nombre según la distancia al centro (_depth):
           //    grande en el centro, mediano en sus vecinos, pequeño en el siguiente nivel, oculto después
           onPlaceLabel: (etiqueta, nodo) => {
-            const tamanos = ["17px", "14px", "11px"];
+            const tamanos = ["17px", "13px", "10px"];
             if (nodo._depth <= 2) {
               etiqueta.style.display = "";
               etiqueta.style.fontSize = tamanos[nodo._depth];
