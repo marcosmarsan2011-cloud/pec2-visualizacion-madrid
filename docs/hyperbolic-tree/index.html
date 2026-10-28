@@ -14,7 +14,7 @@
       Las 204 inversiones principales del Ayuntamiento de Madrid (2.891 M€), organizadas como un árbol: Madrid → línea
       de inversión → distrito → proyecto (328 puntos en 4 niveles). El tamaño de cada punto depende de su presupuesto.
       <b>Haz clic en un nombre para llevarlo al centro</b>: el árbol se recoloca y lo que está lejos se comprime hacia el borde.
-      También puedes buscar un proyecto o un distrito.
+      También puedes buscar un proyecto o un distrito, y pasar el ratón por un nombre para ver su importe.
     </p>
     <p><b>Vicálvaro y Villa de Vallecas tienen 25 proyectos cada uno; Chamberí y Chamartín, uno.</b>
       Al recorrer el árbol se ve cómo cada línea de inversión se reparte por los distritos.</p>
@@ -25,6 +25,7 @@
     <div class="navegacion">
       <button id="atras" title="Atrás">←</button>
       <button id="adelante" title="Adelante">→</button>
+      <button id="inicio" title="Volver a Madrid">Inicio</button>
       <input id="buscador" list="nombres" placeholder="Buscar proyecto, distrito o línea…">
       <datalist id="nombres"></datalist>
     </div>
@@ -109,17 +110,20 @@
           duration: 700,                              // duración de la animación al hacer clic
 
           // Crear la etiqueta (nombre) de cada nodo y hacerla clicable
+          // (los nombres largos se recortan; el nombre completo y el importe salen al pasar el ratón)
           onCreateLabel: (etiqueta, nodo) => {
-            etiqueta.textContent = nodo.name;
+            etiqueta.textContent = nodo.name.length > 32 ? nodo.name.slice(0, 30) + "…" : nodo.name;
+            etiqueta.title = `${nodo.name}: ${millones(nodo.data.presupuesto)}`;
             etiqueta.className = "nodo";
             etiqueta.onclick = () => ir(porId[nodo.id]);
           },
 
           // Tamaño del nombre según la distancia al centro (_depth):
-          // grande en el centro, mediano en sus vecinos, pequeño en el siguiente nivel, oculto después
+          // grande en el centro, mediano en sus vecinos y pequeño en el siguiente nivel;
+          // el siguiente nivel solo se rotula si tiene pocos puntos (si no, los nombres se amontonan)
           onPlaceLabel: (etiqueta, nodo) => {
             const tamanos = ["17px", "13px", "10px"];
-            if (nodo._depth <= 2) {
+            if (nodo._depth <= 1 || (nodo._depth === 2 && rotularNivel2)) {
               etiqueta.style.display = "";
               etiqueta.style.fontSize = tamanos[nodo._depth];
               etiqueta.style.fontWeight = nodo._depth === 0 ? "700" : "400";
@@ -147,9 +151,20 @@
           ficha.querySelector(".datos").textContent = partes.join(" · ");
         }
 
+        // Cuántos puntos hay a 2 saltos de un nodo (nietos, hermanos y abuelo): si son muchos, no se rotulan
+        let rotularNivel2 = false;
+        function cuantosADosSaltos(nodo) {
+          const vecinos = n => [...n.children, ...(padre[n.id] ? [padre[n.id]] : [])];
+          const cerca = new Set([nodo.id, ...vecinos(nodo).map(v => v.id)]);
+          const lejos = new Set();
+          vecinos(nodo).forEach(v => vecinos(v).forEach(w => { if (!cerca.has(w.id)) lejos.add(w.id); }));
+          return lejos.size;
+        }
+
         // 5. Navegación con historial (atrás / adelante) y ruta clicable
         const historial = [];
         let posicion = -1;
+        let dibujado = false;   // la primera vez el árbol ya está centrado en la raíz
 
         function ir(nodo, guardar = true) {
           if (guardar && nodo !== historial[posicion]) {
@@ -157,7 +172,9 @@
             historial.push(nodo);
             posicion = historial.length - 1;
           }
-          if (posicion > 0) ht.onClick(nodo.id);   // lleva el nodo al centro con una animación
+          rotularNivel2 = cuantosADosSaltos(nodo) <= 30;
+          if (dibujado) ht.onClick(nodo.id);       // lleva el nodo al centro con una animación
+          else { ht.refresh(); dibujado = true; }
           mostrarFicha(nodo);
           const ruta = document.getElementById("ruta");
           ruta.innerHTML = "";
@@ -173,6 +190,7 @@
           document.getElementById("adelante").disabled = posicion >= historial.length - 1;
         }
 
+        document.getElementById("inicio").onclick = () => ir(arbol);
         document.getElementById("atras").onclick = () => { if (posicion > 0) ir(historial[--posicion], false); };
         document.getElementById("adelante").onclick = () => { if (posicion < historial.length - 1) ir(historial[++posicion], false); };
         document.getElementById("buscador").onchange = evento => {
@@ -182,7 +200,6 @@
 
         // 6. Cargar los datos, dibujar y empezar en la raíz
         ht.loadJSON(arbol);
-        ht.refresh();
         ir(arbol);
       });
   </script>
