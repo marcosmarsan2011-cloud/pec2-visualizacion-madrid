@@ -11,13 +11,16 @@
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
     <h1>El árbol de las inversiones de Madrid</h1>
     <p class="subtitulo">
-      Las 204 inversiones principales del Ayuntamiento de Madrid (2.891 M€), organizadas como un árbol: Madrid → línea
-      de inversión → distrito → proyecto (328 puntos en 4 niveles). El tamaño de cada punto depende de su presupuesto.
+      Las 204 inversiones principales del Ayuntamiento de Madrid (obras y equipamientos), organizadas como un árbol: Madrid → línea
+      de inversión → distrito → proyecto (328 puntos en 4 niveles). El tamaño de cada punto depende de su presupuesto total.
       <b>Haz clic en un nombre para llevarlo al centro</b>: el árbol se recoloca y lo que está lejos se comprime hacia el borde.
       También puedes buscar un proyecto o un distrito, y pasar el ratón por un nombre para ver su importe.
     </p>
-    <p><b>Vicálvaro y Villa de Vallecas tienen 25 proyectos cada uno; Chamberí y Chamartín, uno.</b>
+    <p><b>Vicálvaro y Villa de Vallecas tienen 25 proyectos cada uno; Chamberí, uno.</b>
       Al recorrer el árbol se ve cómo cada línea de inversión se reparte por los distritos.</p>
+    <p>Entre todas cuestan <b>2.891 M€, pero no es el gasto de un año</b>: es el coste de cada proyecto completo,
+      que se paga a lo largo de varios años (algunos hasta 2032). Para 2026 tienen previstos 589 M€; el presupuesto
+      de 2026 dedica a inversiones 754 M€ en total (las 11 de cada 100 euros del Circle Packing).</p>
 
     <div class="leyenda" id="leyenda"></div>
 
@@ -139,7 +142,7 @@
         // 4. Ficha con los datos del nodo del centro
         function mostrarFicha(nodo) {
           const d = nodo.data;
-          const partes = [`Presupuesto: ${millones(d.presupuesto)}`];
+          const partes = [`Presupuesto total: ${millones(d.presupuesto)}`];
           const superior = padre[nodo.id];
           if (superior) partes.push(`${porcentaje(d.presupuesto / superior.data.presupuesto)} de «${superior.name}»`);
           if (d.tipo === "Proyecto") partes.push(d.años, d.estado);
