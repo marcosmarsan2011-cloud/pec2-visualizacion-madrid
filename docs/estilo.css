@@ -45,3 +45,13 @@ svg text.total { text-anchor: start; dominant-baseline: middle; font-size: 12px;
   font-size: 14px; color: #52514e; line-height: 1.5;
 }
 #ficha b { color: #0b0b0b; font-size: 16px; }
+
+/* Navegación (atrás / adelante / ruta) y buscador del Circle Packing y del Hyperbolic Tree */
+.navegacion { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0; font-size: 14px; color: #52514e; }
+.navegacion button {
+  font-size: 16px; padding: 2px 12px; border: 1px solid #c3c2b7; border-radius: 4px;
+  background: #ffffff; color: #0b0b0b; cursor: pointer;
+}
+.navegacion button:disabled { opacity: 0.35; cursor: default; }
+.navegacion input { font-size: 14px; padding: 3px 8px; border: 1px solid #c3c2b7; border-radius: 4px; min-width: 220px; }
+#ruta a { color: #2a78d6; }

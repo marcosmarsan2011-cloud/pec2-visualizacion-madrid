@@ -1,14 +1,14 @@
-obra,distrito,inicio,fin,meses,presupuesto,estado
-Zonas verdes del área especial (San Blas),San Blas - Canillejas,2024-12-19,2027-02-18,26,7377849.0,En ejecución
-Calles Lombía y Fernán González,Salamanca,2025-01-24,2026-04-23,15,1459194.0,En ejecución
-Rampas del antiguo mercado de Legazpi,Arganzuela,2025-06-22,2026-06-21,12,5205131.0,En ejecución
-Cubrición de la M-30 en Ventas,Salamanca . Ciudad Lineal,2025-06-22,2027-04-21,22,78916237.0,En ejecución
-Soterramiento de la Castellana,Chamartín - Fuencarral - El Pardo,2025-06-29,2026-04-28,22,112260058.0,En ejecución
-Ascensor urbano Dr. Barraquer,Fuencarral-El Pardo,2025-07-03,2026-05-02,10,604018.0,En ejecución
-Plaza de Chamberí,Chamberí,2025-11-17,2026-07-16,8,2272130.0,En ejecución
-Viario Vía Borde-Vía Meridional,Villa De Vallecas,2025-11-18,2027-10-17,23,16198975.0,En ejecución
-Plaza de Jacinto Benavente,Centro,2026-01-11,2027-04-10,15,9461989.0,En ejecución
-Paisaje de la Luz (Alcalá-Cibeles),Retiro - Salamanca,2026-01-25,2027-05-24,16,6120436.0,En ejecución
-Peatonalización del casco de Barajas,Barajas,2026-03-03,2027-09-02,18,6412846.0,En ejecución
-Plaza de Oporto,Carabanchel,2026-05-17,2027-08-16,15,5299314.0,En ejecución
-Calle Alonso Cano,Chamberí,2026-07-02,2027-06-01,11,4404120.0,En ejecución
+obra,distrito,inicio,fin,meses,presupuesto,estado,nombre_oficial,empresa
+Zonas verdes del área especial (San Blas),San Blas - Canillejas,2024-12-19,2027-02-18,26,7377849.0,En ejecución,ACONDICIONAMIENTO DE ZONAS VERDES DEL ÁREA DE ORDENACIÓN ESPECIAL AOE.00.08 PARQUE DEPORTIVO DEL ESTE,UTE PACSA - TAGA
+Calles Lombía y Fernán González,Salamanca,2025-01-24,2026-04-23,15,1459194.0,En ejecución,"REURBANIZACIÓN DE LAS CALLES LOMBÍA, FERNÁN GONZÁLEZ, AVDA. DE FELIPE II Y OTRAS",UTE PACSA - TAGA
+Rampas del antiguo mercado de Legazpi,Arganzuela,2025-06-22,2026-06-21,12,5205131.0,En ejecución,CONSTRUCCIÓN DE LAS RAMPAS DE ACCESO AL ANTIGUO MERCADO CENTRAL DE FRUTAS Y VERDURAS DE LEGAZPI,U.T.E. ROVER-COTODISA
+Cubrición de la M-30 en Ventas,Salamanca . Ciudad Lineal,2025-06-22,2027-04-21,22,78916237.0,En ejecución,CUBRICIÓN DEL VIARIO M-30 EN EL PUENTE DE VENTAS,"UTE FCC , PACSA, TAGA"
+Soterramiento de la Castellana,Chamartín - Fuencarral - El Pardo,2025-06-29,2026-04-28,22,112260058.0,En ejecución,SOTERRAMIENTO DEL PASEO DE LA CASTELLANA EN EL TRAMO C/SINESIO DELGADO- NUDO NORTE DE CALLE 30,UTE FERROVIAL - GYOCIVIL - LICUAS
+Ascensor urbano Dr. Barraquer,Fuencarral-El Pardo,2025-07-03,2026-05-02,10,604018.0,En ejecución,ASCENSOR URBANO PZA. DR.BARRAQUER-AV.CARDENAL HERRERA ORIA. MEJORA DE ACCESIBILIDAD,UTE PACSA - TAGA
+Plaza de Chamberí,Chamberí,2025-11-17,2026-07-16,8,2272130.0,En ejecución,PLAZA DE CHAMBERÍ. OBRAS DE REMODELACIÓN,UTE PACSA-TAGA
+Viario Vía Borde-Vía Meridional,Villa De Vallecas,2025-11-18,2027-10-17,23,16198975.0,En ejecución,VIARIO DE CONEXIÓN VÍA BORDE- VÍA MERIDIONAL ETAPA-2. CTRA. VALDECARROS 2º ETAPA,UTE ORTIZ-GYOCIVIL
+Plaza de Jacinto Benavente,Centro,2026-01-11,2027-04-10,15,9461989.0,En ejecución,REMODELACIÓN DE LA PLAZA DE JACINTO BENAVENTE,"UTE AZVI, S.A.U. - LICUAS S.A."
+Paisaje de la Luz (Alcalá-Cibeles),Retiro - Salamanca,2026-01-25,2027-05-24,16,6120436.0,En ejecución,PAISAJE DE LA LUZ. CALLE ALCALÁ (PLAZA DE CIBELES – PLAZA DE LA INDEPENDENCIA).,U.T.E. LICUAS - AZVI
+Peatonalización del casco de Barajas,Barajas,2026-03-03,2027-09-02,18,6412846.0,En ejecución,PEATONALIZACIÓN DEL CASCO HISTÓRICO DE BARAJAS,U.T.E. ORTIZ - GYOCIVIL
+Plaza de Oporto,Carabanchel,2026-05-17,2027-08-16,15,5299314.0,En ejecución,PLAZA DE OPORTO Y ENTORNO. OBRAS DE REMODELACIÓN,U.T.E. ORTIZ - GYOCIVIL
+Calle Alonso Cano,Chamberí,2026-07-02,2027-06-01,11,4404120.0,En ejecución,REMODELACIÓN DE LA CALLE ALONSO CANO,UTE PACSA-TAGA

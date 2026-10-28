@@ -11,14 +11,24 @@
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
     <h1>El árbol de las inversiones de Madrid</h1>
     <p class="subtitulo">
-      Las 204 inversiones principales del Ayuntamiento de Madrid, organizadas como un árbol: Madrid → línea
-      de inversión → distrito → proyecto (328 puntos en 4 niveles). La ficha muestra el presupuesto de cada rama.
+      Las 204 inversiones principales del Ayuntamiento de Madrid (2.891 M€), organizadas como un árbol: Madrid → línea
+      de inversión → distrito → proyecto (328 puntos en 4 niveles). El tamaño de cada punto depende de su presupuesto.
       <b>Haz clic en un nombre para llevarlo al centro</b>: el árbol se recoloca y lo que está lejos se comprime hacia el borde.
+      También puedes buscar un proyecto o un distrito.
     </p>
     <p><b>Vicálvaro y Villa de Vallecas tienen 25 proyectos cada uno; Chamberí y Chamartín, uno.</b>
       Al recorrer el árbol se ve cómo cada línea de inversión se reparte por los distritos.</p>
 
     <div class="leyenda" id="leyenda"></div>
+
+    <!-- Navegación: atrás / adelante, buscador y ruta hasta el punto del centro -->
+    <div class="navegacion">
+      <button id="atras" title="Atrás">←</button>
+      <button id="adelante" title="Adelante">→</button>
+      <input id="buscador" list="nombres" placeholder="Buscar proyecto, distrito o línea…">
+      <datalist id="nombres"></datalist>
+    </div>
+    <div class="navegacion"><span id="ruta"></span></div>
 
     <!-- Ficha del punto que está en el centro -->
     <div id="ficha"></div>
@@ -27,6 +37,7 @@
     <div id="grafico"></div>
 
     <p class="fuente">
+      Un mismo distrito aparece en varias ramas, una por cada línea de inversión en la que tiene proyectos.<br>
       Fuente: <a href="https://datos.madrid.es/dataset/300533-0-inversiones-principales">Inversiones principales:
       equipamientos, obras e infraestructuras</a> (datos a 31/12/2025), Portal de Datos Abiertos del Ayuntamiento de Madrid (CC BY 4.0).
     </p>
@@ -42,56 +53,70 @@
       "Proyecto": "#898781"
     };
     const millones = n => (n / 1e6).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " M€";
+    const porcentaje = x => (x * 100).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " %";
 
     const leyenda = document.getElementById("leyenda");
     for (const texto of ["Línea de inversión", "Distrito", "Proyecto"]) {
       leyenda.insertAdjacentHTML("beforeend", `<span><i style="background:${colores[texto]}"></i>${texto}</span>`);
     }
 
-    // Muestra en la ficha los datos del punto elegido
-    function mostrarFicha(nodo) {
-      const ficha = document.getElementById("ficha");
-      ficha.innerHTML = "<b></b><br><span class='tipo'></span><br><span class='importe'></span>";
-      ficha.querySelector("b").textContent = nodo.name;
-      ficha.querySelector(".tipo").textContent = nodo.data.tipo === "Proyecto"
-        ? `Proyecto · ${nodo.data.años} · ${nodo.data.estado}`
-        : `${nodo.data.tipo} · ${nodo.data.proyectos} proyectos`;
-      ficha.querySelector(".importe").textContent = "Presupuesto: " + millones(nodo.data.presupuesto);
-    }
-
-    // Pone el color a cada nodo del árbol (JIT lo lee de data.$color)
-    function colorear(nodo) {
-      nodo.data.$color = colores[nodo.data.tipo];
-      nodo.children.forEach(colorear);
-    }
-
     fetch("../data/hyperbolic_tree.json")
       .then(respuesta => respuesta.json())
       .then(arbol => {
-        colorear(arbol);
+        // 1. Recorrer el árbol una vez: color y tamaño de cada punto y padre de cada nodo
+        const padre = {};       // id -> nodo padre
+        const porId = {};       // id -> nodo
+        const maximo = Math.max(...arbol.children.map(l => l.data.presupuesto));
+        function preparar(nodo, superior) {
+          porId[nodo.id] = nodo;
+          padre[nodo.id] = superior;
+          nodo.data.$color = colores[nodo.data.tipo];
+          // tamaño del punto: entre 4 y 16 px según la raíz cuadrada del presupuesto (así el área crece con el importe)
+          nodo.data.$dim = nodo.data.tipo === "Ayuntamiento" ? 10 : 4 + 12 * Math.sqrt(nodo.data.presupuesto / maximo);
+          nodo.children.forEach(hijo => preparar(hijo, nodo));
+        }
+        preparar(arbol, null);
+
+        // Lista de nodos desde la raíz hasta uno dado
+        function rutaHasta(nodo) {
+          const ruta = [];
+          for (let n = nodo; n; n = padre[n.id]) ruta.unshift(n);
+          return ruta;
+        }
+
+        // 2. Opciones del buscador: "Proyecto (Distrito · Línea)" para distinguir los nombres repetidos
+        const buscables = {};
+        Object.values(porId).forEach(nodo => {
+          const contexto = rutaHasta(nodo).slice(1, -1).map(n => n.name).reverse();
+          buscables[contexto.length ? `${nodo.name} (${contexto.join(" · ")})` : nodo.name] = nodo;
+        });
+        const lista = document.getElementById("nombres");
+        Object.keys(buscables).sort().forEach(texto => {
+          const opcion = document.createElement("option");
+          opcion.value = texto;
+          lista.append(opcion);
+        });
+
         const lado = document.getElementById("grafico").offsetWidth;   // gráfico cuadrado
 
-        // 1. Crear el Hyperbolic Tree
+        // 3. Crear el Hyperbolic Tree
         const ht = new $jit.Hypertree({
           injectInto: "grafico",
           width: lado,
           height: lado,
-          Node: { dim: 7, overridable: true },        // tamaño de los puntos; el color sale de data.$color
+          Node: { dim: 7, overridable: true },        // color y tamaño salen de data.$color y data.$dim
           Edge: { lineWidth: 1.5, color: "#c3c2b7" }, // líneas entre cada nivel
           duration: 700,                              // duración de la animación al hacer clic
 
-          // 2. Crear la etiqueta (nombre) de cada nodo y hacerla clicable
+          // Crear la etiqueta (nombre) de cada nodo y hacerla clicable
           onCreateLabel: (etiqueta, nodo) => {
             etiqueta.textContent = nodo.name;
             etiqueta.className = "nodo";
-            etiqueta.onclick = () => {
-              ht.onClick(nodo.id);    // lleva el nodo al centro con una animación
-              mostrarFicha(nodo);
-            };
+            etiqueta.onclick = () => ir(porId[nodo.id]);
           },
 
-          // 3. Tamaño del nombre según la distancia al centro (_depth):
-          //    grande en el centro, mediano en sus vecinos, pequeño en el siguiente nivel, oculto después
+          // Tamaño del nombre según la distancia al centro (_depth):
+          // grande en el centro, mediano en sus vecinos, pequeño en el siguiente nivel, oculto después
           onPlaceLabel: (etiqueta, nodo) => {
             const tamanos = ["17px", "13px", "10px"];
             if (nodo._depth <= 2) {
@@ -107,10 +132,58 @@
           }
         });
 
-        // 4. Cargar los datos y dibujar
+        // 4. Ficha con los datos del nodo del centro
+        function mostrarFicha(nodo) {
+          const d = nodo.data;
+          const partes = [`Presupuesto: ${millones(d.presupuesto)}`];
+          const superior = padre[nodo.id];
+          if (superior) partes.push(`${porcentaje(d.presupuesto / superior.data.presupuesto)} de «${superior.name}»`);
+          if (d.tipo === "Proyecto") partes.push(d.años, d.estado);
+          else partes.push(`${d.proyectos} proyectos`);
+          const ficha = document.getElementById("ficha");
+          ficha.innerHTML = "<b></b><br><span class='tipo'></span><br><span class='datos'></span>";
+          ficha.querySelector("b").textContent = nodo.name;
+          ficha.querySelector(".tipo").textContent = d.tipo;
+          ficha.querySelector(".datos").textContent = partes.join(" · ");
+        }
+
+        // 5. Navegación con historial (atrás / adelante) y ruta clicable
+        const historial = [];
+        let posicion = -1;
+
+        function ir(nodo, guardar = true) {
+          if (guardar && nodo !== historial[posicion]) {
+            historial.splice(posicion + 1);   // al ir a un sitio nuevo se borra el "adelante"
+            historial.push(nodo);
+            posicion = historial.length - 1;
+          }
+          if (posicion > 0) ht.onClick(nodo.id);   // lleva el nodo al centro con una animación
+          mostrarFicha(nodo);
+          const ruta = document.getElementById("ruta");
+          ruta.innerHTML = "";
+          rutaHasta(nodo).forEach((n, i) => {
+            if (i > 0) ruta.append(" › ");
+            const enlace = document.createElement("a");
+            enlace.href = "#";
+            enlace.textContent = n.name;
+            enlace.onclick = evento => { evento.preventDefault(); ir(n); };
+            ruta.append(enlace);
+          });
+          document.getElementById("atras").disabled = posicion <= 0;
+          document.getElementById("adelante").disabled = posicion >= historial.length - 1;
+        }
+
+        document.getElementById("atras").onclick = () => { if (posicion > 0) ir(historial[--posicion], false); };
+        document.getElementById("adelante").onclick = () => { if (posicion < historial.length - 1) ir(historial[++posicion], false); };
+        document.getElementById("buscador").onchange = evento => {
+          const nodo = buscables[evento.target.value];
+          if (nodo) { ir(nodo); evento.target.value = ""; }
+        };
+
+        // 6. Cargar los datos, dibujar y empezar en la raíz
         ht.loadJSON(arbol);
         ht.refresh();
-        mostrarFicha(arbol);
+        ir(arbol);
       });
   </script>
 </body>

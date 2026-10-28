@@ -14,12 +14,25 @@
       Las 13 obras públicas en ejecución del Área de Obras y Equipamientos del Ayuntamiento de Madrid
       que tienen fechas. Cada barra va del inicio al fin previsto de la obra; a la derecha, su presupuesto.
       La línea discontinua marca la fecha de los datos (22 de julio de 2026).
+      <b>Haz clic en una barra para ver su ficha</b> y usa los botones para reordenar las obras.
     </p>
     <p><b>Cinco obras ya deberían haber terminado y siguen «en ejecución».</b>
       Entre ellas, el soterramiento de la Castellana (112 M€), que junto a la cubrición de la M-30 en Ventas
       (79 M€) suma tres de cada cuatro euros de estas obras.</p>
 
     <div class="leyenda" id="leyenda"></div>
+
+    <!-- Orden de las filas -->
+    <div class="navegacion">
+      Ordenar por:
+      <button data-orden="inicio">Fecha de inicio</button>
+      <button data-orden="presupuesto">Presupuesto</button>
+      <button data-orden="retraso">Retraso</button>
+    </div>
+
+    <!-- Ficha de la obra elegida -->
+    <div id="ficha"></div>
+
     <div id="grafico"></div>
 
     <p class="fuente">
@@ -37,6 +50,7 @@
     const fechaDatos = new Date(2026, 6, 22);   // 22 de julio de 2026
     const formato = d3.timeFormat("%d/%m/%Y");
     const millones = n => (n / 1e6).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " M€";
+    const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
 
     // Leyenda
     d3.select("#leyenda").append("span")
@@ -44,10 +58,12 @@
     d3.select("#leyenda").append("span")
       .html(`<i style="background:${rojo}"></i>`).append("span").text("Retraso: sigue en ejecución pasado el plazo");
 
-    // Meses en español para el eje
-    const meses = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
-
     d3.csv("../data/gantt.csv", d3.autoType).then(obras => {
+      // Días de retraso de cada obra (0 si aún está dentro de plazo)
+      obras.forEach(d => {
+        d.retraso = d.fin < fechaDatos && d.estado === "En ejecución" ? Math.round((fechaDatos - d.fin) / 864e5) : 0;
+      });
+
       // 1. Tamaño del dibujo: una fila de 32 px por obra
       const margen = { arriba: 26, derecha: 80, abajo: 30, izquierda: 250 };
       const ancho = 800;
@@ -58,7 +74,6 @@
         .domain([new Date(2024, 11, 1), new Date(2027, 10, 1)])
         .range([margen.izquierda, ancho - margen.derecha]);
       const y = d3.scaleBand()
-        .domain(obras.map(d => d.obra))
         .range([margen.arriba, alto - margen.abajo])
         .padding(0.3);
 
@@ -73,50 +88,68 @@
           .tickFormat(d => `${meses[d.getMonth()]} ${d.getFullYear()}`)
           .tickSize(-(alto - margen.arriba - margen.abajo)));
 
-      // 4. Nombre de cada obra a la izquierda
-      svg.selectAll("text.fila")
+      // 4. Una fila (grupo) por obra: nombre, barra del plazo, barra del retraso y presupuesto
+      const filas = svg.selectAll("g.obra")
         .data(obras)
-        .join("text")
-          .attr("class", "fila")
-          .attr("x", margen.izquierda - 8)
-          .attr("y", d => y(d.obra) + y.bandwidth() / 2)
-          .text(d => d.obra);
+        .join("g")
+          .attr("class", "obra")
+          .style("cursor", "pointer")
+          .on("click", (evento, d) => elegir(d))
+          .on("mouseover", function () { d3.select(this).select(".fila").style("font-weight", "700"); })
+          .on("mouseout", function (evento, d) { if (d !== elegida) d3.select(this).select(".fila").style("font-weight", null); });
 
-      // 5. Plazo previsto: una barra del inicio al fin
-      svg.selectAll("rect.plazo")
-        .data(obras)
-        .join("rect")
-          .attr("x", d => x(d.inicio))
-          .attr("y", d => y(d.obra))
-          .attr("width", d => x(d.fin) - x(d.inicio))
-          .attr("height", y.bandwidth())
-          .attr("rx", 3)
-          .attr("fill", azul)
-        .append("title")   // al pasar el ratón
-          .text(d => `${d.obra} (${d.distrito}): ${formato(d.inicio)} – ${formato(d.fin)}, ${d.meses} meses, ${millones(d.presupuesto)}`);
+      filas.append("text")
+        .attr("class", "fila")
+        .attr("x", margen.izquierda - 8)
+        .text(d => d.obra);
+      filas.append("rect")
+        .attr("class", "plazo")
+        .attr("x", d => x(d.inicio))
+        .attr("width", d => x(d.fin) - x(d.inicio))
+        .attr("rx", 3)
+        .attr("fill", azul);
+      filas.filter(d => d.retraso > 0).append("rect")
+        .attr("x", d => x(d.fin))
+        .attr("width", d => x(fechaDatos) - x(d.fin))
+        .attr("fill", rojo);
+      filas.append("text")
+        .attr("class", "total")
+        .attr("x", ancho - margen.derecha + 8)
+        .text(d => millones(d.presupuesto));
 
-      // 6. Retraso: del fin previsto a la fecha de los datos, si la obra seguía en ejecución
-      svg.selectAll("rect.retraso")
-        .data(obras.filter(d => d.fin < fechaDatos && d.estado === "En ejecución"))
-        .join("rect")
-          .attr("x", d => x(d.fin))
-          .attr("y", d => y(d.obra))
-          .attr("width", d => x(fechaDatos) - x(d.fin))
-          .attr("height", y.bandwidth())
-          .attr("fill", rojo)
-        .append("title")
-          .text(d => `${d.obra}: debía terminar el ${formato(d.fin)} y seguía en ejecución el ${formato(fechaDatos)}`);
+      // 5. Colocar las filas según el orden elegido (con una animación)
+      function ordenar(criterio) {
+        const comparar = {
+          inicio: (a, b) => a.inicio - b.inicio,
+          presupuesto: (a, b) => b.presupuesto - a.presupuesto,
+          retraso: (a, b) => b.retraso - a.retraso || a.fin - b.fin,
+        }[criterio];
+        y.domain(obras.slice().sort(comparar).map(d => d.obra));
+        filas.transition().duration(600).attr("transform", d => `translate(0, ${y(d.obra)})`);
+        filas.selectAll("rect").attr("height", y.bandwidth());
+        filas.selectAll("text").attr("y", y.bandwidth() / 2);
+        d3.selectAll("[data-orden]").style("font-weight", function () { return this.dataset.orden === criterio ? "700" : null; });
+      }
+      d3.selectAll("[data-orden]").on("click", function () { ordenar(this.dataset.orden); });
 
-      // 7. Presupuesto a la derecha
-      svg.selectAll("text.total")
-        .data(obras)
-        .join("text")
-          .attr("class", "total")
-          .attr("x", ancho - margen.derecha + 8)
-          .attr("y", d => y(d.obra) + y.bandwidth() / 2)
-          .text(d => millones(d.presupuesto));
+      // 6. Ficha de la obra elegida
+      let elegida = null;
+      function elegir(d) {
+        elegida = d;
+        filas.select(".fila").style("font-weight", f => f === d ? "700" : null);
+        filas.select(".plazo").attr("fill-opacity", f => f === d ? 1 : 0.55);
+        const ficha = d3.select("#ficha").html("");
+        ficha.append("b").text(d.obra);
+        ficha.append("br");
+        ficha.append("span").text(d.nombre_oficial);
+        ficha.append("br");
+        ficha.append("span").text([
+          d.distrito, `${formato(d.inicio)} – ${formato(d.fin)} (${d.meses} meses)`, millones(d.presupuesto),
+          d.empresa, d.retraso > 0 ? `${d.retraso} días de retraso a 22/07/2026` : "dentro de plazo a 22/07/2026",
+        ].filter(Boolean).join(" · "));
+      }
 
-      // 8. Línea de la fecha de los datos
+      // 7. Línea de la fecha de los datos
       svg.append("line")
         .attr("x1", x(fechaDatos)).attr("x2", x(fechaDatos))
         .attr("y1", margen.arriba - 6).attr("y2", alto - margen.abajo)
@@ -127,6 +160,9 @@
         .attr("x", x(fechaDatos) + 4)
         .attr("y", margen.arriba - 10)
         .text("datos del 22/07/2026");
+
+      ordenar("inicio");
+      elegir(obras.reduce((a, b) => (b.retraso > a.retraso ? b : a)));   // empieza mostrando la de más retraso
     });
   </script>
 </body>

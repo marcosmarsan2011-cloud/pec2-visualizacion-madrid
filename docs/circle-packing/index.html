@@ -3,94 +3,174 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Circle Packing · Inversiones de Madrid</title>
+  <title>Circle Packing · Presupuesto de Madrid</title>
   <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
   <main>
     <p class="volver"><a href="../">← Las tres técnicas</a></p>
-    <h1>¿En qué invierte Madrid?</h1>
+    <h1>¿En qué gasta Madrid sus 7.107 millones?</h1>
     <p class="subtitulo">
-      Las 204 inversiones principales del Ayuntamiento de Madrid (equipamientos, obras e infraestructuras),
-      que suman 2.891 millones de euros. Cada círculo grande es una línea de inversión y, dentro,
-      cada círculo es un proyecto, con un área proporcional a su presupuesto.
+      Todo el presupuesto de gastos del Ayuntamiento de Madrid para 2026, con la clasificación oficial por programas:
+      área de gasto → política → programa → capítulo (en qué se gasta: personal, compras, inversiones…).
+      El área de cada círculo es su importe. <b>Haz clic en un círculo para entrar en él</b> y en el fondo para salir.
     </p>
-    <p><b>Nueve obras de infraestructura (751 M€) cuestan casi tanto como 40 promociones de vivienda (872 M€).</b>
-      Solo el soterramiento de la A-5 (315 M€) cuesta el doble que los 26 proyectos de deportes y juventud juntos (156 M€).</p>
+    <p><b>Solo 11 de cada 100 euros son inversiones;</b> el resto paga el día a día de la ciudad: 38 € van a bienes
+      y servicios (limpieza, mantenimiento, contratos) y 30 € a personal. La seguridad y la movilidad (Policía Municipal,
+      bomberos, Samur) es la política con más dinero: 1.093 M€.</p>
 
     <div class="leyenda" id="leyenda"></div>
+
+    <!-- Navegación: atrás / adelante y ruta hasta el círculo elegido -->
+    <div class="navegacion">
+      <button id="atras" title="Atrás">←</button>
+      <button id="adelante" title="Adelante">→</button>
+      <span id="ruta"></span>
+    </div>
+
+    <!-- Ficha del círculo elegido (o del que tiene el ratón encima) -->
+    <div id="ficha"></div>
+
+    <!-- Aquí D3 dibuja el gráfico -->
     <div id="grafico"></div>
 
     <p class="fuente">
-      Pasa el ratón por un círculo para ver el proyecto, su distrito, sus años y su presupuesto.<br>
-      Fuente: <a href="https://datos.madrid.es/dataset/300533-0-inversiones-principales">Inversiones principales:
-      equipamientos, obras e infraestructuras</a> (datos a 31/12/2025), Portal de Datos Abiertos del Ayuntamiento de Madrid (CC BY 4.0).
+      Importes del presupuesto inicial 2026 (Ayuntamiento y organismos autónomos).<br>
+      Fuente: <a href="https://datos.madrid.es/dataset/300666-0-presupuesto-general-curso">Presupuestos. Presupuesto General 2026</a>,
+      Portal de Datos Abiertos del Ayuntamiento de Madrid (CC BY 4.0).
     </p>
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script>
-    // Deportes resaltado en naranja; el resto de líneas, en azul
-    const colores = { "Deportes y juventud": "#eb6834", "Resto de líneas de inversión": "#2a78d6" };
-    const color = linea => colores[linea] || colores["Resto de líneas de inversión"];
-    const millones = n => (n / 1e6).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " M€";
-
-    for (const texto in colores) {
+    // Un color por área de gasto
+    const colores = {
+      "Servicios públicos básicos": "#2a78d6",
+      "Protección y promoción social": "#e34948",
+      "Bienes públicos preferentes": "#eb6834",
+      "Actuaciones de carácter económico": "#008300",
+      "Actuaciones de carácter general": "#7d4fb5",
+      "Deuda pública": "#898781"
+    };
+    for (const area in colores) {
       d3.select("#leyenda").append("span")
-        .html(`<i style="background:${colores[texto]}"></i>`).append("span").text(texto);
+        .html(`<i style="background:${colores[area]}"></i>`).append("span").text(area);
     }
+
+    // Formatos: 1234567 -> "1,2 M€" ; 0.123 -> "12,3 %"
+    const millones = n => (n / 1e6).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " M€";
+    const porcentaje = x => (x * 100).toLocaleString("es-ES", { maximumFractionDigits: 1 }) + " %";
+    const NIVELES = ["áreas", "políticas", "programas", "capítulos"];
 
     const ancho = 800;
 
     d3.json("../data/circle_packing.json").then(datos => {
-      // 1. Convertir el JSON en una jerarquía y sumar los presupuestos hacia arriba
+      // 1. Jerarquía, sumas hacia arriba y posición de cada círculo
       const raiz = d3.hierarchy(datos)
         .sum(d => d.value)
         .sort((a, b) => b.value - a.value);
+      d3.pack().size([ancho, ancho]).padding(3)(raiz);
 
-      // 2. Calcular la posición y el radio de cada círculo
-      d3.pack().size([ancho, ancho]).padding(d => d.depth === 0 ? 12 : 2)(raiz);
+      // Área de gasto de un nodo (su antepasado de profundidad 1)
+      const area = d => d.ancestors().find(a => a.depth === 1).data.name;
 
-      // Recortar el dibujo a lo que ocupan las líneas de inversión
-      const arriba = d3.min(raiz.children, d => d.y - d.r) - 2;
-      const abajo = d3.max(raiz.children, d => d.y + d.r) + 2;
+      // El dibujo se centra en (0, 0) para poder hacer zoom fácilmente
       const svg = d3.select("#grafico").append("svg")
-        .attr("viewBox", [0, arriba, ancho, abajo - arriba]);
+        .attr("viewBox", [-ancho / 2, -ancho / 2, ancho, ancho])
+        .style("cursor", "pointer")
+        .on("click", () => ir(foco.parent || raiz));   // clic en el fondo: subir un nivel
 
-      // 3. Un círculo por línea de inversión (transparente) y otro por proyecto (relleno)
-      svg.selectAll("circle")
+      // 2. Un círculo por nodo (menos la raíz)
+      const circulos = svg.append("g").selectAll("circle")
         .data(raiz.descendants().slice(1))
         .join("circle")
-          .attr("cx", d => d.x)
-          .attr("cy", d => d.y)
-          .attr("r", d => d.r)
-          .attr("fill", d => color(d.depth === 1 ? d.data.name : d.parent.data.name))
-          .attr("fill-opacity", d => d.children ? 0.1 : 0.85)
-          .attr("stroke", d => color(d.depth === 1 ? d.data.name : d.parent.data.name))
-          .attr("stroke-opacity", d => d.children ? 0.5 : 0)
-        .append("title")   // al pasar el ratón
-          .text(d => d.children
-            ? `${d.data.name}: ${d.children.length} proyectos, ${millones(d.value)}`
-            : `${d.data.name}\n${d.data.distrito} · ${d.data.años} · ${d.data.estado}\n${millones(d.value)}`);
+          .attr("fill", d => colores[area(d)])
+          .attr("fill-opacity", d => d.children ? 0.1 + d.depth * 0.08 : 0.85)
+          .attr("stroke", d => colores[area(d)])
+          .attr("stroke-opacity", 0.5)
+          .on("click", (evento, d) => {
+            evento.stopPropagation();
+            ir(d.children ? d : d.parent);   // un capítulo no se abre: se entra en su programa
+            mostrarFicha(d);
+          })
+          .on("mouseover", (evento, d) => mostrarFicha(d))
+          .on("mouseout", () => mostrarFicha(foco));
 
-      // 4. Presupuesto de los proyectos grandes, dentro de su círculo
-      svg.selectAll("text.equipo")
-        .data(raiz.leaves().filter(d => d.r >= 22))
+      // 3. Una etiqueta por nodo (nombre e importe); solo se ven las de los hijos del círculo elegido
+      const etiquetas = svg.append("g")
+          .style("pointer-events", "none")
+        .selectAll("text")
+        .data(raiz.descendants().slice(1))
         .join("text")
-          .attr("class", "equipo")
-          .style("font-size", "10px")
-          .attr("x", d => d.x)
-          .attr("y", d => d.y + 3)
-          .text(d => millones(d.value));
+          .attr("text-anchor", "middle")
+          .style("font-weight", "600")
+          .style("paint-order", "stroke").style("stroke", "#fcfcfb").style("stroke-width", "3px");
+      etiquetas.append("tspan").attr("x", 0).text(d => d.data.name);
+      etiquetas.append("tspan").attr("x", 0).attr("dy", "1.2em").style("font-weight", "400").text(d => millones(d.value));
 
-      // 5. Nombre de cada línea de inversión, en la parte de arriba de su círculo (solo si cabe, unos 6 px por letra)
-      svg.selectAll("text.division")
-        .data(raiz.children.filter(d => d.data.name.length * 6 < 1.8 * d.r))
-        .join("text")
-          .attr("class", "division")
-          .attr("x", d => d.x)
-          .attr("y", d => d.y - d.r + 14)
-          .text(d => d.data.name);
+      // 4. Zoom: coloca y escala todo para que la vista (x, y, r) ocupe el dibujo
+      let foco = raiz;
+      function zoomA(vista) {
+        const k = ancho / (vista.r * 2);
+        const posicionar = d => `translate(${(d.x - vista.x) * k}, ${(d.y - vista.y) * k})`;
+        circulos.attr("transform", posicionar).attr("r", d => d.r * k);
+        const letra = d => Math.min(14, Math.max(9, d.r * k / 7));
+        // el nombre se ve si es hijo del círculo elegido y cabe (unos 0,55 × tamaño de letra por carácter)
+        const cabe = d => d.data.name.length * letra(d) * 0.55 < 2 * d.r * k;
+        etiquetas.attr("transform", posicionar)
+          .style("font-size", d => letra(d) + "px")
+          .style("display", d => d.parent === foco && cabe(d) ? null : "none");
+      }
+
+      // 5. Ficha con los datos de un nodo
+      function mostrarFicha(d) {
+        const partes = [millones(d.value)];
+        if (d.depth > 0) partes.push(`${porcentaje(d.value / raiz.value)} del presupuesto`);
+        if (d.depth > 1) partes.push(`${porcentaje(d.value / d.parent.value)} de «${d.parent.data.name}»`);
+        if (d.children) partes.push(`${d.children.length} ${NIVELES[d.depth]}`);
+        const ficha = d3.select("#ficha").html("");
+        ficha.append("b").text(d.data.name);
+        ficha.append("br");
+        ficha.append("span").text(partes.join(" · "));
+      }
+
+      // 6. Navegación con historial (atrás / adelante) y ruta clicable
+      const historial = [];
+      let posicion = -1;
+
+      function ir(nodo, guardar = true) {
+        if (guardar && nodo !== historial[posicion]) {
+          historial.splice(posicion + 1);   // al ir a un sitio nuevo se borra el "adelante"
+          historial.push(nodo);
+          posicion = historial.length - 1;
+        }
+        // animación suave desde la vista anterior hasta la nueva
+        const desde = { x: foco.x, y: foco.y, r: foco.r };
+        foco = nodo;
+        d3.transition().duration(600).tween("zoom", () => {
+          const i = d3.interpolate(desde, { x: nodo.x, y: nodo.y, r: nodo.r });
+          return t => zoomA(i(t));
+        });
+        mostrarFicha(nodo);
+        dibujarRuta(nodo);
+        d3.select("#atras").property("disabled", posicion <= 0);
+        d3.select("#adelante").property("disabled", posicion >= historial.length - 1);
+      }
+
+      function dibujarRuta(nodo) {
+        const ruta = d3.select("#ruta").html("");
+        nodo.ancestors().reverse().forEach((a, i) => {
+          if (i > 0) ruta.append("span").text(" › ");
+          ruta.append("a").attr("href", "#").text(a.data.name)
+            .on("click", evento => { evento.preventDefault(); ir(a); });
+        });
+      }
+
+      d3.select("#atras").on("click", () => { if (posicion > 0) ir(historial[--posicion], false); });
+      d3.select("#adelante").on("click", () => { if (posicion < historial.length - 1) ir(historial[++posicion], false); });
+
+      zoomA(raiz);
+      ir(raiz);
     });
   </script>
 </body>
