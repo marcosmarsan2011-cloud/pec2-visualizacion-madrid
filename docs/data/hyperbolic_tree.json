@@ -85,7 +85,7 @@
       },
       {
        "id": "5",
-       "name": "Rehabilitaciones Rrff",
+       "name": "Rehabilitación del Pabellón Cristal",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1458300.0,
@@ -97,7 +97,7 @@
       },
       {
        "id": "6",
-       "name": "Adecuación Centros",
+       "name": "Adecuación del Pabellón Bancadas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 3641939.0,
@@ -212,7 +212,7 @@
       },
       {
        "id": "16",
-       "name": "Instalaciones Centros",
+       "name": "Instalaciones de las Naves 16 y 11 de Matadero",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1235255.0,
@@ -224,7 +224,7 @@
       },
       {
        "id": "17",
-       "name": "Obras Nave 16 de Matadero para la Instalación de S",
+       "name": "Obras en la Nave 16 de Matadero",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1568810.0,
@@ -236,7 +236,7 @@
       },
       {
        "id": "18",
-       "name": "Obras de Adecuación de Almacenes Generales (madrid",
+       "name": "Adecuación de Almacenes Generales",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1880000.0,
@@ -259,7 +259,7 @@
      "children": [
       {
        "id": "20",
-       "name": "Palacio \"el Capricho\"",
+       "name": "Palacio \"El Capricho\"",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 8884452.0,
@@ -271,7 +271,7 @@
       },
       {
        "id": "21",
-       "name": "Museografia para el Museo el Capricho",
+       "name": "Museografía para el Museo El Capricho",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1600000.0,
@@ -317,7 +317,7 @@
      "children": [
       {
        "id": "25",
-       "name": "Museo de Arte Contemporaneo",
+       "name": "Museo de Arte Contemporáneo",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 5080717.0,
@@ -364,7 +364,7 @@
       },
       {
        "id": "29",
-       "name": "Centro Cultural y Biblioteca en las Tablas",
+       "name": "Centro Cultural y Biblioteca en Las Tablas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 13421803.0,
@@ -399,7 +399,7 @@
       },
       {
        "id": "32",
-       "name": "Biblioteca Pública C/silvano,101-103 (entorno Glorieta Mar de Cristal)",
+       "name": "Biblioteca Pública C/ Silvano, 101-103 (Mar de Cristal)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 8755733.0,
@@ -458,7 +458,7 @@
       },
       {
        "id": "37",
-       "name": "Obras de Rehabilitación del Pabellón Xii Fase I",
+       "name": "Obras de Rehabilitación del Pabellón XII Fase I",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 11836912.0,
@@ -481,7 +481,7 @@
      "children": [
       {
        "id": "39",
-       "name": "Parcela C/encomienda Palacios,231",
+       "name": "Parcela C/ Encomienda de Palacios, 231",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 2914350.0,
@@ -596,7 +596,7 @@
      "children": [
       {
        "id": "49",
-       "name": "Biblioteca-centro Cultural Villa de Vallecas",
+       "name": "Biblioteca-Centro Cultural Villa de Vallecas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 8557768.0,
@@ -619,7 +619,7 @@
      "children": [
       {
        "id": "51",
-       "name": "Centro Cultural los Rosales",
+       "name": "Centro Cultural Los Rosales",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1934689.0,
@@ -711,7 +711,7 @@
      "children": [
       {
        "id": "59",
-       "name": "Centro Deportivo C/costanilla Desamparados, 15 C/v a C/fúcar, 6",
+       "name": "Centro Deportivo C/ Costanilla de los Desamparados, 15",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 35594952.0,
@@ -734,7 +734,7 @@
      "children": [
       {
        "id": "61",
-       "name": "Centro Cultural-juvenil Distrito de Ciudad Lineal,c/ Canal de Panamá, 20",
+       "name": "Centro Cultural-Juvenil C/ Canal de Panamá, 20 (Ciudad Lineal)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 6606187.0,
@@ -758,7 +758,7 @@
       },
       {
        "id": "63",
-       "name": "Parque Deportivo Tres Luces,c/francisco Largo Caballero y Av.arcentales.construcción (id 21: 18880)",
+       "name": "Parque Deportivo Tres Luces",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1393397.0,
@@ -804,7 +804,7 @@
      "children": [
       {
        "id": "67",
-       "name": "Campos de Fútbol en Valdebebas (instalaciones Sotenibles)",
+       "name": "Campos de Fútbol en Valdebebas (instalaciones sostenibles)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 2168377.0,
@@ -839,7 +839,7 @@
      "children": [
       {
        "id": "70",
-       "name": "Campo de Fútbol en Aravaca, C/escultor Peresejo, Bosque Metropolitano",
+       "name": "Campo de Fútbol en Aravaca, C/ Escultor Peresejo, Bosque Metropolitano",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1500000.0,
@@ -862,7 +862,7 @@
      "children": [
       {
        "id": "72",
-       "name": "Campo de Rugby en C/fuente Carrantona S/n, Distrito de Moratalaz",
+       "name": "Campo de Rugby en C/ Fuente Carrantona s/n, Distrito de Moratalaz",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 2692831.0,
@@ -909,7 +909,7 @@
       },
       {
        "id": "76",
-       "name": "Centro Deportivo Angel Nieto",
+       "name": "Centro Deportivo Ángel Nieto",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 3714645.0,
@@ -932,7 +932,7 @@
      "children": [
       {
        "id": "78",
-       "name": "Pabellón Deportivo en Calle Mónaco, 10, Distrito San Blas-canillejas",
+       "name": "Pabellón Deportivo en Calle Mónaco, 10, Distrito San Blas-Canillejas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 12066355.0,
@@ -1050,7 +1050,7 @@
       },
       {
        "id": "88",
-       "name": "Deportivo Básico el Cañaveral Ii",
+       "name": "Deportivo Básico El Cañaveral II",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1047904.0,
@@ -1073,7 +1073,7 @@
      "children": [
       {
        "id": "90",
-       "name": "Centro Deportivo el Espinillo",
+       "name": "Centro Deportivo El Espinillo",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1710246.0,
@@ -1165,7 +1165,7 @@
      "children": [
       {
        "id": "98",
-       "name": "Escuela Infantil los Pajaritos, Distrito de Retiro",
+       "name": "Escuela Infantil Los Pajaritos, Distrito de Retiro",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 2967040.0,
@@ -1222,7 +1222,7 @@
      "children": [
       {
        "id": "103",
-       "name": "Pasarela Peatonal y Ciclista Conexión Arganzuela-carabanchel Sobre el Río Manzanares",
+       "name": "Pasarela Peatonal y Ciclista Conexión Arganzuela-Carabanchel sobre el Río Manzanares",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1920000.0,
@@ -1245,7 +1245,7 @@
      "children": [
       {
        "id": "105",
-       "name": "Soterramiento Paseo de la Castellana, Tramo Complejo Hospitalario la Paz - Calle de Sinesio Delgado",
+       "name": "Soterramiento Paseo de la Castellana, Tramo Complejo Hospitalario La Paz - Calle de Sinesio Delgado",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 128925871.0,
@@ -1613,7 +1613,7 @@
      "children": [
       {
        "id": "137",
-       "name": "Zona Forestal Montecarmelo: M-607 Km.13-gta.ventisquero de la Condesa.rehabilitación (id 21: 17548)",
+       "name": "Zona Forestal Montecarmelo (M-607)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1851981.0,
@@ -1625,7 +1625,7 @@
       },
       {
        "id": "138",
-       "name": "Margen Izquierda del Río Manzanares a la Altura de la C/adelina Patti",
+       "name": "Margen Izquierda del Río Manzanares a la Altura de la C/ Adelina Patti",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1640000.0,
@@ -1729,7 +1729,7 @@
      "children": [
       {
        "id": "147",
-       "name": "Parque la Viña",
+       "name": "Parque La Viña",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1287345.0,
@@ -1880,7 +1880,7 @@
       },
       {
        "id": "160",
-       "name": "Centro de Tratamiento las Dehesas",
+       "name": "Centro de Tratamiento Las Dehesas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 12186510.0,
@@ -1904,7 +1904,7 @@
       },
       {
        "id": "162",
-       "name": "Aliviaderos de los Estanques de Tormentas de Abroñigales y la Gavia",
+       "name": "Aliviaderos de los Estanques de Tormentas de Abroñigales y La Gavia",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 2872840.0,
@@ -1916,7 +1916,7 @@
       },
       {
        "id": "163",
-       "name": "Centro de Tratamiento la Paloma",
+       "name": "Centro de Tratamiento La Paloma",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 9891029.0,
@@ -1973,7 +1973,7 @@
      "children": [
       {
        "id": "168",
-       "name": "Unidades de Enterramiento (carabanchel Sur)",
+       "name": "Unidades de Enterramiento (Carabanchel Sur)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 3136814.0,
@@ -1996,7 +1996,7 @@
      "children": [
       {
        "id": "170",
-       "name": "Renovacion Tanatorios-tº M30",
+       "name": "Renovación del Tanatorio M-30",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1079540.0,
@@ -2008,7 +2008,7 @@
       },
       {
        "id": "171",
-       "name": "Rehabilitación Cementerios Cº la Almudena",
+       "name": "Rehabilitación del Cementerio de la Almudena",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 10230023.0,
@@ -2020,7 +2020,7 @@
       },
       {
        "id": "172",
-       "name": "Acond",
+       "name": "Pórtico del Cementerio de la Almudena",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 2371766.0,
@@ -2032,7 +2032,7 @@
       },
       {
        "id": "173",
-       "name": "Unidades de Enterramiento (almudena)",
+       "name": "Unidades de Enterramiento (Almudena)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1000000.0,
@@ -2243,7 +2243,7 @@
      "children": [
       {
        "id": "191",
-       "name": "Nuevo Aulario del Centro de Formacion de Seguridad y Emergencias (cifse)",
+       "name": "Nuevo Aulario del Centro de Formación de Seguridad y Emergencias (CIFSE)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 17359325.0,
@@ -2266,7 +2266,7 @@
      "children": [
       {
        "id": "193",
-       "name": "Base 0 Samur-protección Civil",
+       "name": "Base 0 SAMUR-Protección Civil",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1241653.0,
@@ -2289,7 +2289,7 @@
      "children": [
       {
        "id": "195",
-       "name": "Base Samur-proteccion Civil y Centro de Salud del Distrito de Moratalaz",
+       "name": "Base SAMUR-Protección Civil y Centro de Salud de Moratalaz",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 5761179.0,
@@ -2358,7 +2358,7 @@
      "children": [
       {
        "id": "201",
-       "name": "Complejo Logístico y Parque de Bomberos en la Calle el Real de San Vicente, 61",
+       "name": "Complejo Logístico y Parque de Bomberos en la Calle El Real de San Vicente, 61",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 13635756.0,
@@ -2381,7 +2381,7 @@
      "children": [
       {
        "id": "203",
-       "name": "Unidad Integral Policía Municipal del Distrito de Villaverde, Avda",
+       "name": "Unidad Integral de Policía Municipal de Villaverde",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 8015375.0,
@@ -2473,7 +2473,7 @@
      "children": [
       {
        "id": "211",
-       "name": "Centro Municipal de Urgencias Sociales (cemus)",
+       "name": "Centro Municipal de Urgencias Sociales (CEMUS)",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 5150000.0,
@@ -2496,7 +2496,7 @@
      "children": [
       {
        "id": "213",
-       "name": "Centro de Mayores C/ Tellez",
+       "name": "Centro de Mayores C/ Téllez",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 9187445.0,
@@ -2519,7 +2519,7 @@
      "children": [
       {
        "id": "215",
-       "name": "Centro de Mayores y Día las Rosas",
+       "name": "Centro de Mayores y Día Las Rosas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 10150000.0,
@@ -2634,7 +2634,7 @@
       },
       {
        "id": "225",
-       "name": "Zonas Adyacentes Jardines de Sabatini con la Plaza de España.reurbanización y Acondicionamiento",
+       "name": "Jardines de Sabatini y Plaza de España",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 7522466.0,
@@ -2727,7 +2727,7 @@
      "children": [
       {
        "id": "233",
-       "name": "Cuña Norte de O´donnell",
+       "name": "Cuña Norte de O'Donnell",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 11059438.0,
@@ -2773,7 +2773,7 @@
      "children": [
       {
        "id": "237",
-       "name": "Junta de Compensación Us 4.10 Solana de Valdebebas",
+       "name": "Junta de Compensación US 4.10 Solana de Valdebebas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1381691.0,
@@ -2843,7 +2843,7 @@
      "children": [
       {
        "id": "243",
-       "name": "Ámbito de la Cuña Verde de O´donnell Sur",
+       "name": "Ámbito de la Cuña Verde de O'Donnell Sur",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1500000.0,
@@ -2855,7 +2855,7 @@
       },
       {
        "id": "244",
-       "name": "Calle de la Hacienda de Pavones, Barrio Pavones-las Latas",
+       "name": "Calle de la Hacienda de Pavones, Barrio Pavones-Las Latas",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1643147.0,
@@ -3006,7 +3006,7 @@
      "children": [
       {
        "id": "257",
-       "name": "Paseo de la Dirección, Distrito de Tetuan",
+       "name": "Paseo de la Dirección, Distrito de Tetuán",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 5767925.0,
@@ -3064,7 +3064,7 @@
      "children": [
       {
        "id": "262",
-       "name": "Sistemas de Compensación",
+       "name": "Sistemas de Compensación UZP 2.04 Los Berrocales",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 28702505.0,
@@ -3076,7 +3076,7 @@
       },
       {
        "id": "263",
-       "name": "Uzp 2.03 Desarrollo del Este los Ahijones",
+       "name": "UZP 2.03 Desarrollo del Este Los Ahijones",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 17496018.0,
@@ -3134,7 +3134,7 @@
      "children": [
       {
        "id": "268",
-       "name": "Ámbito Cerro Almodóvar Ii",
+       "name": "Ámbito Cerro Almodóvar II",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 1623124.0,
@@ -3297,7 +3297,7 @@
       },
       {
        "id": "282",
-       "name": "Vivienda de Protección Pública Básica Alquiler 4.8.2 D de la Ue1 del Uzi 0.10 “ensanche de Carabanchel 35",
+       "name": "Vivienda de Protección Pública Básica Alquiler, Ensanche de Carabanchel",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 11095677.0,
@@ -3472,7 +3472,7 @@
       },
       {
        "id": "297",
-       "name": "Vivienda de Protección Pública Básica Alquiler.paseo Dirección 05 C1",
+       "name": "Vivienda de Protección Pública Básica Alquiler, Paseo de la Dirección",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 44525714.0,
@@ -3484,7 +3484,7 @@
       },
       {
        "id": "298",
-       "name": "Vivienda de Protección Pública Básica Alquiler.ofelia Nieto",
+       "name": "Vivienda de Protección Pública Básica Alquiler, Ofelia Nieto",
        "data": {
         "tipo": "Proyecto",
         "presupuesto": 7561132.0,
